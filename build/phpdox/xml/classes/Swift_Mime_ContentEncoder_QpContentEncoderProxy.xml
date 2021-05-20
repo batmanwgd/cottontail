@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_ContentEncoder_QpContentEncoderProxy" namespace="" name="Swift_Mime_ContentEncoder_QpContentEncoderProxy" abstract="false" final="false" start="18" end="96">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder" file="QpContentEncoderProxy.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" size="2354" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="09d010ef6a261fd289c0892ca96027c2a2044839" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php"/>
+  <docblock>
+    <description compact="Proxy for quoted-printable content encoders.">Switches on the best QP encoder implementation for current charset.</description>
+    <author value="Jean-François Simon &lt;jeanfrancois.simon@sensiolabs.com&gt;"/>
+  </docblock>
+  <implements full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+  <member name="safeEncoder" visibility="private" static="false" line="23">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Swift_Mime_ContentEncoder_QpContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_QpContentEncoder"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="nativeEncoder" visibility="private" static="false" line="28">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Swift_Mime_ContentEncoder_NativeQpContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_NativeQpContentEncoder"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="charset" visibility="private" static="false" line="33">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="40" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor."/>
+      <param type="object" variable="$charset">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+    </docblock>
+    <parameter name="safeEncoder" byreference="false" type="object">
+      <type full="Swift_Mime_ContentEncoder_QpContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_QpContentEncoder"/>
+    </parameter>
+    <parameter name="nativeEncoder" byreference="false" type="object">
+      <type full="Swift_Mime_ContentEncoder_NativeQpContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_NativeQpContentEncoder"/>
+    </parameter>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="__clone" start="50" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Make a deep copy of object."/>
+    </docblock>
+  </method>
+  <method name="charsetChanged" start="59" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="encodeByteStream" start="68" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <parameter name="os" byreference="false" type="object">
+      <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+    </parameter>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="getName" start="76" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </method>
+  <method name="encodeString" start="84" end="87" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="getEncoder" start="92" end="95" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+      </return>
+    </docblock>
+  </method>
+  <interface full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder">
+    <extends full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+    <method name="encodeByteStream" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode $in to $out."/>
+        <param description="to read from" type="object" variable="$os">
+          <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+        </param>
+        <param description="to write to" type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+        <param type="int" variable="$firstLineOffset"/>
+        <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+      </docblock>
+      <parameter name="os" byreference="false" type="object">
+        <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+      </parameter>
+      <parameter name="is" byreference="false" type="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </parameter>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+    <method name="getName" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the MIME name of this content encoding scheme."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

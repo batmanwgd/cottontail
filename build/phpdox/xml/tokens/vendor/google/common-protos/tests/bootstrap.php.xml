@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/google/common-protos/tests" file="bootstrap.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/google/common-protos/tests/bootstrap.php" size="1761" time="2020-08-26T16:05:09+00:00" unixtime="1598457909" sha1="ca9a02b8e459a66fd5f8b1cbcd596c5c00b1064f" relative="vendor/google/common-protos/tests/bootstrap.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT"> * Copyright 2018, Google Inc.</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> * All rights reserved.</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> * Redistribution and use in source and binary forms, with or without</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> * modification, are permitted provided that the following conditions are</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT"> * met:</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT"> *     * Redistributions of source code must retain the above copyright</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT"> * notice, this list of conditions and the following disclaimer.</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT"> *     * Redistributions in binary form must reproduce the above</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT"> * copyright notice, this list of conditions and the following disclaimer</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT"> * in the documentation and/or other materials provided with the</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT"> * distribution.</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT"> *     * Neither the name of Google Inc. nor the names of its</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT"> * contributors may be used to endorse or promote products derived from</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT"> * this software without specific prior written permission.</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT"> * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT"> * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT"> * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT"> * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT"> * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT"> * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT"> * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT"> * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="32">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/../vendor/autoload.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_STRING">date_default_timezone_set</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'UTC'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="35">
+    <token name="T_STRING">ini_set</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'error_reporting'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">E_ALL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="36">
+    <token name="T_STRING">ini_set</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'display_errors'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'1'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="37">
+    <token name="T_STRING">ini_set</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'display_startup_errors'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'1'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="38"/>
+</source>

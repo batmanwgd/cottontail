@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Grpc\DefaultCallInvoker" namespace="Grpc" name="DefaultCallInvoker" abstract="false" final="false" start="25" end="46">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib" file="DefaultCallInvoker.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib/DefaultCallInvoker.php" size="1550" time="2021-03-01T21:52:11+00:00" unixtime="1614635531" sha1="d49b22e6dfa7ebbb8a4b4e817d52b2a50596885c" relative="vendor/grpc/grpc/src/lib/DefaultCallInvoker.php"/>
+  <docblock>
+    <description compact="Default call invoker in the gRPC stub.">THIS IS AN EXPERIMENTAL API.</description>
+  </docblock>
+  <implements full="Grpc\CallInvoker" namespace="Grpc" name="CallInvoker"/>
+  <method name="createChannelFactory" start="27" end="29" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="hostname" byreference="false" type="{unknown}"/>
+    <parameter name="opts" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="UnaryCall" start="31" end="33" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="channel" byreference="false" type="{unknown}"/>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="deserialize" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="ClientStreamingCall" start="35" end="37" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="channel" byreference="false" type="{unknown}"/>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="deserialize" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="ServerStreamingCall" start="39" end="41" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="channel" byreference="false" type="{unknown}"/>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="deserialize" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="BidiStreamingCall" start="43" end="45" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="channel" byreference="false" type="{unknown}"/>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="deserialize" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Grpc\CallInvoker" namespace="Grpc" name="CallInvoker">
+    <method name="createChannelFactory" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="hostname" byreference="false" type="{unknown}"/>
+      <parameter name="opts" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="UnaryCall" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="channel" byreference="false" type="{unknown}"/>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+      <parameter name="deserialize" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="ClientStreamingCall" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="channel" byreference="false" type="{unknown}"/>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+      <parameter name="deserialize" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="ServerStreamingCall" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="channel" byreference="false" type="{unknown}"/>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+      <parameter name="deserialize" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="BidiStreamingCall" start="32" end="32" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="channel" byreference="false" type="{unknown}"/>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+      <parameter name="deserialize" byreference="false" type="{unknown}"/>
+      <parameter name="options" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

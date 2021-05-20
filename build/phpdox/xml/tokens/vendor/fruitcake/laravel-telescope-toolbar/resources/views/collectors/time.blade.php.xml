@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="time.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/time.blade.php" size="725" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="29b772778128c413d136f7c055a851b1e4ddcf62" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/time.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/** @var \Illuminate\Support\Collection|\Laravel\Telescope\EntryResult[] $entries */</token>
+  </line>
+  <line no="3">
+    <token name="T_VARIABLE">$data</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$entries</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">first</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">content</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'time', 'link' =&gt; true])</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_INLINE_HTML">        @ttIcon('time')</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value"&gt;{{ $data['duration'] }}&lt;/span&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-label"&gt;ms&lt;/span&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @slot('text')</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;b&gt;Request Duration&lt;/b&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            &lt;span&gt;{{ $data['duration'] }} ms&lt;/span&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;b&gt;Peak memory usage&lt;/b&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            &lt;span&gt;{{ $data['memory'] }} MB&lt;/span&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+</source>

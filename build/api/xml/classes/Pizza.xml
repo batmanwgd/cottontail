@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Pizza" namespace="" name="Pizza" abstract="false" final="false" start="23" end="29">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data" file="Pizza.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Pizza.php" size="626" time="2020-06-19T18:26:14+00:00" unixtime="1592591174" sha1="e31125b16d45b13b6cf7d6665bcff85c3396d13a" relative="vendor/phpdocumentor/reflection/tests/integration/data/Pizza.php"/>
+  <docblock>
+    <description compact="Pizza base class"/>
+  </docblock>
+  <constant type="string" name="PACKAGING" value="'box'">
+    <docblock>
+      <description compact="The packaging method used to transport the pizza."/>
+    </docblock>
+  </constant>
+</class>

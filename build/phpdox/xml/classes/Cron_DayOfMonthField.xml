@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Cron\DayOfMonthField" namespace="Cron" name="DayOfMonthField" abstract="false" final="false" start="28" end="159">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron" file="DayOfMonthField.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php" size="4727" time="2020-11-24T19:55:57+00:00" unixtime="1606247757" sha1="6db21c4ab2305ec01b96f71b4f426bb615703365" relative="vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php"/>
+  <docblock>
+    <description compact="Day of month field.  Allows: * , / - ? L W.">'L' stands for "last" and specifies the last day of the month.
+
+The 'W' character is used to specify the weekday (Monday-Friday) nearest the
+given day. As an example, if you were to specify "15W" as the value for the
+day-of-month field, the meaning is: "the nearest weekday to the 15th of the
+month". So if the 15th is a Saturday, the trigger will fire on Friday the
+14th. If the 15th is a Sunday, the trigger will fire on Monday the 16th. If
+the 15th is a Tuesday, then it will fire on Tuesday the 15th. However if you
+specify "1W" as the value for day-of-month, and the 1st is a Saturday, the
+trigger will fire on Monday the 3rd, as it will not 'jump' over the boundary
+of a month's days. The 'W' character can only be specified when the
+day-of-month is a single day, not a range or list of days.</description>
+    <author value="Michael Dowling &lt;mtdowling@gmail.com&gt;"/>
+  </docblock>
+  <extends full="Cron\AbstractField" namespace="Cron" name="AbstractField" unresolved="true"/>
+  <member name="rangeStart" default="1" type="integer" visibility="protected" static="false" line="33">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <member name="rangeEnd" default="31" type="integer" visibility="protected" static="false" line="38">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <method name="getNearestWeekday" start="49" end="77" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description compact="Get the nearest day of the week for a given day in a month."/>
+      <param description="Current year" type="int" variable="$currentYear"/>
+      <param description="Current month" type="int" variable="$currentMonth"/>
+      <param description="Target day of the month" type="int" variable="$targetDay"/>
+      <return description="Returns the nearest date" type="object">
+        <type full="\DateTime|null" namespace="" name="DateTime|null"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="true">
+      <type full="DateTime" namespace="" name="DateTime"/>
+    </return>
+    <parameter name="currentYear" byreference="false" type="int"/>
+    <parameter name="currentMonth" byreference="false" type="int"/>
+    <parameter name="targetDay" byreference="false" type="int"/>
+  </method>
+  <method name="isSatisfiedBy" start="82" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <return type="bool" nullable="false"/>
+    <parameter name="date" byreference="false" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="? states that the field value is to be skipped" line="84"/>
+      <comment value="Check to see if this is the last day of the month" line="91"/>
+      <comment value="Check to see if this is the nearest weekday to a particular value" line="96"/>
+    </inline>
+  </method>
+  <method name="increment" start="118" end="127" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <inheritdoc/>
+      <param type="object" variable="$date">
+        <type full="\DateTime|\DateTimeImmutable" namespace="\DateTime|" name="DateTimeImmutable"/>
+      </param>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+    </return>
+    <parameter name="date" byreference="true" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+    <parameter name="invert" byreference="false" type="boolean" default="false"/>
+    <parameter name="parts" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="validate" start="132" end="158" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <return type="bool" nullable="false"/>
+    <parameter name="value" byreference="false" type="string"/>
+    <inline>
+      <comment value="Validate that a list don't have W or L" line="136"/>
+    </inline>
+  </method>
+</class>

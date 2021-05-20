@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Decorator_Replacements" namespace="" name="Swift_Plugins_Decorator_Replacements" abstract="false" final="false" start="16" end="31">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Decorator" file="Replacements.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Decorator/Replacements.php" size="763" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="d04cfeaaf95d1a1b826387dd2a0dc1b03da1917b" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Decorator/Replacements.php"/>
+  <docblock>
+    <description compact="Allows customization of Messages on-the-fly."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="getReplacementsFor" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the array of replacements for $address.">This method is invoked once for every single recipient of a message.
+
+If no replacements can be found, an empty value (NULL) should be returned
+and no replacements will then be made on the message.</description>
+      <param type="string" variable="$address"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="address" byreference="false" type="{unknown}"/>
+  </method>
+</interface>

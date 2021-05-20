@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views/partials" file="scripts.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views/partials/scripts.blade.php" size="231" time="2021-01-23T10:10:25+00:00" unixtime="1611396625" sha1="2a493743a01c961248315b0e0908d25769f11162" relative="vendor/infureal/artisan-gui/resources/views/partials/scripts.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if(file_exists(public_path($styleFile = 'vendor/artisan-gui/gui.js')))</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;script defer src="{{ asset($styleFile) }}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;script defer&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_INCLUDE">include</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$guiRoot</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/stubs/js/gui.js'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+</source>

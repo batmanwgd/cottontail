@@ -1,0 +1,1063 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/barryvdh/laravel-ide-helper/config" file="ide-helper.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/barryvdh/laravel-ide-helper/config/ide-helper.php" size="10080" time="2021-04-09T06:17:55+00:00" unixtime="1617949075" sha1="f5758aa6ff80d14eaef6cdde69abcdb4e383ff58" relative="vendor/barryvdh/laravel-ide-helper/config/ide-helper.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">    | Filename &amp; Format</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">    | The default filename</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'filename'</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_ide_helper.php'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">    | Where to write the PhpStorm specific meta file</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">    | PhpStorm also supports the directory `.phpstorm.meta.php/` with arbitrary</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">    | files in it, should you need additional files for your project; e.g.</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">    | `.phpstorm.meta.php/laravel_ide_Helper.php'.</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'meta_filename'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'.phpstorm.meta.php'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">    | Fluent helpers</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="33">
+    <token name="T_COMMENT">    | Set to true to generate commonly used Fluent methods</token>
+  </line>
+  <line no="34">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'include_fluent'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">    | Factory Builders</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">    | Set to true to generate factory generators for better factory()</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">    | method auto-completion.</token>
+  </line>
+  <line no="46">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="47">
+    <token name="T_COMMENT">    | Deprecated for Laravel 8 or latest.</token>
+  </line>
+  <line no="48">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="49">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'include_factory_builders'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">    | Write Model Magic methods</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">    | Set to false to disable write magic methods of model</token>
+  </line>
+  <line no="59">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="60">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'write_model_magic_where'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">    | Write Model External Eloquent Builder methods</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">    | Set to false to disable write external eloquent builder methods</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'write_model_external_builder_methods'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="76">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="77">
+    <token name="T_COMMENT">    | Write Model relation count properties</token>
+  </line>
+  <line no="78">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="79">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="80">
+    <token name="T_COMMENT">    | Set to false to disable writing of relation count properties to model DocBlocks.</token>
+  </line>
+  <line no="81">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="82">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'write_model_relation_count_properties'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="87">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="88">
+    <token name="T_COMMENT">    | Write Eloquent Model Mixins</token>
+  </line>
+  <line no="89">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="90">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="91">
+    <token name="T_COMMENT">    | This will add the necessary DocBlock mixins to the model class</token>
+  </line>
+  <line no="92">
+    <token name="T_COMMENT">    | contained in the Laravel Framework. This helps the IDE with</token>
+  </line>
+  <line no="93">
+    <token name="T_COMMENT">    | auto-completion.</token>
+  </line>
+  <line no="94">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="95">
+    <token name="T_COMMENT">    | Please be aware that this setting changes a file within the /vendor directory.</token>
+  </line>
+  <line no="96">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="97">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="98"/>
+  <line no="99">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'write_eloquent_model_mixins'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="102">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="103">
+    <token name="T_COMMENT">    | Helper files to include</token>
+  </line>
+  <line no="104">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="105">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="106">
+    <token name="T_COMMENT">    | Include helper files. By default not included, but can be toggled with the</token>
+  </line>
+  <line no="107">
+    <token name="T_COMMENT">    | -- helpers (-H) option. Extra helper files can be included.</token>
+  </line>
+  <line no="108">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="109">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'include_helpers'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="112"/>
+  <line no="113">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'helper_files'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="114">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">base_path</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/vendor/laravel/framework/src/Illuminate/Support/helpers.php'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="115">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="116"/>
+  <line no="117">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="118">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="119">
+    <token name="T_COMMENT">    | Model locations to include</token>
+  </line>
+  <line no="120">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="121">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="122">
+    <token name="T_COMMENT">    | Define in which directories the ide-helper:models command should look</token>
+  </line>
+  <line no="123">
+    <token name="T_COMMENT">    | for models.</token>
+  </line>
+  <line no="124">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="125">
+    <token name="T_COMMENT">    | glob patterns are supported to easier reach models in sub-directories,</token>
+  </line>
+  <line no="126">
+    <token name="T_COMMENT">    | e.g. `app/Services/* /Models` (without the space)</token>
+  </line>
+  <line no="127">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="128">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'model_locations'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="131">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'app'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="132">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="135">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="136">
+    <token name="T_COMMENT">    | Models to ignore</token>
+  </line>
+  <line no="137">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="138">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="139">
+    <token name="T_COMMENT">    | Define which models should be ignored.</token>
+  </line>
+  <line no="140">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="141">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="142"/>
+  <line no="143">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ignored_models'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="144"/>
+  <line no="145">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="146"/>
+  <line no="147">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="148">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="149">
+    <token name="T_COMMENT">    | Models hooks</token>
+  </line>
+  <line no="150">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="151">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="152">
+    <token name="T_COMMENT">    | Define which hook classes you want to run for models to add custom information</token>
+  </line>
+  <line no="153">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="154">
+    <token name="T_COMMENT">    | Hooks should implement Barryvdh\LaravelIdeHelper\Contracts\ModelHookInterface.</token>
+  </line>
+  <line no="155">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="156">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'model_hooks'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="159">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// App\Support\IdeHelper\MyModelHook::class</token>
+  </line>
+  <line no="160">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="163">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="164">
+    <token name="T_COMMENT">    | Extra classes</token>
+  </line>
+  <line no="165">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="166">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="167">
+    <token name="T_COMMENT">    | These implementations are not really extended, but called with magic functions</token>
+  </line>
+  <line no="168">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="169">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="170"/>
+  <line no="171">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'extra'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="172">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Eloquent'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Illuminate\Database\Eloquent\Builder'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Illuminate\Database\Query\Builder'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="173">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Session'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Illuminate\Session\Store'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="174">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="175"/>
+  <line no="176">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'magic'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="179">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="180">
+    <token name="T_COMMENT">    | Interface implementations</token>
+  </line>
+  <line no="181">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="182">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="183">
+    <token name="T_COMMENT">    | These interfaces will be replaced with the implementing class. Some interfaces</token>
+  </line>
+  <line no="184">
+    <token name="T_COMMENT">    | are detected by the helpers, others can be listed below.</token>
+  </line>
+  <line no="185">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="186">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="187"/>
+  <line no="188">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'interfaces'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="189"/>
+  <line no="190">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="191"/>
+  <line no="192">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="193">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="194">
+    <token name="T_COMMENT">    | Support for custom DB types</token>
+  </line>
+  <line no="195">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="196">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="197">
+    <token name="T_COMMENT">    | This setting allow you to map any custom database type (that you may have</token>
+  </line>
+  <line no="198">
+    <token name="T_COMMENT">    | created using CREATE TYPE statement or imported using database plugin</token>
+  </line>
+  <line no="199">
+    <token name="T_COMMENT">    | / extension to a Doctrine type.</token>
+  </line>
+  <line no="200">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="201">
+    <token name="T_COMMENT">    | Each key in this array is a name of the Doctrine2 DBAL Platform. Currently valid names are:</token>
+  </line>
+  <line no="202">
+    <token name="T_COMMENT">    | 'postgresql', 'db2', 'drizzle', 'mysql', 'oracle', 'sqlanywhere', 'sqlite', 'mssql'</token>
+  </line>
+  <line no="203">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="204">
+    <token name="T_COMMENT">    | This name is returned by getName() method of the specific Doctrine/DBAL/Platforms/AbstractPlatform descendant</token>
+  </line>
+  <line no="205">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="206">
+    <token name="T_COMMENT">    | The value of the array is an array of type mappings. Key is the name of the custom type,</token>
+  </line>
+  <line no="207">
+    <token name="T_COMMENT">    | (for example, "jsonb" from Postgres 9.4) and the value is the name of the corresponding Doctrine2 type (in</token>
+  </line>
+  <line no="208">
+    <token name="T_COMMENT">    | our case it is 'json_array'. Doctrine types are listed here:</token>
+  </line>
+  <line no="209">
+    <token name="T_COMMENT">    | http://doctrine-dbal.readthedocs.org/en/latest/reference/types.html</token>
+  </line>
+  <line no="210">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="211">
+    <token name="T_COMMENT">    | So to support jsonb in your models when working with Postgres, just add the following entry to the array below:</token>
+  </line>
+  <line no="212">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="213">
+    <token name="T_COMMENT">    | "postgresql" =&gt; array(</token>
+  </line>
+  <line no="214">
+    <token name="T_COMMENT">    |       "jsonb" =&gt; "json_array",</token>
+  </line>
+  <line no="215">
+    <token name="T_COMMENT">    |  ),</token>
+  </line>
+  <line no="216">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="217">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="218">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom_db_types'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="219"/>
+  <line no="220">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="221"/>
+  <line no="222">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="223">
+    <token name="T_COMMENT">     |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="224">
+    <token name="T_COMMENT">     | Support for camel cased models</token>
+  </line>
+  <line no="225">
+    <token name="T_COMMENT">     |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="226">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="227">
+    <token name="T_COMMENT">     | There are some Laravel packages (such as Eloquence) that allow for accessing</token>
+  </line>
+  <line no="228">
+    <token name="T_COMMENT">     | Eloquent model properties via camel case, instead of snake case.</token>
+  </line>
+  <line no="229">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="230">
+    <token name="T_COMMENT">     | Enabling this option will support these packages by saving all model</token>
+  </line>
+  <line no="231">
+    <token name="T_COMMENT">     | properties as camel case, instead of snake case.</token>
+  </line>
+  <line no="232">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="233">
+    <token name="T_COMMENT">     | For example, normally you would see this:</token>
+  </line>
+  <line no="234">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="235">
+    <token name="T_COMMENT">     |  * @property \Illuminate\Support\Carbon $created_at</token>
+  </line>
+  <line no="236">
+    <token name="T_COMMENT">     |  * @property \Illuminate\Support\Carbon $updated_at</token>
+  </line>
+  <line no="237">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="238">
+    <token name="T_COMMENT">     | With this enabled, the properties will be this:</token>
+  </line>
+  <line no="239">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="240">
+    <token name="T_COMMENT">     |  * @property \Illuminate\Support\Carbon $createdAt</token>
+  </line>
+  <line no="241">
+    <token name="T_COMMENT">     |  * @property \Illuminate\Support\Carbon $updatedAt</token>
+  </line>
+  <line no="242">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="243">
+    <token name="T_COMMENT">     | Note, it is currently an all-or-nothing option.</token>
+  </line>
+  <line no="244">
+    <token name="T_COMMENT">     |</token>
+  </line>
+  <line no="245">
+    <token name="T_COMMENT">     */</token>
+  </line>
+  <line no="246">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'model_camel_case_properties'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="247"/>
+  <line no="248">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="249">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="250">
+    <token name="T_COMMENT">    | Property Casts</token>
+  </line>
+  <line no="251">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="252">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="253">
+    <token name="T_COMMENT">    | Cast the given "real type" to the given "type".</token>
+  </line>
+  <line no="254">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="255">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="256">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'type_overrides'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="257">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'integer'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'int'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="258">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'boolean'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'bool'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="259">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="260"/>
+  <line no="261">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="262">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="263">
+    <token name="T_COMMENT">    | Include DocBlocks from classes</token>
+  </line>
+  <line no="264">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="265">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="266">
+    <token name="T_COMMENT">    | Include DocBlocks from classes to allow additional code inspection for</token>
+  </line>
+  <line no="267">
+    <token name="T_COMMENT">    | magic methods and properties.</token>
+  </line>
+  <line no="268">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="269">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="270">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'include_class_docblocks'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="271"/>
+  <line no="272">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="273">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="274">
+    <token name="T_COMMENT">    | Force FQN usage</token>
+  </line>
+  <line no="275">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="276">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="277">
+    <token name="T_COMMENT">    | Use the fully qualified (class) name in docBlock,</token>
+  </line>
+  <line no="278">
+    <token name="T_COMMENT">    | event if class exists in a given file</token>
+  </line>
+  <line no="279">
+    <token name="T_COMMENT">    | or there is an import (use className) of a given class</token>
+  </line>
+  <line no="280">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="281">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="282">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'force_fqn'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="283"/>
+  <line no="284">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="285">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="286">
+    <token name="T_COMMENT">    | Additional relation types</token>
+  </line>
+  <line no="287">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="288">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="289">
+    <token name="T_COMMENT">    | Sometimes it's needed to create custom relation types. The key of the array</token>
+  </line>
+  <line no="290">
+    <token name="T_COMMENT">    | is the Relationship Method name. The value of the array is the canonical class</token>
+  </line>
+  <line no="291">
+    <token name="T_COMMENT">    | name of the Relationship, e.g. `'relationName' =&gt; RelationShipClass::class`.</token>
+  </line>
+  <line no="292">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="293">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="294">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'additional_relation_types'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="295"/>
+  <line no="296">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="297">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="298">
+    <token name="T_COMMENT">    | Run artisan commands after migrations to generate model helpers</token>
+  </line>
+  <line no="299">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="300">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="301">
+    <token name="T_COMMENT">    | The specified commands should run after migrations are finished running.</token>
+  </line>
+  <line no="302">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="303">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="304">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'post_migrate'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="305">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">// 'ide-helper:models --nowrite',</token>
+  </line>
+  <line no="306">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="307"/>
+  <line no="308">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="309"/>
+</source>

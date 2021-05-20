@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_ContentEncoder_RawContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_RawContentEncoder" abstract="false" final="false" start="20" end="65">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder" file="RawContentEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" size="1555" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="71c5d062016ad89e22644834fe228c73e2d92270" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php"/>
+  <docblock>
+    <description compact="Handles raw Transfer Encoding in Swift Mailer.">When sending 8-bit content over SMTP, you should use
+Swift_Transport_Esmtp_EightBitMimeHandler to enable the 8BITMIME SMTP
+extension.</description>
+    <author value="Sebastiaan Stok &lt;s.stok@rollerscapes.net&gt;"/>
+  </docblock>
+  <implements full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+  <method name="encodeString" start="31" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode a given string to produce an encoded string."/>
+      <param type="string" variable="$string"/>
+      <param description="ignored" type="int" variable="$firstLineOffset"/>
+      <param description="ignored" type="int" variable="$maxLineLength"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="encodeByteStream" start="42" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode stream $in to stream $out."/>
+      <param description="ignored" type="int" variable="$firstLineOffset"/>
+      <param description="ignored" type="int" variable="$maxLineLength"/>
+    </docblock>
+    <parameter name="os" byreference="false" type="object">
+      <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+    </parameter>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="getName" start="54" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the name of this encoding scheme."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="charsetChanged" start="62" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not used."/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder">
+    <extends full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+    <method name="encodeByteStream" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode $in to $out."/>
+        <param description="to read from" type="object" variable="$os">
+          <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+        </param>
+        <param description="to write to" type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+        <param type="int" variable="$firstLineOffset"/>
+        <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+      </docblock>
+      <parameter name="os" byreference="false" type="object">
+        <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+      </parameter>
+      <parameter name="is" byreference="false" type="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </parameter>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+    <method name="getName" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the MIME name of this content encoding scheme."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

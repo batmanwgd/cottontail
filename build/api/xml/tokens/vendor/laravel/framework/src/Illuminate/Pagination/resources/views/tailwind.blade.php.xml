@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views" file="tailwind.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/tailwind.blade.php" size="7669" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="b63dec863dfd13bbcabc2932bb37c984ebf06060" relative="vendor/laravel/framework/src/Illuminate/Pagination/resources/views/tailwind.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if ($paginator-&gt;hasPages())</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;nav role="navigation" aria-label="{{ __('Pagination Navigation') }}" class="flex items-center justify-between"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        &lt;div class="flex justify-between flex-1 sm:hidden"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">            @if ($paginator-&gt;onFirstPage())</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">                &lt;span class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                    {!! __('pagination.previous') !!}</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ $paginator-&gt;previousPageUrl() }}" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                    {!! __('pagination.previous') !!}</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">            @if ($paginator-&gt;hasMorePages())</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ $paginator-&gt;nextPageUrl() }}" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    {!! __('pagination.next') !!}</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;span class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    {!! __('pagination.next') !!}</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">        &lt;div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            &lt;div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;p class="text-sm text-gray-700 leading-5"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                    {!! __('Showing') !!}</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;span class="font-medium"&gt;{{ $paginator-&gt;firstItem() }}&lt;/span&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    {!! __('to') !!}</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                    &lt;span class="font-medium"&gt;{{ $paginator-&gt;lastItem() }}&lt;/span&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                    {!! __('of') !!}</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                    &lt;span class="font-medium"&gt;{{ $paginator-&gt;total() }}&lt;/span&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                    {!! __('results') !!}</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;/p&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">            &lt;div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                &lt;span class="relative z-0 inline-flex shadow-sm rounded-md"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    {{-- Previous Page Link --}}</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                    @if ($paginator-&gt;onFirstPage())</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                        &lt;span aria-disabled="true" aria-label="{{ __('pagination.previous') }}"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                            &lt;span class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default rounded-l-md leading-5" aria-hidden="true"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                    &lt;path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                &lt;/svg&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            &lt;/span&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        &lt;/span&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    @else</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                        &lt;a href="{{ $paginator-&gt;previousPageUrl() }}" rel="prev" class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-l-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="{{ __('pagination.previous') }}"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                            &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                &lt;path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    {{-- Pagination Elements --}}</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                    @foreach ($elements as $element)</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                        {{-- "Three Dots" Separator --}}</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        @if (is_string($element))</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                            &lt;span aria-disabled="true"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                &lt;span class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 cursor-default leading-5"&gt;{{ $element }}&lt;/span&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                            &lt;/span&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">                        {{-- Array Of Links --}}</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                        @if (is_array($element))</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                            @foreach ($element as $page =&gt; $url)</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                @if ($page == $paginator-&gt;currentPage())</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                    &lt;span aria-current="page"&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                        &lt;span class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5"&gt;{{ $page }}&lt;/span&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                    &lt;/span&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                    &lt;a href="{{ $url }}" class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 hover:text-gray-500 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" aria-label="{{ __('Go to page :page', ['page' =&gt; $page]) }}"&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                        {{ $page }}</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                    &lt;/a&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                    @endforeach</token>
+  </line>
+  <line no="81"/>
+  <line no="82">
+    <token name="T_INLINE_HTML">                    {{-- Next Page Link --}}</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                    @if ($paginator-&gt;hasMorePages())</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                        &lt;a href="{{ $paginator-&gt;nextPageUrl() }}" rel="next" class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-r-md leading-5 hover:text-gray-400 focus:z-10 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="{{ __('pagination.next') }}"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                            &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                &lt;path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                    @else</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        &lt;span aria-disabled="true" aria-label="{{ __('pagination.next') }}"&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                            &lt;span class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default rounded-r-md leading-5" aria-hidden="true"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                &lt;svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                                    &lt;path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                &lt;/svg&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                            &lt;/span&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                        &lt;/span&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">    &lt;/nav&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="103"/>
+</source>

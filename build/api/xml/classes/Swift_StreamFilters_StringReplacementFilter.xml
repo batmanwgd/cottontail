@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_StreamFilters_StringReplacementFilter" namespace="" name="Swift_StreamFilters_StringReplacementFilter" abstract="false" final="false" start="16" end="70">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters" file="StringReplacementFilter.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" size="1613" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="c7beb456f398af1d710abdb9df8b9895166b0eaf" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilter.php"/>
+  <docblock>
+    <description compact="Processes bytes as they pass through a buffer and replaces sequences in it."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+  <member name="search" visibility="private" static="false" line="19">
+    <docblock>
+      <description compact="The needle(s) to search for"/>
+    </docblock>
+  </member>
+  <member name="replace" visibility="private" static="false" line="22">
+    <docblock>
+      <description compact="The replacement(s) to make"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new StringReplacementFilter with $search and $replace."/>
+      <param type="object" variable="$search">
+        <type full="string|array" namespace="" name="string|array"/>
+      </param>
+      <param type="object" variable="$replace">
+        <type full="string|array" namespace="" name="string|array"/>
+      </param>
+    </docblock>
+    <parameter name="search" byreference="false" type="{unknown}"/>
+    <parameter name="replace" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="shouldBuffer" start="43" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns true if based on the buffer passed more bytes should be buffered."/>
+      <param type="string" variable="$buffer"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="buffer" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="filter" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Perform the actual replacements on $buffer and return the result."/>
+      <param type="string" variable="$buffer"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="buffer" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter">
+    <method name="shouldBuffer" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Based on the buffer given, this returns true if more buffering is needed."/>
+        <param type="mixed" variable="$buffer"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="buffer" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="filter" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Filters $buffer and returns the changes."/>
+        <param type="mixed" variable="$buffer"/>
+        <return type="mixed"/>
+      </docblock>
+      <parameter name="buffer" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

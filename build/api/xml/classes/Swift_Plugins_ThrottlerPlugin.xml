@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_ThrottlerPlugin" namespace="" name="Swift_Plugins_ThrottlerPlugin" abstract="false" final="false" start="16" end="196">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins" file="ThrottlerPlugin.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ThrottlerPlugin.php" size="4667" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="e9766ad419a19d89d9ca0a626c47d62d177c7881" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ThrottlerPlugin.php"/>
+  <docblock>
+    <description compact="Throttles the rate at which emails are sent."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Plugins_BandwidthMonitorPlugin" namespace="" name="Swift_Plugins_BandwidthMonitorPlugin" unresolved="true"/>
+  <implements full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+  <implements full="Swift_Plugins_Timer" namespace="" name="Swift_Plugins_Timer"/>
+  <constant type="integer" name="BYTES_PER_MINUTE" value="0x01">
+    <docblock>
+      <description compact="Flag for throttling in bytes per minute"/>
+    </docblock>
+  </constant>
+  <constant type="integer" name="MESSAGES_PER_SECOND" value="0x11">
+    <docblock>
+      <description compact="Flag for throttling in emails per second (Amazon SES)"/>
+    </docblock>
+  </constant>
+  <constant type="integer" name="MESSAGES_PER_MINUTE" value="0x10">
+    <docblock>
+      <description compact="Flag for throttling in emails per minute"/>
+    </docblock>
+  </constant>
+  <member name="sleeper" visibility="private" static="false" line="32">
+    <docblock>
+      <description compact="The Sleeper instance for sleeping."/>
+      <var type="object">
+        <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="timer" visibility="private" static="false" line="39">
+    <docblock>
+      <description compact="The Timer instance which provides the timestamp."/>
+      <var type="object">
+        <type full="Swift_Plugins_Timer" namespace="" name="Swift_Plugins_Timer"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="start" visibility="private" static="false" line="46">
+    <docblock>
+      <description compact="The time at which the first email was sent."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="rate" visibility="private" static="false" line="53">
+    <docblock>
+      <description compact="The rate at which messages should be sent."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="mode" visibility="private" static="false" line="62">
+    <docblock>
+      <description compact="The mode for throttling.">This is <link xmlns="http://xml.phpdox.net/src" value="BYTES_PER_MINUTE"/> or <link xmlns="http://xml.phpdox.net/src" value="MESSAGES_PER_MINUTE"/></description>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="messages" default="0" type="integer" visibility="private" static="false" line="69">
+    <docblock>
+      <description compact="An internal counter of the number of messages sent."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="79" end="85" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new ThrottlerPlugin."/>
+      <param type="int" variable="$rate"/>
+      <param description="defaults to {@link BYTES_PER_MINUTE}" type="int" variable="$mode"/>
+      <param description="(only needed in testing)" type="object" variable="$sleeper">
+        <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+      </param>
+      <param description="(only needed in testing)" type="object" variable="$timer">
+        <type full="Swift_Plugins_Timer" namespace="" name="Swift_Plugins_Timer"/>
+      </param>
+    </docblock>
+    <parameter name="rate" byreference="false" type="{unknown}"/>
+    <parameter name="mode" byreference="false" type="{unknown}" default="" constant="self::BYTES_PER_MINUTE"/>
+    <parameter name="sleeper" byreference="false" type="object" default="NULL">
+      <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+    </parameter>
+    <parameter name="timer" byreference="false" type="object" default="NULL">
+      <type full="Swift_Plugins_Timer" namespace="" name="Swift_Plugins_Timer"/>
+    </parameter>
+  </constructor>
+  <method name="beforeSendPerformed" start="90" end="116" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Invoked immediately before the Message is sent."/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+    </parameter>
+  </method>
+  <method name="sendPerformed" start="121" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Invoked when a Message is sent."/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+    </parameter>
+  </method>
+  <method name="sleep" start="132" end="139" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sleep for $seconds."/>
+      <param type="int" variable="$seconds"/>
+    </docblock>
+    <parameter name="seconds" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getTimestamp" start="146" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the current UNIX timestamp."/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="throttleBytesPerMinute" start="162" end="167" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Get a number of seconds to sleep for."/>
+      <param type="int" variable="$timePassed"/>
+      <return type="int"/>
+    </docblock>
+    <parameter name="timePassed" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="throttleMessagesPerSecond" start="176" end="181" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Get a number of seconds to sleep for."/>
+      <param type="int" variable="$timePassed"/>
+      <return type="int"/>
+    </docblock>
+    <parameter name="timePassed" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="throttleMessagesPerMinute" start="190" end="195" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Get a number of seconds to sleep for."/>
+      <param type="int" variable="$timePassed"/>
+      <return type="int"/>
+    </docblock>
+    <parameter name="timePassed" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper">
+    <method name="sleep" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sleep for $seconds."/>
+        <param type="int" variable="$seconds"/>
+      </docblock>
+      <parameter name="seconds" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+  <interface full="Swift_Plugins_Timer" namespace="" name="Swift_Plugins_Timer">
+    <method name="getTimestamp" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the current UNIX timestamp."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

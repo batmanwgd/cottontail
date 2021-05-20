@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views/partials" file="styles.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views/partials/styles.blade.php" size="325" time="2021-01-23T10:10:25+00:00" unixtime="1611396625" sha1="f77127fc7ef63315b944d4990ca14d0ebb1c49a3" relative="vendor/infureal/artisan-gui/resources/views/partials/styles.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@if(file_exists(public_path($styleFile = 'vendor/artisan-gui/gui.css')))</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{ asset($styleFile) }}"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_INCLUDE">include</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$guiRoot</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/stubs/css/gui.css'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+</source>

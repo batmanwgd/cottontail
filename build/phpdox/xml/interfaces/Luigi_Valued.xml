@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Luigi\Valued" namespace="Luigi" name="Valued" abstract="false" final="false" start="22" end="27">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Luigi" file="Valued.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Luigi/Valued.php" size="697" time="2020-06-19T18:26:14+00:00" unixtime="1592591174" sha1="b72ee7b753790a41e9346a76e66064bf35dc6ce8" relative="vendor/phpdocumentor/reflection/tests/integration/data/Luigi/Valued.php"/>
+  <docblock>
+    <description compact="Any class implementing this interface has an associated price.">Using this interface we can easily add the price of all components in a pizza by checking for this interface and
+adding the prices together for all components.</description>
+  </docblock>
+  <constant type="integer" name="BASE_PRICE" value="1"/>
+  <method name="getPrice" start="26" end="26" abstract="false" final="false" static="false" visibility="public"/>
+</interface>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views" file="index.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/infureal/artisan-gui/resources/views/index.blade.php" size="656" time="2021-01-23T10:10:25+00:00" unixtime="1611396625" sha1="451d41417911217fbca570c6cb78188ebcbd1e61" relative="vendor/infureal/artisan-gui/resources/views/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="{{ str_replace('_', '-', app()-&gt;getLocale()) }}"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;meta charset="UTF-8"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport"</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Artisan ~ {{ $name = config('app.name', 'Laravel') }}&lt;/title&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    @include('gui::partials.styles')</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;body class="bg-gray-100 font-mono"&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;div id="app"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        &lt;app home="{{ url(config('artisan-gui.home', '/')) }}" endpoint="{{ route('gui.index') }}" /&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">    @include('gui::partials.scripts')</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

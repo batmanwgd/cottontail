@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\Undefined" namespace="Mockery" name="Undefined" abstract="false" final="false" start="23" end="46">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="Undefined.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/Undefined.php" size="1162" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="500d8c1f1653e66a1a586462ba916ac8db3be603" relative="vendor/mockery/mockery/library/Mockery/Undefined.php"/>
+  <method name="__call" start="32" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Call capturing to merely return this same object."/>
+      <param type="string" variable="$method"/>
+      <param type="array" variable="$args"/>
+      <return resolution="self" type="object">
+        <type full="Mockery\Undefined" namespace="Mockery" name="Undefined"/>
+      </return>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return a string, avoiding E_RECOVERABLE_ERROR"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

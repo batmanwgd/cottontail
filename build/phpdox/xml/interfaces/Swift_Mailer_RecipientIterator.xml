@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mailer_RecipientIterator" namespace="" name="Swift_Mailer_RecipientIterator" abstract="false" final="false" start="16" end="32">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer" file="RecipientIterator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/RecipientIterator.php" size="744" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="acabc63a10543b0ceb876f8d2373e49eaeb30e0f" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/RecipientIterator.php"/>
+  <docblock>
+    <description compact="Provides an abstract way of specifying recipients for batch sending."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="hasNext" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns true only if there are more recipients to send to."/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="nextRecipient" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns an array where the keys are the addresses of recipients and the values are the names. e.g. ('foo@bar' =&gt; 'Foo') or ('foo@bar' =&gt; NULL)."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Mailer_ArrayRecipientIterator" namespace="" name="Swift_Mailer_ArrayRecipientIterator"/>
+  </implementors>
+</interface>

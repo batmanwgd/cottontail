@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder" abstract="false" final="false" start="16" end="24">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="HeaderEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder.php" size="488" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="740a67186a2d4e6a625d93c3ad2a98050d3c8e3c" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder.php"/>
+  <docblock>
+    <description compact="Interface for all Header Encoding schemes."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+  <method name="getName" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the MIME name of this content encoding scheme."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Mime_HeaderEncoder_Base64HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder_Base64HeaderEncoder"/>
+  </implementors>
+  <parent full="Swift_Encoder" namespace="" name="Swift_Encoder">
+    <extends full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver"/>
+    <method name="encodeString" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode a given string to produce an encoded string."/>
+        <param type="string" variable="$string"/>
+        <param description="if first line needs to be shorter" type="int" variable="$firstLineOffset"/>
+        <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="string" byreference="false" type="{unknown}"/>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+  </parent>
+  <parent full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver">
+    <method name="charsetChanged" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Notify this observer that the entity's charset has changed."/>
+        <param type="string" variable="$charset"/>
+      </docblock>
+      <parameter name="charset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</interface>

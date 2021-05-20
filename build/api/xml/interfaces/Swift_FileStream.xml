@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_FileStream" namespace="" name="Swift_FileStream" abstract="false" final="false" start="16" end="24">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="FileStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/FileStream.php" size="488" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="2f2338db85553894c20a5cdd195f40fda4bf51a1" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/FileStream.php"/>
+  <docblock>
+    <description compact="An OutputByteStream which specifically reads from a file."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+  <method name="getPath" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the complete path to the file."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <parent full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream">
+    <method name="read" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Reads $length bytes from the stream into a string and moves the pointer through the stream by $length.">If less bytes exist than are requested the remaining bytes are given instead.
+If no bytes are remaining at all, boolean false is returned.</description>
+        <param type="int" variable="$length"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="object">
+          <type full="string|bool" namespace="" name="string|bool"/>
+        </return>
+      </docblock>
+      <parameter name="length" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setReadPointer" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Move the internal read pointer to $byteOffset in the stream."/>
+        <param type="int" variable="$byteOffset"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="byteOffset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</interface>

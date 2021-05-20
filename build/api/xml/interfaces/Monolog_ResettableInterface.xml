@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Monolog\ResettableInterface" namespace="Monolog" name="ResettableInterface" abstract="false" final="false" start="28" end="34">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/monolog/monolog/src/Monolog" file="ResettableInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/monolog/monolog/src/Monolog/ResettableInterface.php" size="1004" time="2020-12-14T13:15:25+00:00" unixtime="1607951725" sha1="9022402a96be2416c7c8d9fd11171e5b3affd815" relative="vendor/monolog/monolog/src/Monolog/ResettableInterface.php"/>
+  <docblock>
+    <description compact="Handler or Processor implementing this interface will be reset when Logger::reset() is called.">Resetting ends a log cycle gets them back to their initial state.
+
+Resetting a Handler or a Processor means flushing/cleaning all buffers, resetting internal
+state, and getting it back to a state in which it can receive log records again.
+
+This is useful in case you want to avoid logs leaking between two requests or jobs when you
+have a long running process like a worker or an application server serving multiple requests
+in one process.</description>
+    <author value="Grégoire Pineau &lt;lyrixx@lyrixx.info&gt;"/>
+  </docblock>
+  <method name="reset" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Monolog\void" namespace="Monolog" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</interface>

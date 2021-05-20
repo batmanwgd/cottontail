@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Transport_Esmtp_Auth_LoginAuthenticator" namespace="" name="Swift_Transport_Esmtp_Auth_LoginAuthenticator" abstract="false" final="false" start="16" end="45">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth" file="LoginAuthenticator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" size="1123" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="268e7697e763e61029523b935e924a7e95a4125e" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php"/>
+  <docblock>
+    <description compact="Handles LOGIN authentication."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_Transport_Esmtp_Authenticator" namespace="" name="Swift_Transport_Esmtp_Authenticator"/>
+  <method name="getAuthKeyword" start="23" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the name of the AUTH mechanism this Authenticator handles."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="authenticate" start="31" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <parameter name="agent" byreference="false" type="object">
+      <type full="Swift_Transport_SmtpAgent" namespace="" name="Swift_Transport_SmtpAgent"/>
+    </parameter>
+    <parameter name="username" byreference="false" type="{unknown}"/>
+    <parameter name="password" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Transport_Esmtp_Authenticator" namespace="" name="Swift_Transport_Esmtp_Authenticator">
+    <method name="getAuthKeyword" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the name of the AUTH mechanism this Authenticator handles."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+    <method name="authenticate" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Try to authenticate the user with $username and $password."/>
+        <param type="string" variable="$username"/>
+        <param type="string" variable="$password"/>
+        <return description="true if authentication worked (returning false is deprecated, throw a Swift_TransportException instead)" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+        <throws description="Allows the message to bubble up when authentication was not successful" type="object">
+          <type full="Swift_TransportException" namespace="" name="Swift_TransportException"/>
+        </throws>
+      </docblock>
+      <parameter name="agent" byreference="false" type="object">
+        <type full="Swift_Transport_SmtpAgent" namespace="" name="Swift_Transport_SmtpAgent"/>
+      </parameter>
+      <parameter name="username" byreference="false" type="{unknown}"/>
+      <parameter name="password" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

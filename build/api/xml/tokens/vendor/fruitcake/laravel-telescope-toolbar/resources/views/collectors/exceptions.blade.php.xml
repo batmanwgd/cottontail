@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="exceptions.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/exceptions.blade.php" size="1471" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="453ec37ce5840cf3bb99f642aca17f3a1b51a537" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/exceptions.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * @var \Illuminate\Support\Collection|\Laravel\Telescope\EntryResult[] $entries</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="5"/>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'exceptions', 'link' =&gt; true, 'status' =&gt; 'red'])</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        @ttIcon('exceptions')</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value"&gt;{{ $entries-&gt;count() }}&lt;/span&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @slot('text')</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;table class="sf-toolbar-previews"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;thead&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;tr&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Details&lt;/th&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Message&lt;/th&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    &lt;/tr&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;/thead&gt;</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;tbody&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    @foreach ($entries as $entry)</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                        &lt;tr&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                &lt;a href="{{ route('telescope') }}/exceptions/{{ $entry-&gt;id }}" target="_telescope"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                    view</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                &lt;/a&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                            &lt;/td&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">                            &lt;td title="{{ $entry-&gt;content['class'] }}"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                {{ \Illuminate\Support\Str::limit($entry-&gt;content['class'], 70) }}&lt;br&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                &lt;small&gt;{{ \Illuminate\Support\Str::limit($entry-&gt;content['message'], 100) }}&lt;/small&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                            &lt;/td&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">                        &lt;/tr&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    @endforeach</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                &lt;/tbody&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+</source>

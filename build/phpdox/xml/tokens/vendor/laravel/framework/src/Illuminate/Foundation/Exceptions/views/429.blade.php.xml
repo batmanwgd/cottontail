@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views" file="429.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/429.blade.php" size="141" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="3bc7fc5eaed878f6e7cfdd8be986219e2bb0a679" relative="vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/429.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('errors::minimal')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('title', __('Too Many Requests'))</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@section('code', '429')</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@section('message', __('Too Many Requests'))</token>
+  </line>
+  <line no="6"/>
+</source>

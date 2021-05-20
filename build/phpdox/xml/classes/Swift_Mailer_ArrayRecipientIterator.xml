@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mailer_ArrayRecipientIterator" namespace="" name="Swift_Mailer_ArrayRecipientIterator" abstract="false" final="false" start="16" end="53">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer" file="ArrayRecipientIterator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" size="1164" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="1fc680d347290c91f2eba5ffd08f31c5230ff095" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/ArrayRecipientIterator.php"/>
+  <docblock>
+    <description compact="Wraps a standard PHP array in an iterator."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_Mailer_RecipientIterator" namespace="" name="Swift_Mailer_RecipientIterator"/>
+  <member name="recipients" default="" type="array" visibility="private" static="false" line="23">
+    <docblock>
+      <description compact="The list of recipients."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="28" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new ArrayRecipientIterator from $recipients."/>
+    </docblock>
+    <parameter name="recipients" byreference="false" type="array"/>
+  </constructor>
+  <method name="hasNext" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns true only if there are more recipients to send to."/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="nextRecipient" start="49" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns an array where the keys are the addresses of recipients and the values are the names. e.g. ('foo@bar' =&gt; 'Foo') or ('foo@bar' =&gt; NULL)."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <interface full="Swift_Mailer_RecipientIterator" namespace="" name="Swift_Mailer_RecipientIterator">
+    <method name="hasNext" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns true only if there are more recipients to send to."/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="nextRecipient" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns an array where the keys are the addresses of recipients and the values are the names. e.g. ('foo@bar' =&gt; 'Foo') or ('foo@bar' =&gt; NULL)."/>
+        <return type="array"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

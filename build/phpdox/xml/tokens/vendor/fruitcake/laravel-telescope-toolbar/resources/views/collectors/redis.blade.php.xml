@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="redis.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/redis.blade.php" size="319" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="beb04add9b72c07c9b64e0c52b3308e122b5791b" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/redis.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * @var \Illuminate\Support\Collection|\Laravel\Telescope\EntryResult[] $entries</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="5"/>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'redis', 'link' =&gt; true])</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        @ttIcon('redis')</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value"&gt;{{ $entries-&gt;count() }}&lt;/span&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="16"/>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+</source>

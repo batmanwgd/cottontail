@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Logger" namespace="" name="Swift_Plugins_Logger" abstract="false" final="false" start="16" end="36">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins" file="Logger.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Logger.php" size="614" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="e7969798571d969fa8991ba02022e8b97a3c26d5" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Logger.php"/>
+  <docblock>
+    <description compact="Logs events in the Transport system."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="add" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add a log entry."/>
+      <param type="string" variable="$entry"/>
+    </docblock>
+    <parameter name="entry" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="clear" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Clear the log contents."/>
+    </docblock>
+  </method>
+  <method name="dump" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get this log as a string."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Plugins_Loggers_EchoLogger" namespace="" name="Swift_Plugins_Loggers_EchoLogger"/>
+  </implementors>
+</interface>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\HigherOrderMessage" namespace="Mockery" name="HigherOrderMessage" abstract="false" final="false" start="26" end="49">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="HigherOrderMessage.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/HigherOrderMessage.php" size="1329" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="7079dc27b0ca685d5efc474655a652a4ac8b8cda" relative="vendor/mockery/mockery/library/Mockery/HigherOrderMessage.php"/>
+  <docblock>
+    <description/>
+    <method value="\Mockery\Expectation withArgs(\Closure|array $args)"/>
+  </docblock>
+  <member name="mock" visibility="private" static="false" line="28"/>
+  <member name="method" visibility="private" static="false" line="29"/>
+  <constructor name="__construct" start="31" end="35" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="mock" byreference="false" type="object">
+      <type full="Mockery\MockInterface" namespace="Mockery" name="MockInterface"/>
+    </parameter>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="__call" start="40" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\Mockery\Expectation" namespace="\Mockery" name="Expectation"/>
+      </return>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Mockery\ExpectsHigherOrderMessage" namespace="Mockery" name="ExpectsHigherOrderMessage"/>
+  </extenders>
+</class>

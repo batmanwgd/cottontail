@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Marios\Product" namespace="Marios" name="Product" abstract="false" final="false" start="7" end="9">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src" file="Product.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Product.php" size="74" time="2020-10-27T20:24:27+00:00" unixtime="1603830267" sha1="056f387db398bb6da3594905a36cc5c977c0041a" relative="vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Product.php"/>
+</interface>

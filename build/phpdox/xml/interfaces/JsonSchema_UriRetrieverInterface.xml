@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="JsonSchema\UriRetrieverInterface" namespace="JsonSchema" name="UriRetrieverInterface" abstract="false" final="false" start="15" end="26">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/justinrainbow/json-schema/src/JsonSchema" file="UriRetrieverInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/justinrainbow/json-schema/src/JsonSchema/UriRetrieverInterface.php" size="517" time="2020-05-27T16:41:55+00:00" unixtime="1590597715" sha1="53f9b4ebeeb3aafcc04822228ef91fd158ba6a0f" relative="vendor/justinrainbow/json-schema/src/JsonSchema/UriRetrieverInterface.php"/>
+  <docblock>
+    <description/>
+    <package value="JsonSchema"/>
+  </docblock>
+  <method name="retrieve" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve a URI"/>
+      <param description="JSON Schema URI" type="string" variable="$uri"/>
+      <param type="object" variable="$baseUri">
+        <type full="JsonSchema\null|string" namespace="JsonSchema" name="null|string"/>
+      </param>
+      <return description="JSON Schema contents" type="object"/>
+    </docblock>
+    <parameter name="uri" byreference="false" type="{unknown}"/>
+    <parameter name="baseUri" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</interface>

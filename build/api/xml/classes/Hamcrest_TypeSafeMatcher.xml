@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hamcrest\TypeSafeMatcher" namespace="Hamcrest" name="TypeSafeMatcher" abstract="true" final="false" start="13" end="107">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="TypeSafeMatcher.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php" size="2918" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="2c015235bcff5f3ae371f478a81eb054b8044ce7" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php"/>
+  <docblock>
+    <description compact="Convenient base class for Matchers that require a value of a specific type.">This simply checks the type.
+
+While it may seem a useless exercise to have this in PHP, objects cannot
+be cast to certain data types such as numerics (or even strings if
+__toString() has not be defined).</description>
+  </docblock>
+  <extends full="Hamcrest\BaseMatcher" namespace="Hamcrest" name="BaseMatcher"/>
+  <constant type="{unknown}" name="TYPE_ANY" value="0"/>
+  <constant type="{unknown}" name="TYPE_STRING" value="1"/>
+  <constant type="{unknown}" name="TYPE_NUMERIC" value="2"/>
+  <constant type="{unknown}" name="TYPE_ARRAY" value="3"/>
+  <constant type="{unknown}" name="TYPE_OBJECT" value="4"/>
+  <constant type="{unknown}" name="TYPE_RESOURCE" value="5"/>
+  <constant type="{unknown}" name="TYPE_BOOLEAN" value="6"/>
+  <member name="_expectedType" visibility="private" static="false" line="30">
+    <docblock>
+      <description compact="The type that is required for a safe comparison"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="_expectedSubtype" visibility="private" static="false" line="37">
+    <docblock>
+      <description compact="The subtype (e.g. class for objects) that is required"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="expectedType" byreference="false" type="{unknown}"/>
+    <parameter name="expectedSubtype" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="matches" start="45" end="48" abstract="false" final="true" static="false" visibility="public">
+    <parameter name="item" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="describeMismatch" start="50" end="57" abstract="false" final="true" static="false" visibility="public">
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <parameter name="mismatchDescription" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <method name="matchesSafely" start="64" end="64" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="The item will already have been checked for the specific type and subtype."/>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="describeMismatchSafely" start="69" end="69" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="The item will already have been checked for the specific type and subtype."/>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <parameter name="mismatchDescription" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <method name="_isSafeType" start="73" end="106" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Hamcrest\TypeSafeDiagnosingMatcher" namespace="Hamcrest" name="TypeSafeDiagnosingMatcher"/>
+    <extender full="Hamcrest\FeatureMatcher" namespace="Hamcrest" name="FeatureMatcher"/>
+  </extenders>
+  <parent full="Hamcrest\BaseMatcher" namespace="Hamcrest" name="BaseMatcher">
+    <implements full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher"/>
+    <method name="describeMismatch" start="16" end="19" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="description" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+    <method name="__toString" start="21" end="24" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="__invoke" start="26" end="29" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+  <interface full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher">
+    <extends full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+    <method name="matches" start="36" end="36" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Evaluates the matcher for argument &lt;var&gt;$item&lt;/var&gt;."/>
+        <param description="the object against which the matcher is evaluated." type="mixed" variable="$item"/>
+        <return description="&lt;code&gt;true&lt;/code&gt; if &lt;var&gt;$item&lt;/var&gt; matches," type="boolean">otherwise &lt;code&gt;false&lt;/code&gt;.</return>
+        <see value="Hamcrest\BaseMatcher"/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="describeMismatch" start="49" end="49" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Generate a description of why the matcher has not accepted the item.">The description will be part of a larger description of why a matching
+failed, so it should be concise.
+This method assumes that &lt;code&gt;matches($item)&lt;/code&gt; is false, but
+will not check this.</description>
+        <param description="The item that the Matcher has rejected." type="mixed" variable="$item"/>
+        <param type="object" variable="$description">
+          <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+        </param>
+        <return/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="description" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

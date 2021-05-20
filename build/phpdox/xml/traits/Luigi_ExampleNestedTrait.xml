@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trait xmlns="http://xml.phpdox.net/src" full="Luigi\ExampleNestedTrait" namespace="Luigi" name="ExampleNestedTrait" abstract="false" final="false" start="15" end="20">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Luigi" file="ExampleNestedTrait.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Luigi/ExampleNestedTrait.php" size="471" time="2020-06-19T18:26:14+00:00" unixtime="1592591174" sha1="85b77f346e7811c11d06e2c2367a8606d01faa2e" relative="vendor/phpdocumentor/reflection/tests/integration/data/Luigi/ExampleNestedTrait.php"/>
+  <method name="exampleTraitMethod" start="17" end="19" abstract="false" final="false" static="false" visibility="private"/>
+</trait>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Psy\ContextAware" namespace="Psy" name="ContextAware" abstract="false" final="false" start="20" end="28">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src" file="ContextAware.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src/ContextAware.php" size="567" time="2021-04-10T16:23:39+00:00" unixtime="1618071819" sha1="11157e274424c430cd097f8425f87e2a67539545" relative="vendor/psy/psysh/src/ContextAware.php"/>
+  <docblock>
+    <description compact="ContextAware interface.">This interface is used to pass the Shell's context into commands and such
+which require access to the current scope variables.</description>
+  </docblock>
+  <method name="setContext" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the Context reference."/>
+      <param type="object" variable="$context">
+        <type full="Psy\Context" namespace="Psy" name="Context"/>
+      </param>
+    </docblock>
+    <parameter name="context" byreference="false" type="object">
+      <type full="Psy\Context" namespace="Psy" name="Context"/>
+    </parameter>
+  </method>
+</interface>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_KeyCache_KeyCacheInputStream" namespace="" name="Swift_KeyCache_KeyCacheInputStream" abstract="false" final="false" start="16" end="47">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache" file="KeyCacheInputStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" size="1070" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="88259ec45a2593b7f2e9babbaad8db5aaf26a693" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/KeyCacheInputStream.php"/>
+  <docblock>
+    <description compact="Writes data to a KeyCache using a stream."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+  <method name="setKeyCache" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the KeyCache to wrap."/>
+    </docblock>
+    <parameter name="keyCache" byreference="false" type="object">
+      <type full="Swift_KeyCache" namespace="" name="Swift_KeyCache"/>
+    </parameter>
+  </method>
+  <method name="setNsKey" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the nsKey which will be written to."/>
+      <param type="string" variable="$nsKey"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setItemKey" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the itemKey which will be written to."/>
+      <param type="string" variable="$itemKey"/>
+    </docblock>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setWriteThroughStream" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Specify a stream to write through for each write()."/>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="__clone" start="46" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Any implementation should be cloneable, allowing the clone to access a separate $nsKey and $itemKey."/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_KeyCache_SimpleKeyCacheInputStream" namespace="" name="Swift_KeyCache_SimpleKeyCacheInputStream"/>
+  </implementors>
+  <parent full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream">
+    <method name="write" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Writes $bytes to the end of the stream.">Writing may not happen immediately if the stream chooses to buffer.  If
+you want to write these bytes with immediate effect, call <link xmlns="http://xml.phpdox.net/src" value="commit()"/>after calling write().
+This method returns the sequence ID of the write (i.e. 1 for first, 2 for
+second, etc etc).
+</description>
+        <param type="string" variable="$bytes"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="int"/>
+      </docblock>
+      <parameter name="bytes" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="commit" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="For any bytes that are currently buffered inside the stream, force them off the buffer."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+    <method name="bind" start="55" end="55" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Attach $is to this stream.">The stream acts as an observer, receiving all data that is written.
+All <link xmlns="http://xml.phpdox.net/src" value="write()"/> and <link xmlns="http://xml.phpdox.net/src" value="flushBuffers()"/> operations will be mirrored.
+</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="unbind" start="66" end="66" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove an already bound stream.">If $is is not bound, no errors will be raised.
+If the stream currently has any buffered data it will be written to $is
+before unbinding occurs.</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="flushBuffers" start="74" end="74" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+  </parent>
+</interface>

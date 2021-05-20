@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="StaticMethodFile" namespace="" name="StaticMethodFile" abstract="false" final="false" start="7" end="38">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="StaticMethodFile.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php" size="773" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="84730e37654d978d55e3296b931f2e4b533bedd0" relative="vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php"/>
+  <extends full="FactoryFile" namespace="" name="FactoryFile"/>
+  <member name="methods" visibility="private" static="false" line="12">
+    <docblock>
+      <description/>
+      <var description="containing method definitions" type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="14" end="18" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="addCall" start="20" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="call" byreference="false" type="object">
+      <type full="FactoryCall" namespace="" name="FactoryCall"/>
+    </parameter>
+  </method>
+  <method name="getDeclarationModifiers" start="25" end="28" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="build" start="30" end="37" abstract="false" final="false" static="false" visibility="public"/>
+  <parent full="FactoryFile" namespace="" name="FactoryFile">
+    <constant type="{unknown}" name="INDENT" value="'    '">
+      <docblock>
+        <description compact="Hamcrest standard is two spaces for each level of indentation."/>
+        <var type="string"/>
+      </docblock>
+    </constant>
+    <constructor name="__construct" start="22" end="26" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="file" byreference="false" type="{unknown}"/>
+      <parameter name="indent" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="addCall" start="28" end="28" abstract="true" final="false" static="false" visibility="public">
+      <parameter name="call" byreference="false" type="object">
+        <type full="FactoryCall" namespace="" name="FactoryCall"/>
+      </parameter>
+    </method>
+    <method name="build" start="30" end="30" abstract="true" final="false" static="false" visibility="public"/>
+    <method name="addFileHeader" start="32" end="36" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="addPart" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="addCode" start="43" end="46" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="code" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="readPart" start="48" end="51" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="generateFactoryCall" start="53" end="61" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="call" byreference="false" type="object">
+        <type full="FactoryCall" namespace="" name="FactoryCall"/>
+      </parameter>
+    </method>
+    <method name="generateDeclaration" start="63" end="70" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="method" byreference="false" type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </parameter>
+    </method>
+    <method name="getDeclarationModifiers" start="72" end="75" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="generateDeclarationArguments" start="77" end="84" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="method" byreference="false" type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </parameter>
+    </method>
+    <method name="generateImport" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="method" byreference="false" type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </parameter>
+    </method>
+    <method name="generateCall" start="91" end="110" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="method" byreference="false" type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </parameter>
+    </method>
+    <method name="generateClosing" start="112" end="115" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="write" start="117" end="120" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+</class>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hamcrest\NullDescription" namespace="Hamcrest" name="NullDescription" abstract="false" final="false" start="11" end="43">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="NullDescription.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/NullDescription.php" size="699" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="b7199dec45c7008234c5fd5e4c962cb292f1e516" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/NullDescription.php"/>
+  <docblock>
+    <description compact="Null implementation of {@link Hamcrest\Description}."/>
+  </docblock>
+  <implements full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+  <method name="appendText" start="14" end="17" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="text" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="appendDescriptionOf" start="19" end="22" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="value" byreference="false" type="object">
+      <type full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+    </parameter>
+  </method>
+  <method name="appendValue" start="24" end="27" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="appendValueList" start="29" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="start" byreference="false" type="{unknown}"/>
+    <parameter name="separator" byreference="false" type="{unknown}"/>
+    <parameter name="end" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="appendList" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="start" byreference="false" type="{unknown}"/>
+    <parameter name="separator" byreference="false" type="{unknown}"/>
+    <parameter name="end" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__toString" start="39" end="42" abstract="false" final="false" static="false" visibility="public"/>
+  <interface full="Hamcrest\Description" namespace="Hamcrest" name="Description">
+    <method name="appendText" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Appends some plain text to the description."/>
+        <param type="string" variable="$text"/>
+        <return type="object">
+          <type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/>
+        </return>
+      </docblock>
+      <parameter name="text" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="appendDescriptionOf" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Appends the description of a {@link Hamcrest\SelfDescribing} value to this description."/>
+        <param type="object" variable="$value">
+          <type full="\Hamcrest\SelfDescribing" namespace="\Hamcrest" name="SelfDescribing"/>
+        </param>
+        <return type="object">
+          <type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/>
+        </return>
+      </docblock>
+      <parameter name="value" byreference="false" type="object">
+        <type full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+      </parameter>
+    </method>
+    <method name="appendValue" start="43" end="43" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Appends an arbitary value to the description."/>
+        <param type="mixed" variable="$value"/>
+        <return type="object">
+          <type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/>
+        </return>
+      </docblock>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="appendValueList" start="55" end="55" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Appends a list of values to the description."/>
+        <param type="string" variable="$start"/>
+        <param type="string" variable="$separator"/>
+        <param type="string" variable="$end"/>
+        <param type="object" variable="$values">
+          <type full="Hamcrest\array|\IteratorAggregate|\Iterator" namespace="Hamcrest\array|\IteratorAggregate|" name="Iterator"/>
+        </param>
+        <return type="object">
+          <type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/>
+        </return>
+      </docblock>
+      <parameter name="start" byreference="false" type="{unknown}"/>
+      <parameter name="separator" byreference="false" type="{unknown}"/>
+      <parameter name="end" byreference="false" type="{unknown}"/>
+      <parameter name="values" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="appendList" start="69" end="69" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Appends a list of {@link Hamcrest\SelfDescribing} objects to the description."/>
+        <param type="string" variable="$start"/>
+        <param type="string" variable="$separator"/>
+        <param type="string" variable="$end"/>
+        <param type="object" variable="$values">must be instances of <link xmlns="http://xml.phpdox.net/src" value="Hamcrest\SelfDescribing"/><type full="Hamcrest\array|\\IteratorAggregate|\\Iterator" namespace="Hamcrest\array|\\IteratorAggregate|\" name="Iterator"/></param>
+        <return type="object">
+          <type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/>
+        </return>
+      </docblock>
+      <parameter name="start" byreference="false" type="{unknown}"/>
+      <parameter name="separator" byreference="false" type="{unknown}"/>
+      <parameter name="end" byreference="false" type="{unknown}"/>
+      <parameter name="values" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

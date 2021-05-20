@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Carbon\Language" namespace="Carbon" name="Language" abstract="false" final="false" start="15" end="339">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nesbot/carbon/src/Carbon" file="Language.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nesbot/carbon/src/Carbon/Language.php" size="7266" time="2021-05-07T10:08:30+00:00" unixtime="1620382110" sha1="082e6cc69433f6b9bda405a958474a92a8236cba" relative="vendor/nesbot/carbon/src/Carbon/Language.php"/>
+  <implements full="JsonSerializable" namespace="" name="JsonSerializable"/>
+  <member name="languagesNames" visibility="protected" static="true" line="20">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="regionsNames" visibility="protected" static="true" line="25">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="id" visibility="protected" static="false" line="30">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="code" visibility="protected" static="false" line="35">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="variant" visibility="protected" static="false" line="40">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="region" visibility="protected" static="false" line="45">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="names" visibility="protected" static="false" line="50">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="isoName" visibility="protected" static="false" line="55">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="nativeName" visibility="protected" static="false" line="60">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="62" end="77" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="string"/>
+  </constructor>
+  <method name="all" start="84" end="91" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the list of the known languages."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="regions" start="98" end="105" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the list of the known regions."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="getNames" start="112" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get both isoName and nativeName as an array."/>
+      <return type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="getId" start="129" end="132" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the original locale ID."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getCode" start="139" end="142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the code of the locale &quot;en&quot;/&quot;fr&quot;."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getVariant" start="149" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the variant code such as cyrl/latn."/>
+      <return type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </return>
+    </docblock>
+    <return type="string" nullable="true"/>
+  </method>
+  <method name="getVariantName" start="159" end="170" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the variant such as Cyrillic/Latin."/>
+      <return type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </return>
+    </docblock>
+    <return type="string" nullable="true"/>
+  </method>
+  <method name="getRegion" start="177" end="180" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the region part of the locale."/>
+      <return type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </return>
+    </docblock>
+    <return type="string" nullable="true"/>
+  </method>
+  <method name="getRegionName" start="187" end="190" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the region name for the current language."/>
+      <return type="object">
+        <type full="Carbon\string|null" namespace="Carbon" name="string|null"/>
+      </return>
+    </docblock>
+    <return type="string" nullable="true"/>
+  </method>
+  <method name="getFullIsoName" start="197" end="204" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the long ISO language name."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setIsoName" start="211" end="216" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the ISO language name."/>
+      <param type="string" variable="$isoName"/>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Carbon\Language" namespace="Carbon" name="Language"/>
+    </return>
+    <parameter name="isoName" byreference="false" type="string"/>
+  </method>
+  <method name="getFullNativeName" start="223" end="230" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the full name of the language in this language."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="setNativeName" start="237" end="242" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the name of the language in this language."/>
+      <param type="string" variable="$nativeName"/>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Carbon\Language" namespace="Carbon" name="Language"/>
+    </return>
+    <parameter name="nativeName" byreference="false" type="string"/>
+  </method>
+  <method name="getIsoName" start="249" end="254" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the short ISO language name."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getNativeName" start="261" end="266" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the short name of the language in this language."/>
+      <return type="string"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getIsoDescription" start="273" end="279" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a string with short ISO name, region in parentheses if applicable, variant in parentheses if applicable."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getNativeDescription" start="286" end="292" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a string with short native name, region in parentheses if applicable, variant in parentheses if applicable."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getFullIsoDescription" start="299" end="305" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a string with long ISO name, region in parentheses if applicable, variant in parentheses if applicable."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getFullNativeDescription" start="312" end="318" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a string with long native name, region in parentheses if applicable, variant in parentheses if applicable."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="__toString" start="325" end="328" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the original locale ID."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="jsonSerialize" start="335" end="338" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a string with short ISO name, region in parentheses if applicable, variant in parentheses if applicable."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <interface full="JsonSerializable" namespace="" name="JsonSerializable">
+    <method name="jsonSerialize" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Specify data which should be serialized to JSON"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  </interface>
+</class>

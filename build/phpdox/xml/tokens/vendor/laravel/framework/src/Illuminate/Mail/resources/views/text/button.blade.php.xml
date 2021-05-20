@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/text" file="button.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/text/button.blade.php" size="24" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="d6bb0bef7d9b171365f08541350df8df19a384ed" relative="vendor/laravel/framework/src/Illuminate/Mail/resources/views/text/button.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">{{ $slot }}: {{ $url }}</token>
+  </line>
+  <line no="2"/>
+</source>

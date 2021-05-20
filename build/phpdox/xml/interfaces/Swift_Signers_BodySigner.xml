@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Signers_BodySigner" namespace="" name="Swift_Signers_BodySigner" abstract="false" final="false" start="16" end="31">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers" file="BodySigner.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/BodySigner.php" size="706" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="68ab2de9fd7df4c398b23f299f1f11eea1217d7c" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/BodySigner.php"/>
+  <docblock>
+    <description compact="Body Signer Interface used to apply Body-Based Signature to a message."/>
+    <author value="Xavier De Cock &lt;xdecock@gmail.com&gt;"/>
+  </docblock>
+  <extends full="Swift_Signer" namespace="" name="Swift_Signer"/>
+  <method name="signMessage" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Change the Swift_Signed_Message to apply the singing."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_BodySigner" namespace="" name="Swift_Signers_BodySigner"/>
+      </return>
+    </docblock>
+    <parameter name="message" byreference="false" type="object">
+      <type full="Swift_Message" namespace="" name="Swift_Message"/>
+    </parameter>
+  </method>
+  <method name="getAlteredHeaders" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the list of header a signer might tamper."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <parent full="Swift_Signer" namespace="" name="Swift_Signer">
+    <method name="reset" start="18" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+</interface>

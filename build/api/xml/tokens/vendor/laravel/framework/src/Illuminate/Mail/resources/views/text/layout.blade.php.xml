@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/text" file="layout.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/text/layout.blade.php" size="141" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="3176d7c44a32a4e40e51590b5df6ab5cb2cb340c" relative="vendor/laravel/framework/src/Illuminate/Mail/resources/views/text/layout.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">{!! strip_tags($header) !!}</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">{!! strip_tags($slot) !!}</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@isset($subcopy)</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">{!! strip_tags($subcopy) !!}</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">@endisset</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">{!! strip_tags($footer) !!}</token>
+  </line>
+  <line no="10"/>
+</source>

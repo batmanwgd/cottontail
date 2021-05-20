@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views" file="simple-tailwind.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/simple-tailwind.blade.php" size="1699" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="8a0cc8a4466aed3d140e5ada9b36b821b7acb964" relative="vendor/laravel/framework/src/Illuminate/Pagination/resources/views/simple-tailwind.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if ($paginator-&gt;hasPages())</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        {{-- Previous Page Link --}}</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        @if ($paginator-&gt;onFirstPage())</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;span class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                {!! __('pagination.previous') !!}</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;/span&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        @else</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;a href="{{ $paginator-&gt;previousPageUrl() }}" rel="prev" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                {!! __('pagination.previous') !!}</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">        {{-- Next Page Link --}}</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        @if ($paginator-&gt;hasMorePages())</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;a href="{{ $paginator-&gt;nextPageUrl() }}" rel="next" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 leading-5 rounded-md hover:text-gray-500 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                {!! __('pagination.next') !!}</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        @else</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;span class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 cursor-default leading-5 rounded-md"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                {!! __('pagination.next') !!}</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            &lt;/span&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">    &lt;/nav&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="26"/>
+</source>

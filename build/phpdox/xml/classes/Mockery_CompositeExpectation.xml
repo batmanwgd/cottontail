@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\CompositeExpectation" namespace="Mockery" name="CompositeExpectation" abstract="false" final="false" start="23" end="154">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="CompositeExpectation.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php" size="4001" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="ad920e8f4f0f895b3c28155504757af27f408419" relative="vendor/mockery/mockery/library/Mockery/CompositeExpectation.php"/>
+  <implements full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface"/>
+  <member name="_expectations" default="" type="array" visibility="protected" static="false" line="30">
+    <docblock>
+      <description compact="Stores an array of all expectations for this composite"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="add" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add an expectation to the composite"/>
+      <param type="object" variable="$expectation">
+        <type full="\Mockery\Expectation|\Mockery\CompositeExpectation" namespace="\Mockery\Expectation|\Mockery" name="CompositeExpectation"/>
+      </param>
+      <return type="object">
+        <type full="Mockery\void" namespace="Mockery" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="expectation" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="andReturn" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="mixed" variable="...$args"/>
+    </docblock>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="andReturns" start="57" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set a return value, or sequential queue of return values"/>
+      <param type="mixed" variable="...$args"/>
+      <return resolution="self" type="object">
+        <type full="Mockery\CompositeExpectation" namespace="Mockery" name="CompositeExpectation"/>
+      </return>
+    </docblock>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__call" start="69" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Intercept any expectation calls and direct against all expectations"/>
+      <param type="string" variable="$method"/>
+      <param type="array" variable="$args"/>
+      <return resolution="self" type="object">
+        <type full="Mockery\CompositeExpectation" namespace="Mockery" name="CompositeExpectation"/>
+      </return>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array"/>
+  </method>
+  <method name="getOrderNumber" start="82" end="87" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return order number of the first expectation"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="getMock" start="94" end="99" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the parent mock of the first expectation"/>
+      <return type="object">
+        <type full="\Mockery\MockInterface|\Mockery\LegacyMockInterface" namespace="\Mockery\MockInterface|\Mockery" name="LegacyMockInterface"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="mock" start="106" end="109" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Mockery API alias to getMock"/>
+      <return type="object">
+        <type full="\Mockery\LegacyMockInterface|\Mockery\MockInterface" namespace="\Mockery\LegacyMockInterface|\Mockery" name="MockInterface"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="shouldReceive" start="118" end="123" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Starts a new expectation addition on the first mock which is the primary target outside of a demeter chain"/>
+      <param type="mixed" variable="...$args"/>
+      <return type="object">
+        <type full="\Mockery\Expectation" namespace="\Mockery" name="Expectation"/>
+      </return>
+    </docblock>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="shouldNotReceive" start="132" end="137" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Starts a new expectation addition on the first mock which is the primary target outside of a demeter chain"/>
+      <param type="mixed" variable="...$args"/>
+      <return type="object">
+        <type full="\Mockery\Expectation" namespace="\Mockery" name="Expectation"/>
+      </return>
+    </docblock>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__toString" start="144" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the string summary of this composite expectation"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <interface full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface">
+    <method name="getOrderNumber" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getMock" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="Mockery\LegacyMockInterface|MockInterface" namespace="Mockery" name="LegacyMockInterface|MockInterface"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="andReturn" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param type="mixed" variable="$args"/>
+        <return resolution="self" type="object">
+          <type full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface"/>
+        </return>
+      </docblock>
+      <parameter name="args" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="andReturns" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return resolution="self" type="object">
+          <type full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+</class>

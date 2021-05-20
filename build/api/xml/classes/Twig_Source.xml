@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Twig\Source" namespace="Twig" name="Source" abstract="false" final="true" start="19" end="51">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/twig/twig/src" file="Source.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/twig/twig/src/Source.php" size="1059" time="2021-05-16T12:12:47+00:00" unixtime="1621167167" sha1="20aa432419888eb2f2dfb7741e44ab526d822ac7" relative="vendor/twig/twig/src/Source.php"/>
+  <docblock>
+    <description compact="Holds information about a non-compiled Twig template."/>
+    <author value="Fabien Potencier &lt;fabien@symfony.com&gt;"/>
+  </docblock>
+  <member name="code" visibility="private" static="false" line="21"/>
+  <member name="name" visibility="private" static="false" line="22"/>
+  <member name="path" visibility="private" static="false" line="23"/>
+  <constructor name="__construct" start="30" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="The template source code" type="string" variable="$code"/>
+      <param description="The template logical name" type="string" variable="$name"/>
+      <param description="The filesystem path of the template if any" type="string" variable="$path"/>
+    </docblock>
+    <parameter name="code" byreference="false" type="string"/>
+    <parameter name="name" byreference="false" type="string"/>
+    <parameter name="path" byreference="false" type="string" default="''"/>
+  </constructor>
+  <method name="getCode" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getName" start="42" end="45" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getPath" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+</class>

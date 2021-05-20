@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\VerificationDirector" namespace="Mockery" name="VerificationDirector" abstract="false" final="false" start="23" end="107">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="VerificationDirector.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/VerificationDirector.php" size="3121" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="2ce150dc21072f9d97e423f7f931facce7f9707a" relative="vendor/mockery/mockery/library/Mockery/VerificationDirector.php"/>
+  <member name="receivedMethodCalls" visibility="private" static="false" line="25"/>
+  <member name="expectation" visibility="private" static="false" line="26"/>
+  <constructor name="__construct" start="28" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="receivedMethodCalls" byreference="false" type="object">
+      <type full="Mockery\ReceivedMethodCalls" namespace="Mockery" name="ReceivedMethodCalls"/>
+    </parameter>
+    <parameter name="expectation" byreference="false" type="object">
+      <type full="Mockery\VerificationExpectation" namespace="Mockery" name="VerificationExpectation"/>
+    </parameter>
+  </constructor>
+  <method name="verify" start="34" end="37" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="with" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="withArgs" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="withNoArgs" start="49" end="52" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="withAnyArgs" start="54" end="57" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="times" start="59" end="62" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="limit" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="once" start="64" end="67" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="twice" start="69" end="72" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="atLeast" start="74" end="77" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="atMost" start="79" end="82" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="between" start="84" end="87" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="minimum" byreference="false" type="{unknown}"/>
+    <parameter name="maximum" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="cloneWithoutCountValidatorsApplyAndVerify" start="89" end="97" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="cloneApplyAndVerify" start="99" end="106" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+</class>

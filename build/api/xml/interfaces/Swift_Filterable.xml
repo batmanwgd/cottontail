@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Filterable" namespace="" name="Swift_Filterable" abstract="false" final="false" start="16" end="31">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="Filterable.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Filterable.php" size="626" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="fffffb16bb30fdb876c8dae1d1c65a068c2b05a2" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Filterable.php"/>
+  <docblock>
+    <description compact="Allows StreamFilters to operate on a stream."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="addFilter" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add a new StreamFilter, referenced by $key."/>
+      <param type="string" variable="$key"/>
+    </docblock>
+    <parameter name="filter" byreference="false" type="object">
+      <type full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+    </parameter>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="removeFilter" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove an existing filter using $key."/>
+      <param type="string" variable="$key"/>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Swift_ByteStream_AbstractFilterableInputStream" namespace="" name="Swift_ByteStream_AbstractFilterableInputStream"/>
+  </implementors>
+</interface>

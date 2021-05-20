@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/telescope/resources/views" file="layout.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/telescope/resources/views/layout.blade.php" size="14982" time="2021-04-13T15:47:06+00:00" unixtime="1618328826" sha1="ca24f5f4765c87f88470961c9542ea6b78b4643a" relative="vendor/laravel/telescope/resources/views/layout.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;!-- Meta Information --&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta name="csrf-token" content="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;link rel="shortcut icon" href="{{ asset('/vendor/telescope/favicon.ico') }}"&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;meta name="robots" content="noindex, nofollow"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Telescope{{ config('app.name') ? ' - ' . config('app.name') : '' }}&lt;/title&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;!-- Style sheets--&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;link href="{{ asset(mix($cssFile, 'vendor/telescope')) }}" rel="stylesheet" type="text/css"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">&lt;div id="telescope" v-cloak&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">    &lt;alert :message="alert.message"</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">           :type="alert.type"</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">           :auto-close="alert.autoClose"</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">           :confirmation-proceed="alert.confirmationProceed"</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">           :confirmation-cancel="alert.confirmationCancel"</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">           v-if="alert.type"&gt;&lt;/alert&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;div class="container mb-5"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        &lt;div class="d-flex align-items-center py-4 header"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">            &lt;svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                &lt;path class="fill-primary" d="M0 40a39.87 39.87 0 0 1 11.72-28.28A40 40 0 1 1 0 40zm34 10a4 4 0 0 1-4-4v-2a2 2 0 1 0-4 0v2a4 4 0 0 1-4 4h-2a2 2 0 1 0 0 4h2a4 4 0 0 1 4 4v2a2 2 0 1 0 4 0v-2a4 4 0 0 1 4-4h2a2 2 0 1 0 0-4h-2zm24-24a6 6 0 0 1-6-6v-3a3 3 0 0 0-6 0v3a6 6 0 0 1-6 6h-3a3 3 0 0 0 0 6h3a6 6 0 0 1 6 6v3a3 3 0 0 0 6 0v-3a6 6 0 0 1 6-6h3a3 3 0 0 0 0-6h-3zm-4 36a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM21 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;/svg&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;h4 class="mb-0 ml-3"&gt;&lt;strong&gt;Laravel&lt;/strong&gt; Telescope{{ config('app.name') ? ' - ' . config('app.name') : '' }}&lt;/h4&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">            &lt;button class="btn btn-outline-primary ml-auto mr-3" v-on:click.prevent="toggleRecording" title="Play/Pause"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon fill-primary" v-if="recording"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                    &lt;path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z"/&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                &lt;/svg&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon fill-primary" v-else&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    &lt;path d="M4 4l12 6-12 6z"/&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;/svg&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">            &lt;/button&gt;</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_INLINE_HTML">            &lt;button class="btn btn-outline-primary mr-3" :class="{active: autoLoadsNewEntries}" v-on:click.prevent="autoLoadNewEntries" title="Auto Load Entries"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon fill-primary"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                    &lt;path d="M10 3v2a5 5 0 0 0-3.54 8.54l-1.41 1.41A7 7 0 0 1 10 3zm4.95 2.05A7 7 0 0 1 10 17v-2a5 5 0 0 0 3.54-8.54l1.41-1.41zM10 20l-4-4 4-4v8zm0-12V0l4 4-4 4z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                &lt;/svg&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">            &lt;/button&gt;</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">            &lt;div class="btn-group" role="group" aria-label="Basic example"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                &lt;router-link tag="button" to="/monitored-tags" class="btn btn-outline-primary" active-class="active" title="Monitoring"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon fill-primary"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                        &lt;path d="M12 10a2 2 0 0 1-3.41 1.41A2 2 0 0 1 10 8V0a9.97 9.97 0 0 1 10 10h-8zm7.9 1.41A10 10 0 1 1 8.59.1v2.03a8 8 0 1 0 9.29 9.29h2.02zm-4.07 0a6 6 0 1 1-7.25-7.25v2.1a3.99 3.99 0 0 0-1.4 6.57 4 4 0 0 0 6.56-1.42h2.1z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                    &lt;/svg&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                &lt;/router-link&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="58"/>
+  <line no="59">
+    <token name="T_INLINE_HTML">        &lt;div class="row mt-4"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">            &lt;div class="col-2 sidebar"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                &lt;ul class="nav flex-column"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/requests" class="nav-link d-flex align-items-center pt-0"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                &lt;path d="M0 3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm2 2v12h16V5H2zm8 3l4 5H6l4-5z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Requests&lt;/span&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/commands" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                &lt;path d="M7 17H2a2 2 0 0 1-2-2V2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-5l4 2v1H3v-1l4-2zM2 2v11h16V2H2z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Commands&lt;/span&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/schedule" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                &lt;path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-7.59V4h2v5.59l3.95 3.95-1.41 1.41L9 10.41z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Schedule&lt;/span&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/jobs" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                &lt;path d="M0 2h20v4H0V2zm0 8h20v2H0v-2zm0 6h20v2H0v-2z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Jobs&lt;/span&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="94"/>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item mt-3"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/batches" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                &lt;path d="M1 1h18v2H1V1zm0 8h18v2H1V9zm0 8h18v2H1v-2zM1 5h18v2H1V5zm0 8h18v2H1v-2z"/&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Batches&lt;/span&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/cache" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                &lt;path d="M16 2h4v15a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V0h16v2zm0 2v13a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4h-2zM2 2v15a1 1 0 0 0 1 1h11.17a2.98 2.98 0 0 1-.17-1V2H2zm2 8h8v2H4v-2zm0 4h8v2H4v-2zM4 4h8v4H4V4z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Cache&lt;/span&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/dumps" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                &lt;path d="M.7 9.3l4.8-4.8 1.4 1.42L2.84 10l4.07 4.07-1.41 1.42L0 10l.7-.7zm18.6 1.4l.7-.7-5.49-5.49-1.4 1.42L17.16 10l-4.07 4.07 1.41 1.42 4.78-4.78z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Dumps&lt;/span&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/events" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                &lt;path d="M16 8A6 6 0 1 0 4 8v11H2a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2V8a8 8 0 1 1 16 0v3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2V8zm-4 2h3v10h-3V10zm-7 0h3v10H5V10z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Events&lt;/span&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/exceptions" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                                &lt;path d="M15.3 14.89l2.77 2.77a1 1 0 0 1 0 1.41 1 1 0 0 1-1.41 0l-2.59-2.58A5.99 5.99 0 0 1 11 18V9.04a1 1 0 0 0-2 0V18a5.98 5.98 0 0 1-3.07-1.51l-2.59 2.58a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41l2.77-2.77A5.95 5.95 0 0 1 4.07 13H1a1 1 0 1 1 0-2h3V8.41L.93 5.34a1 1 0 0 1 0-1.41 1 1 0 0 1 1.41 0l2.1 2.1h11.12l2.1-2.1a1 1 0 0 1 1.41 0 1 1 0 0 1 0 1.41L16 8.41V11h3a1 1 0 1 1 0 2h-3.07c-.1.67-.32 1.31-.63 1.89zM15 5H5a5 5 0 1 1 10 0z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Exceptions&lt;/span&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/gates" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                &lt;path d="M7 10V7a5 5 0 1 1 10 0v3h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h2zm2 0h6V7a3 3 0 0 0-6 0v3zm-4 2v8h14v-8H5zm7 2a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Gates&lt;/span&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/logs" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                &lt;path d="M0 2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v2H0V2zm1 3h18v13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5zm6 2v2h6V7H7z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Logs&lt;/span&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/mail" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                &lt;path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Mail&lt;/span&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/models" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                &lt;path d="M10 1l10 6-10 6L0 7l10-6zm6.67 10L20 13l-10 6-10-6 3.33-2L10 15l6.67-4z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Models&lt;/span&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/notifications" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                &lt;path d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Notifications&lt;/span&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/queries" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                                &lt;path d="M1 1h18v2H1V1zm0 8h18v2H1V9zm0 8h18v2H1v-2zM1 5h12v2H1V5zm0 8h12v2H1v-2z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Queries&lt;/span&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/redis" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                &lt;path d="M.96 9.84c1.35.61 6.83 2.83 7.73 3.26.93.44 1.58.45 2.75-.16 1.13-.59 6.21-2.68 7.6-3.36l.16.06c1.04.38 1.08.7.01 1.25-1.06.56-6.59 2.83-7.77 3.44-1.17.62-1.82.61-2.75.17-.93-.45-6.81-2.82-7.87-3.33-1.06-.5-1.08-.85-.04-1.26l.18-.07zM.8 13.19h.01c1.06.5 6.94 2.88 7.87 3.33.93.44 1.58.45 2.75-.17 1.17-.6 6.6-2.84 7.74-3.42h.02c1.04.39 1.08.7.01 1.26-1.06.55-6.59 2.82-7.77 3.44-1.17.61-1.82.6-2.75.16-.93-.44-6.81-2.82-7.87-3.33-1.06-.5-1.08-.85-.04-1.26l.03-.01zm18.4-5.71c-1.06.55-6.59 2.82-7.77 3.44-1.17.61-1.82.6-2.75.16-.93-.44-6.81-2.82-7.87-3.32C-.24 7.25-.26 6.9.78 6.49c1.04-.4 6.89-2.7 8.12-3.14 1.24-.44 1.67-.46 2.72-.07 1.05.38 6.54 2.57 7.58 2.95 1.04.38 1.08.7.01 1.25zm-6.59-1.95l-1.34-.5.36-.86-1.32.44-1.4-.55.45.83-1.5.53 2 .18.63 1.04.39-.93 1.73-.18zm-2.22 4.53L11.8 8l-4.63.7 3.23 1.35zm-4.48-2.1c1.37 0 2.47-.42 2.47-.95s-1.1-.96-2.47-.96-2.48.43-2.48.96 1.11.96 2.48.96zm8.75-2.17v2.16l2.74-1.08-2.74-1.08zm-3.03 1.2l2.73 1.08.3-.12V5.8l-3.03 1.2z"&gt;&lt;/path&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Redis&lt;/span&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                        &lt;router-link active-class="active" to="/views" class="nav-link d-flex align-items-center"&gt;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                            &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                &lt;path d="M7 3H2v14h5V3zm2 0v14h9V3H9zM0 3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm3 1h3v2H3V4zm0 3h3v2H3V7zm0 3h3v2H3v-2z"/&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                            &lt;/svg&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                            &lt;span&gt;Views&lt;/span&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                        &lt;/router-link&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                &lt;/ul&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="202"/>
+  <line no="203">
+    <token name="T_INLINE_HTML">            &lt;div class="col-10"&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                @if (! $assetsAreCurrent)</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                    &lt;div class="alert alert-warning"&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                        The published Telescope assets are not up-to-date with the installed version. To update, run:&lt;br/&gt;&lt;code&gt;php artisan telescope:publish&lt;/code&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                @endif</token>
+  </line>
+  <line no="209"/>
+  <line no="210">
+    <token name="T_INLINE_HTML">                &lt;router-view&gt;&lt;/router-view&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="215"/>
+  <line no="216">
+    <token name="T_INLINE_HTML">&lt;!-- Global Telescope Object --&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">    window.Telescope = @json($telescopeScriptVariables);</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="220"/>
+  <line no="221">
+    <token name="T_INLINE_HTML">&lt;script src="{{ asset(mix('app.js', 'vendor/telescope')) }}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="224"/>
+</source>

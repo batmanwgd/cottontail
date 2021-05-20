@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing" abstract="false" final="false" start="11" end="23">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="SelfDescribing.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/SelfDescribing.php" size="535" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="55b89f280431a9ff3f7ee9337cf7da6b54aebe22" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/SelfDescribing.php"/>
+  <docblock>
+    <description compact="The ability of an object to describe itself."/>
+  </docblock>
+  <method name="describeTo" start="22" end="22" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Generates a description of the object.  The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately."/>
+      <param type="object" variable="$description">The description to be built or appended to.<type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/></param>
+    </docblock>
+    <parameter name="description" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <extenders>
+    <extender full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher"/>
+  </extenders>
+</interface>

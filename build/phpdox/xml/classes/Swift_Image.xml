@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Image" namespace="" name="Swift_Image" abstract="false" final="false" start="16" end="43">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="Image.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Image.php" size="1052" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="068bb149639020b52c1bd01d1349af6b6c1e4014" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Image.php"/>
+  <docblock>
+    <description compact="An image, embedded in a multipart message."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_EmbeddedFile" namespace="" name="Swift_EmbeddedFile" unresolved="true"/>
+  <constructor name="__construct" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new EmbeddedFile.">Details may be optionally provided to the constructor.</description>
+      <param type="object" variable="$data">
+        <type full="string|Swift_OutputByteStream" namespace="" name="string|Swift_OutputByteStream"/>
+      </param>
+      <param type="string" variable="$filename"/>
+      <param type="string" variable="$contentType"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="filename" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="contentType" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="fromPath" start="39" end="42" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a new Image from a filesystem path."/>
+      <param type="string" variable="$path"/>
+      <return resolution="self" type="object">
+        <type full="Swift_Image" namespace="" name="Swift_Image"/>
+      </return>
+    </docblock>
+    <parameter name="path" byreference="false" type="{unknown}"/>
+  </method>
+</class>

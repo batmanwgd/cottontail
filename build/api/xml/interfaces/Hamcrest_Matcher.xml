@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher" abstract="false" final="false" start="23" end="50">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="Matcher.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" size="1627" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="e0d782f1661b3febec35c0bc88a7bf1abd5cb0b6" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php"/>
+  <docblock>
+    <description compact="A matcher over acceptable values.">A matcher is able to describe itself to give feedback when it fails.
+&lt;p/&gt;
+Matcher implementations should &lt;b&gt;NOT directly implement this interface&lt;/b&gt;.
+Instead, &lt;b&gt;extend&lt;/b&gt; the <link xmlns="http://xml.phpdox.net/src" value="Hamcrest\BaseMatcher"/> abstract class,
+which will ensure that the Matcher API can grow to support
+new features and remain compatible with all Matcher implementations.
+&lt;p/&gt;
+For easy access to common Matcher implementations, use the static factory
+methods in <link xmlns="http://xml.phpdox.net/src" value="Hamcrest\CoreMatchers"/>.
+</description>
+    <see value="Hamcrest\CoreMatchers"/>
+    <see value="Hamcrest\BaseMatcher"/>
+  </docblock>
+  <extends full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+  <method name="matches" start="36" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Evaluates the matcher for argument &lt;var&gt;$item&lt;/var&gt;."/>
+      <param description="the object against which the matcher is evaluated." type="mixed" variable="$item"/>
+      <return description="&lt;code&gt;true&lt;/code&gt; if &lt;var&gt;$item&lt;/var&gt; matches," type="boolean">otherwise &lt;code&gt;false&lt;/code&gt;.</return>
+      <see value="Hamcrest\BaseMatcher"/>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="describeMismatch" start="49" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Generate a description of why the matcher has not accepted the item.">The description will be part of a larger description of why a matching
+failed, so it should be concise.
+This method assumes that &lt;code&gt;matches($item)&lt;/code&gt; is false, but
+will not check this.</description>
+      <param description="The item that the Matcher has rejected." type="mixed" variable="$item"/>
+      <param type="object" variable="$description">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </param>
+      <return/>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <parameter name="description" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <implementors>
+    <class full="Hamcrest\BaseMatcher" namespace="Hamcrest" name="BaseMatcher"/>
+    <class full="Hamcrest\DiagnosingMatcher" namespace="Hamcrest" name="DiagnosingMatcher"/>
+    <class full="Hamcrest\TypeSafeDiagnosingMatcher" namespace="Hamcrest" name="TypeSafeDiagnosingMatcher"/>
+    <class full="Hamcrest\FeatureMatcher" namespace="Hamcrest" name="FeatureMatcher"/>
+    <class full="Hamcrest\TypeSafeMatcher" namespace="Hamcrest" name="TypeSafeMatcher"/>
+  </implementors>
+  <parent full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing">
+    <method name="describeTo" start="22" end="22" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Generates a description of the object.  The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately."/>
+        <param type="object" variable="$description">The description to be built or appended to.<type full="\Hamcrest\Description" namespace="\Hamcrest" name="Description"/></param>
+      </docblock>
+      <parameter name="description" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+  </parent>
+</interface>

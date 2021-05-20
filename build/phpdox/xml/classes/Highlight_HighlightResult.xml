@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Highlight\HighlightResult" namespace="Highlight" name="HighlightResult" abstract="true" final="false" start="37" end="60">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="HighlightResult.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/HighlightResult.php" size="2246" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="16d5a3a833953b3489e1cecdb3731eedd8c96d2e" relative="vendor/scrivo/highlight.php/Highlight/HighlightResult.php"/>
+  <docblock>
+    <description/>
+    <api/>
+    <since value="9.17.1.0"/>
+  </docblock>
+  <member name="relevance" visibility="public" static="false" line="40">
+    <docblock>
+      <var description="the relevance score" type="int"/>
+    </docblock>
+  </member>
+  <member name="value" visibility="public" static="false" line="43">
+    <docblock>
+      <var description="the highlighted HTML code" type="string"/>
+    </docblock>
+  </member>
+  <member name="language" visibility="public" static="false" line="46">
+    <docblock>
+      <var description="the language name" type="string"/>
+    </docblock>
+  </member>
+  <member name="illegal" visibility="public" static="false" line="49">
+    <docblock>
+      <var description="indicates whether any illegal matches were found" type="object">
+        <type full="Highlight\bool" namespace="Highlight" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="top" visibility="public" static="false" line="52">
+    <docblock>
+      <var description="top of the current mode stack" type="object">
+        <type full="Highlight\Mode|null" namespace="Highlight" name="Mode|null"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="errorRaised" visibility="public" static="false" line="55">
+    <docblock>
+      <var type="object">
+        <type full="\Exception|null" namespace="" name="Exception|null"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="secondBest" visibility="public" static="false" line="59">
+    <docblock>
+      <var type="object">
+        <type full="\stdClass|HighlightResult|null" namespace="" name="stdClass|HighlightResult|null"/>
+      </var>
+    </docblock>
+  </member>
+</class>

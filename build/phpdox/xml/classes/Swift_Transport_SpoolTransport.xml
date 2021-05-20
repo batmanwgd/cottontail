@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Transport_SpoolTransport" namespace="" name="Swift_Transport_SpoolTransport" abstract="false" final="false" start="16" end="120">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport" file="SpoolTransport.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SpoolTransport.php" size="2567" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="29667bd308b7806965550f4ea032bb7b5b64d42f" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SpoolTransport.php"/>
+  <docblock>
+    <description compact="Stores Messages in a queue."/>
+    <author value="Fabien Potencier"/>
+  </docblock>
+  <implements full="Swift_Transport" namespace="" name="Swift_Transport"/>
+  <member name="spool" visibility="private" static="false" line="19">
+    <docblock>
+      <description compact="The spool instance"/>
+    </docblock>
+  </member>
+  <member name="eventDispatcher" visibility="private" static="false" line="22">
+    <docblock>
+      <description compact="The event dispatcher from the plugin API"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor."/>
+    </docblock>
+    <parameter name="eventDispatcher" byreference="false" type="object">
+      <type full="Swift_Events_EventDispatcher" namespace="" name="Swift_Events_EventDispatcher"/>
+    </parameter>
+    <parameter name="spool" byreference="false" type="object" default="NULL">
+      <type full="Swift_Spool" namespace="" name="Swift_Spool"/>
+    </parameter>
+  </constructor>
+  <method name="setSpool" start="38" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sets the spool object."/>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="spool" byreference="false" type="object">
+      <type full="Swift_Spool" namespace="" name="Swift_Spool"/>
+    </parameter>
+  </method>
+  <method name="getSpool" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the spool object."/>
+      <return type="object">
+        <type full="Swift_Spool" namespace="" name="Swift_Spool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="isStarted" start="60" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Tests if this Transport mechanism has started."/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="start" start="68" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Starts this Transport mechanism."/>
+    </docblock>
+  </method>
+  <method name="stop" start="75" end="77" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Stops this Transport mechanism."/>
+    </docblock>
+  </method>
+  <method name="ping" start="82" end="85" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </method>
+  <method name="send" start="94" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sends the given message."/>
+      <param description="An array of failures by-reference" type="array" variable="$failedRecipients" of="string"/>
+      <return description="The number of sent e-mail's" type="int"/>
+    </docblock>
+    <parameter name="message" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleMessage" namespace="" name="Swift_Mime_SimpleMessage"/>
+    </parameter>
+    <parameter name="failedRecipients" byreference="true" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="registerPlugin" start="116" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Register a plugin."/>
+    </docblock>
+    <parameter name="plugin" byreference="false" type="object">
+      <type full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+    </parameter>
+  </method>
+  <interface full="Swift_Transport" namespace="" name="Swift_Transport">
+    <method name="isStarted" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Test if this Transport mechanism has started."/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="start" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Start this Transport mechanism."/>
+      </docblock>
+    </method>
+    <method name="stop" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Stop this Transport mechanism."/>
+      </docblock>
+    </method>
+    <method name="ping" start="56" end="56" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Check if this Transport mechanism is alive.">If a Transport mechanism session is no longer functional, the method
+returns FALSE. It is the responsibility of the developer to handle this
+case and restart the Transport mechanism manually.</description>
+        <example value="if (!$transport-&gt;ping()) { $transport-&gt;stop(); $transport-&gt;start(); }  The Transport mechanism will be started, if it is not already.  It is undefined if the Transport mechanism attempts to restart as long as the return value reflects whether the mechanism is now functional."/>
+        <return description="TRUE if the transport is alive" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="send" start="70" end="70" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Send the given Message.">Recipient/sender data will be retrieved from the Message API.
+The return value is the number of recipients who were accepted for delivery.
+
+This is the responsibility of the send method to start the transport if needed.</description>
+        <param description="An array of failures by-reference" type="array" variable="$failedRecipients" of="string"/>
+        <return type="int"/>
+      </docblock>
+      <parameter name="message" byreference="false" type="object">
+        <type full="Swift_Mime_SimpleMessage" namespace="" name="Swift_Mime_SimpleMessage"/>
+      </parameter>
+      <parameter name="failedRecipients" byreference="true" type="{unknown}" default="NULL"/>
+    </method>
+    <method name="registerPlugin" start="75" end="75" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Register a plugin in the Transport."/>
+      </docblock>
+      <parameter name="plugin" byreference="false" type="object">
+        <type full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

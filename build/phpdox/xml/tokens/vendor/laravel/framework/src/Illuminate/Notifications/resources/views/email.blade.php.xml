@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Notifications/resources/views" file="email.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Notifications/resources/views/email.blade.php" size="1159" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="0e985c83cc6d55ef9da9782cb9fe337f156d61b9" relative="vendor/laravel/framework/src/Illuminate/Notifications/resources/views/email.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@component('mail::message')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">{{-- Greeting --}}</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">@if (! empty($greeting))</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML"># {{ $greeting }}</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@if ($level === 'error')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML"># @lang('Whoops!')</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML"># @lang('Hello!')</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">{{-- Intro Lines --}}</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">@foreach ($introLines as $line)</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">{{ $line }}</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">@endforeach</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">{{-- Action Button --}}</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">@isset($actionText)</token>
+  </line>
+  <line no="21">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_SWITCH">switch</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$level</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="23">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CASE">case</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_COLON">:</token>
+  </line>
+  <line no="24">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CASE">case</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'error'</token>
+    <token name="T_PHPDOX_COLON">:</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$color</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$level</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_BREAK">break</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DEFAULT">default</token>
+    <token name="T_PHPDOX_COLON">:</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$color</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'primary'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="30">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">@component('mail::button', ['url' =&gt; $actionUrl, 'color' =&gt; $color])</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">{{ $actionText }}</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">@endisset</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">{{-- Outro Lines --}}</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">@foreach ($outroLines as $line)</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">{{ $line }}</token>
+  </line>
+  <line no="39"/>
+  <line no="40">
+    <token name="T_INLINE_HTML">@endforeach</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">{{-- Salutation --}}</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">@if (! empty($salutation))</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">{{ $salutation }}</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">@lang('Regards'),&lt;br&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">{{ config('app.name') }}</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">{{-- Subcopy --}}</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">@isset($actionText)</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">@slot('subcopy')</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">@lang(</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">    "If you&#x2019;re having trouble clicking the \":actionText\" button, copy and paste the URL below\n".</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">    'into your web browser:',</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">    [</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">        'actionText' =&gt; $actionText,</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">    ]</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">) &lt;span class="break-all"&gt;[{{ $displayableActionUrl }}]({{ $actionUrl }})&lt;/span&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">@endslot</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">@endisset</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="63"/>
+</source>

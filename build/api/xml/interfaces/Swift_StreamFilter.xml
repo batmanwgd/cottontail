@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter" abstract="false" final="false" start="16" end="35">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="StreamFilter.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilter.php" size="720" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="3ed5641ab58cd1d45cea3859ddd3d33109fbb734" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilter.php"/>
+  <docblock>
+    <description compact="Processes bytes as they pass through a stream and performs filtering."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="shouldBuffer" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Based on the buffer given, this returns true if more buffering is needed."/>
+      <param type="mixed" variable="$buffer"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="buffer" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="filter" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Filters $buffer and returns the changes."/>
+      <param type="mixed" variable="$buffer"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="buffer" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Swift_StreamFilters_StringReplacementFilter" namespace="" name="Swift_StreamFilters_StringReplacementFilter"/>
+  </implementors>
+</interface>

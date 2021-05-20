@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Pop_Pop3Connection" namespace="" name="Swift_Plugins_Pop_Pop3Connection" abstract="false" final="false" start="16" end="31">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop" file="Pop3Connection.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" size="718" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="4bdec92ab9a82d119fa0108e35598fd0a161fa5c" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Connection.php"/>
+  <docblock>
+    <description compact="Pop3Connection interface for connecting and disconnecting to a POP3 host."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="connect" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Connect to the POP3 host and throw an Exception if it fails."/>
+      <throws type="object">
+        <type full="Swift_Plugins_Pop_Pop3Exception" namespace="" name="Swift_Plugins_Pop_Pop3Exception"/>
+      </throws>
+    </docblock>
+  </method>
+  <method name="disconnect" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Disconnect from the POP3 host and throw an Exception if it fails."/>
+      <throws type="object">
+        <type full="Swift_Plugins_Pop_Pop3Exception" namespace="" name="Swift_Plugins_Pop_Pop3Exception"/>
+      </throws>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Plugins_PopBeforeSmtpPlugin" namespace="" name="Swift_Plugins_PopBeforeSmtpPlugin"/>
+  </implementors>
+</interface>

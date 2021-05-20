@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="phpDocumentor\Application" namespace="phpDocumentor" name="Application" abstract="false" final="true" start="32" end="101">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor" file="Application.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Application.php" size="2701" time="2020-10-27T20:24:27+00:00" unixtime="1603830267" sha1="367a046326618306a187354bf4a80469a39c34ad" relative="vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Application.php"/>
+  <docblock>
+    <description compact="Application class for phpDocumentor.">Can be used as bootstrap when the run method is not invoked.</description>
+    <codecoverageignore value="Nothing in this file is really testable or needed to be tested"/>
+  </docblock>
+  <method name="VERSION" start="34" end="37" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="templateDirectory" start="39" end="50" abstract="false" final="false" static="true" visibility="public">
+    <return type="string" nullable="false"/>
+    <inline>
+      <comment value="when installed using composer the templates are in a different folder" line="43"/>
+    </inline>
+  </method>
+  <constructor name="__construct" start="55" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Initializes all components used by phpDocumentor."/>
+    </docblock>
+  </constructor>
+  <method name="defineIniSettings" start="65" end="82" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Adjust php.ini settings."/>
+      <throws type="object">
+        <type full="RuntimeException" namespace="" name="RuntimeException"/>
+      </throws>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <inline>
+      <comment value="@codeCoverageIgnoreStart" line="70"/>
+    </inline>
+  </method>
+  <method name="setTimezone" start="93" end="100" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="If the timezone is not set anywhere, set it to UTC.">This is done to prevent any warnings being outputted in relation to using
+date/time functions.</description>
+      <link value="https://www.php.net/function.date-default-timezone-get for more information how PHP determines the default timezone."/>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+</class>

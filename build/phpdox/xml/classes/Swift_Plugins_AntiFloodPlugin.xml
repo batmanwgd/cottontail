@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_AntiFloodPlugin" namespace="" name="Swift_Plugins_AntiFloodPlugin" abstract="false" final="false" start="16" end="137">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins" file="AntiFloodPlugin.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/AntiFloodPlugin.php" size="3018" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="646c1a4d84625dcba05c1c29f0a20eed70dfbd09" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/AntiFloodPlugin.php"/>
+  <docblock>
+    <description compact="Reduces network flooding when sending large amounts of mail."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_Events_SendListener" namespace="" name="Swift_Events_SendListener"/>
+  <implements full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+  <member name="threshold" visibility="private" static="false" line="23">
+    <docblock>
+      <description compact="The number of emails to send before restarting Transport."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="sleep" visibility="private" static="false" line="30">
+    <docblock>
+      <description compact="The number of seconds to sleep for during a restart."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="counter" default="0" type="integer" visibility="private" static="false" line="37">
+    <docblock>
+      <description compact="The internal counter."/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="sleeper" visibility="private" static="false" line="44">
+    <docblock>
+      <description compact="The Sleeper instance for sleeping."/>
+      <var type="object">
+        <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="53" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new AntiFloodPlugin with $threshold and $sleep time."/>
+      <param type="int" variable="$threshold"/>
+      <param description="time" type="int" variable="$sleep"/>
+      <param description="(not needed really)" type="object" variable="$sleeper">
+        <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+      </param>
+    </docblock>
+    <parameter name="threshold" byreference="false" type="integer" default="99"/>
+    <parameter name="sleep" byreference="false" type="integer" default="0"/>
+    <parameter name="sleeper" byreference="false" type="object" default="NULL">
+      <type full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper"/>
+    </parameter>
+  </constructor>
+  <method name="setThreshold" start="65" end="68" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the number of emails to send before restarting."/>
+      <param type="int" variable="$threshold"/>
+    </docblock>
+    <parameter name="threshold" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getThreshold" start="75" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the number of emails to send before restarting."/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="setSleepTime" start="85" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the number of seconds to sleep for during a restart."/>
+      <param description="time" type="int" variable="$sleep"/>
+    </docblock>
+    <parameter name="sleep" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSleepTime" start="95" end="98" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the number of seconds to sleep for during a restart."/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="beforeSendPerformed" start="103" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Invoked immediately before the Message is sent."/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+    </parameter>
+  </method>
+  <method name="sendPerformed" start="110" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Invoked immediately after the Message is sent."/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+    </parameter>
+  </method>
+  <method name="sleep" start="129" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sleep for $seconds."/>
+      <param type="int" variable="$seconds"/>
+    </docblock>
+    <parameter name="seconds" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Events_SendListener" namespace="" name="Swift_Events_SendListener">
+    <extends full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+    <method name="beforeSendPerformed" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Invoked immediately before the Message is sent."/>
+      </docblock>
+      <parameter name="evt" byreference="false" type="object">
+        <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+      </parameter>
+    </method>
+    <method name="sendPerformed" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Invoked immediately after the Message is sent."/>
+      </docblock>
+      <parameter name="evt" byreference="false" type="object">
+        <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+      </parameter>
+    </method>
+  </interface>
+  <interface full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper">
+    <method name="sleep" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sleep for $seconds."/>
+        <param type="int" variable="$seconds"/>
+      </docblock>
+      <parameter name="seconds" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

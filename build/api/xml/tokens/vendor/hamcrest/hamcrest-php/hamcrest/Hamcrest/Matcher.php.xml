@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="Matcher.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" size="1627" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="e0d782f1661b3febec35c0bc88a7bf1abd5cb0b6" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Hamcrest</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> Copyright (c) 2009 hamcrest.org</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * A matcher over acceptable values.</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * A matcher is able to describe itself to give feedback when it fails.</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * &lt;p/&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * Matcher implementations should &lt;b&gt;NOT directly implement this interface&lt;/b&gt;.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * Instead, &lt;b&gt;extend&lt;/b&gt; the {@link Hamcrest\BaseMatcher} abstract class,</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * which will ensure that the Matcher API can grow to support</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * new features and remain compatible with all Matcher implementations.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * &lt;p/&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * For easy access to common Matcher implementations, use the static factory</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * methods in {@link Hamcrest\CoreMatchers}.</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * @see Hamcrest\CoreMatchers</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * @see Hamcrest\BaseMatcher</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="23">
+    <token name="T_INTERFACE">interface</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Matcher</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SelfDescribing</token>
+  </line>
+  <line no="24">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">     * Evaluates the matcher for argument &lt;var&gt;$item&lt;/var&gt;.</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     * @param mixed $item the object against which the matcher is evaluated.</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     * @return boolean &lt;code&gt;true&lt;/code&gt; if &lt;var&gt;$item&lt;/var&gt; matches,</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     *   otherwise &lt;code&gt;false&lt;/code&gt;.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     * @see Hamcrest\BaseMatcher</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">matches</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$item</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">         * Generate a description of why the matcher has not accepted the item.</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">         * The description will be part of a larger description of why a matching</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">         * failed, so it should be concise.</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">         * This method assumes that &lt;code&gt;matches($item)&lt;/code&gt; is false, but</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">         * will not check this.</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">         *</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">         * @param mixed $item The item that the Matcher has rejected.</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">         * @param Description $description</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">         * @return</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">         */</token>
+  </line>
+  <line no="49">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">describeMismatch</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$item</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="50">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="51"/>
+</source>

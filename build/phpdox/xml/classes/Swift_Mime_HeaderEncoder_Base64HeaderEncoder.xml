@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_HeaderEncoder_Base64HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder_Base64HeaderEncoder" abstract="false" final="false" start="16" end="55">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder" file="Base64HeaderEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" size="1613" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="8226c0565572ae146917921ca9bf60df866f8b2f" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php"/>
+  <docblock>
+    <description compact="Handles Base64 (B) Header Encoding in Swift Mailer."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Encoder_Base64Encoder" namespace="" name="Swift_Encoder_Base64Encoder"/>
+  <implements full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder"/>
+  <method name="getName" start="24" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the name of this encoding scheme.">Returns the string 'B'.</description>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="encodeString" start="42" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Takes an unencoded string and produces a Base64 encoded string from it.">If the charset is iso-2022-jp, it uses mb_encode_mimeheader instead of
+default encodeString, otherwise pass to the parent method.</description>
+      <param description="string to encode" type="string" variable="$string"/>
+      <param type="int" variable="$firstLineOffset"/>
+      <param description="optional, 0 indicates the default of 76 bytes" type="int" variable="$maxLineLength"/>
+      <param type="string" variable="$charset"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    <parameter name="charset" byreference="false" type="string" default="'utf-8'"/>
+  </method>
+  <parent full="Swift_Encoder_Base64Encoder" namespace="" name="Swift_Encoder_Base64Encoder">
+    <implements full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+    <method name="encodeString" start="31" end="50" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Takes an unencoded string and produces a Base64 encoded string from it.">Base64 encoded strings have a maximum line length of 76 characters.
+If the first line needs to be shorter, indicate the difference with
+$firstLineOffset.</description>
+        <param description="to encode" type="string" variable="$string"/>
+        <param type="int" variable="$firstLineOffset"/>
+        <param description="optional, 0 indicates the default of 76 bytes" type="int" variable="$maxLineLength"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="string" byreference="false" type="{unknown}"/>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+    <method name="charsetChanged" start="55" end="57" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Does nothing."/>
+      </docblock>
+      <parameter name="charset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+  <interface full="Swift_Encoder" namespace="" name="Swift_Encoder">
+    <extends full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver"/>
+    <method name="encodeString" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode a given string to produce an encoded string."/>
+        <param type="string" variable="$string"/>
+        <param description="if first line needs to be shorter" type="int" variable="$firstLineOffset"/>
+        <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="string" byreference="false" type="{unknown}"/>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+  </interface>
+  <interface full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder">
+    <extends full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+    <method name="getName" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the MIME name of this content encoding scheme."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

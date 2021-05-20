@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_Headers_DateHeader" namespace="" name="Swift_Mime_Headers_DateHeader" abstract="false" final="false" start="16" end="113">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers" file="DateHeader.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/DateHeader.php" size="2690" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="ed7bf715c6baa9bbe9c36d7497d09a10f856631c" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/DateHeader.php"/>
+  <docblock>
+    <description compact="A Date MIME Header for Swift Mailer."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Mime_Headers_AbstractHeader" namespace="" name="Swift_Mime_Headers_AbstractHeader" unresolved="true"/>
+  <member name="dateTime" visibility="private" static="false" line="23">
+    <docblock>
+      <description compact="Date-time value of this Header."/>
+      <var type="object">
+        <type full="DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a new DateHeader with $name."/>
+      <param description="of Header" type="string" variable="$name"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getFieldType" start="43" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the type of Header that this instance represents."/>
+      <see value="TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX"/>
+      <see value="TYPE_DATE, TYPE_ID, TYPE_PATH"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="setFieldBodyModel" start="53" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the model for the field body."/>
+      <param type="object" variable="$model">
+        <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+      </param>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFieldBodyModel" start="63" end="66" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the model for the field body."/>
+      <return type="object">
+        <type full="DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="getDateTime" start="73" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the date-time representing the Date in this Header."/>
+      <return type="object">
+        <type full="DateTimeImmutable" namespace="" name="DateTimeImmutable"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDateTime" start="83" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the date-time of the Date in this Header.">If a DateTime instance is provided, it is converted to DateTimeImmutable.</description>
+    </docblock>
+    <parameter name="dateTime" byreference="false" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+  </method>
+  <method name="getFieldBody" start="103" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the string value of the body in this Header.">This is not necessarily RFC 2822 compliant since folding white space will
+not be added at this stage (see <link xmlns="http://xml.phpdox.net/src" value="toString()"/> for that).
+</description>
+      <see value="toString()"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

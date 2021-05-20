@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner" abstract="false" final="false" start="16" end="61">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers" file="HeaderSigner.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/HeaderSigner.php" size="1324" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="029b5985edfd7e1a5aa9a63557dbf1a0659f3ccd" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/HeaderSigner.php"/>
+  <docblock>
+    <description compact="Header Signer Interface used to apply Header-Based Signature to a message."/>
+    <author value="Xavier De Cock &lt;xdecock@gmail.com&gt;"/>
+  </docblock>
+  <extends full="Swift_Signer" namespace="" name="Swift_Signer"/>
+  <extends full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+  <method name="ignoreHeader" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Exclude an header from the signed headers."/>
+      <param type="string" variable="$header_name"/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+      </return>
+    </docblock>
+    <parameter name="header_name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="startBody" start="32" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Prepare the Signer to get a new Body."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="endBody" start="39" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Give the signal that the body has finished streaming."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setHeaders" start="46" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Give the headers already given."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+      </return>
+    </docblock>
+    <parameter name="headers" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleHeaderSet" namespace="" name="Swift_Mime_SimpleHeaderSet"/>
+    </parameter>
+  </method>
+  <method name="addSignature" start="53" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add the header(s) to the headerSet."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+      </return>
+    </docblock>
+    <parameter name="headers" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleHeaderSet" namespace="" name="Swift_Mime_SimpleHeaderSet"/>
+    </parameter>
+  </method>
+  <method name="getAlteredHeaders" start="60" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the list of header a signer might tamper."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <parent full="Swift_Signer" namespace="" name="Swift_Signer">
+    <method name="reset" start="18" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+  <parent full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream">
+    <method name="write" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Writes $bytes to the end of the stream.">Writing may not happen immediately if the stream chooses to buffer.  If
+you want to write these bytes with immediate effect, call <link xmlns="http://xml.phpdox.net/src" value="commit()"/>after calling write().
+This method returns the sequence ID of the write (i.e. 1 for first, 2 for
+second, etc etc).
+</description>
+        <param type="string" variable="$bytes"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="int"/>
+      </docblock>
+      <parameter name="bytes" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="commit" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="For any bytes that are currently buffered inside the stream, force them off the buffer."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+    <method name="bind" start="55" end="55" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Attach $is to this stream.">The stream acts as an observer, receiving all data that is written.
+All <link xmlns="http://xml.phpdox.net/src" value="write()"/> and <link xmlns="http://xml.phpdox.net/src" value="flushBuffers()"/> operations will be mirrored.
+</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="unbind" start="66" end="66" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove an already bound stream.">If $is is not bound, no errors will be raised.
+If the stream currently has any buffered data it will be written to $is
+before unbinding occurs.</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="flushBuffers" start="74" end="74" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+  </parent>
+</interface>

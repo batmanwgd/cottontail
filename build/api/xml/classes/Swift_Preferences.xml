@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Preferences" namespace="" name="Swift_Preferences" abstract="false" final="false" start="16" end="100">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="Preferences.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Preferences.php" size="2225" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="f52ba1b9eff9e9f954551d8bb7b1a0e1eabf2ea8" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Preferences.php"/>
+  <docblock>
+    <description compact="Changes some global preference settings in Swift Mailer."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <member name="instance" default="NULL" visibility="private" static="true" line="19">
+    <docblock>
+      <description compact="Singleton instance"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="22" end="24" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Constructor not to be used"/>
+    </docblock>
+  </constructor>
+  <method name="getInstance" start="31" end="38" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Gets the instance of Preferences."/>
+      <return resolution="self" type="object">
+        <type full="Swift_Preferences" namespace="" name="Swift_Preferences"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCharset" start="47" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the default charset used."/>
+      <param type="string" variable="$charset"/>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setTempDir" start="61" end="66" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the directory where temporary files can be saved."/>
+      <param type="string" variable="$dir"/>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="dir" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setCacheType" start="75" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the type of cache to use (i.e. &quot;disk&quot; or &quot;array&quot;)."/>
+      <param type="string" variable="$type"/>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setQPDotEscape" start="89" end="99" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the QuotedPrintable dot escaper preference."/>
+      <param type="object" variable="$dotEscape">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="dotEscape" byreference="false" type="{unknown}"/>
+  </method>
+</class>

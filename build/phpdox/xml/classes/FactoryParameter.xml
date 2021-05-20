@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FactoryParameter" namespace="" name="FactoryParameter" abstract="false" final="false" start="7" end="131">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="FactoryParameter.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/FactoryParameter.php" size="3539" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="d32ba6f240445dbf14055c9e30f6c49284a616d2" relative="vendor/hamcrest/hamcrest-php/generator/FactoryParameter.php"/>
+  <member name="method" visibility="private" static="false" line="12">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="reflector" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="ReflectionParameter" namespace="" name="ReflectionParameter"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="19" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="method" byreference="false" type="object">
+      <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+    </parameter>
+    <parameter name="reflector" byreference="false" type="object">
+      <type full="ReflectionParameter" namespace="" name="ReflectionParameter"/>
+    </parameter>
+  </constructor>
+  <method name="getDeclaration" start="30" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Compute the declaration code."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getTypeCode" start="61" end="83" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Compute the type code for the paramater."/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="Handle PHP 5 separately" line="63"/>
+      <comment value="PHP 7.1+ supports nullable types via a leading question mark" line="81"/>
+    </inline>
+  </method>
+  <method name="getQualifiedName" start="95" end="110" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description compact="Compute qualified name for the given type.">This function knows how to prefix class names with a leading slash and
+also how to handle PHP 8's union types.</description>
+      <param type="object" variable="$type">
+        <type full="ReflectionType" namespace="" name="ReflectionType"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="object">
+      <type full="ReflectionType" namespace="" name="ReflectionType"/>
+    </parameter>
+    <inline>
+      <comment value="PHP 8 union types can be recursively processed" line="97"/>
+      <comment value="PHP 7.0 doesn't have named types, but 7.1+ does" line="106"/>
+    </inline>
+  </method>
+  <method name="getInvocation" start="117" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Compute the invocation code."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getMethod" start="127" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Compute the method name."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

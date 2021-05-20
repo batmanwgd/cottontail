@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\ExpectsHigherOrderMessage" namespace="Mockery" name="ExpectsHigherOrderMessage" abstract="false" final="false" start="23" end="38">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="ExpectsHigherOrderMessage.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php" size="1084" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="45ca3e9c4433e3a5e73461c1fdb4dc3c598b56b8" relative="vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php"/>
+  <extends full="Mockery\HigherOrderMessage" namespace="Mockery" name="HigherOrderMessage"/>
+  <constructor name="__construct" start="25" end="28" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="mock" byreference="false" type="object">
+      <type full="Mockery\MockInterface" namespace="Mockery" name="MockInterface"/>
+    </parameter>
+  </constructor>
+  <method name="__call" start="32" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\Mockery\Expectation" namespace="\Mockery" name="Expectation"/>
+      </return>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="Mockery\HigherOrderMessage" namespace="Mockery" name="HigherOrderMessage">
+    <constructor name="__construct" start="31" end="35" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="mock" byreference="false" type="object">
+        <type full="Mockery\MockInterface" namespace="Mockery" name="MockInterface"/>
+      </parameter>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="__call" start="40" end="48" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="\Mockery\Expectation" namespace="\Mockery" name="Expectation"/>
+        </return>
+      </docblock>
+      <parameter name="method" byreference="false" type="{unknown}"/>
+      <parameter name="args" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</class>

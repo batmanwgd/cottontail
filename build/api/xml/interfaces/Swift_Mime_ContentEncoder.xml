@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder" abstract="false" final="false" start="16" end="34">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="ContentEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder.php" size="969" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="930653c45a16b7a5f6632ef3610ac393e1873ed8" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder.php"/>
+  <docblock>
+    <description compact="Interface for all Transfer Encoding schemes."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+  <method name="encodeByteStream" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode $in to $out."/>
+      <param description="to read from" type="object" variable="$os">
+        <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+      </param>
+      <param description="to write to" type="object" variable="$is">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </param>
+      <param type="int" variable="$firstLineOffset"/>
+      <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+    </docblock>
+    <parameter name="os" byreference="false" type="object">
+      <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+    </parameter>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="getName" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the MIME name of this content encoding scheme."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Mime_ContentEncoder_QpContentEncoderProxy" namespace="" name="Swift_Mime_ContentEncoder_QpContentEncoderProxy"/>
+    <class full="Swift_Mime_ContentEncoder_NullContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_NullContentEncoder"/>
+    <class full="Swift_Mime_ContentEncoder_RawContentEncoder" namespace="" name="Swift_Mime_ContentEncoder_RawContentEncoder"/>
+  </implementors>
+  <parent full="Swift_Encoder" namespace="" name="Swift_Encoder">
+    <extends full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver"/>
+    <method name="encodeString" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode a given string to produce an encoded string."/>
+        <param type="string" variable="$string"/>
+        <param description="if first line needs to be shorter" type="int" variable="$firstLineOffset"/>
+        <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="string" byreference="false" type="{unknown}"/>
+      <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+      <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+    </method>
+  </parent>
+  <parent full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver">
+    <method name="charsetChanged" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Notify this observer that the entity's charset has changed."/>
+        <param type="string" variable="$charset"/>
+      </docblock>
+      <parameter name="charset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</interface>

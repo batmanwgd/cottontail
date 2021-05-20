@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="PhpParser\Parser" namespace="PhpParser" name="Parser" abstract="false" final="false" start="5" end="18">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser" file="Parser.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser/Parser.php" size="628" time="2021-05-03T19:11:20+00:00" unixtime="1620069080" sha1="3b132887e0ff1ed8228d9144e8c39b5d72ebeda9" relative="vendor/nikic/php-parser/lib/PhpParser/Parser.php"/>
+  <method name="parse" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parses PHP code into a node tree."/>
+      <param description="The source code to parse" type="string" variable="$code"/>
+      <param description="Error handler to use for lexer/parser errors, defaults" type="object" variable="$errorHandler">to ErrorHandler\Throwing.<type full="PhpParser\ErrorHandler|null" namespace="PhpParser" name="ErrorHandler|null"/></param>
+      <return description="Array of statements (or null non-throwing error handler is used and" type="array" of="object">the parser was unable to recover from an error).<type full="PhpParser\Node\Stmt[]|nu" namespace="PhpParser\Node" name="Stmt[]|nu"/></return>
+    </docblock>
+    <parameter name="code" byreference="false" type="string"/>
+    <parameter name="errorHandler" byreference="false" type="object" default="NULL">
+      <type full="PhpParser\ErrorHandler" namespace="PhpParser" name="ErrorHandler"/>
+    </parameter>
+  </method>
+</interface>

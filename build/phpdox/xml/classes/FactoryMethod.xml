@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FactoryMethod" namespace="" name="FactoryMethod" abstract="false" final="false" start="12" end="231">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="FactoryMethod.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/FactoryMethod.php" size="5644" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="4b2e8e8f74daa602217e158612bf32e44842231c" relative="vendor/hamcrest/hamcrest-php/generator/FactoryMethod.php"/>
+  <docblock>
+    <description compact="Represents a single static factory method from a {@link Matcher} class."/>
+    <todo value="Search method in file contents for func_get_args() to replace factoryVarArgs."/>
+  </docblock>
+  <member name="class" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="FactoryClass" namespace="" name="FactoryClass"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="reflector" visibility="private" static="false" line="22">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="ReflectionMethod" namespace="" name="ReflectionMethod"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="comment" visibility="private" static="false" line="27">
+    <docblock>
+      <description/>
+      <var description="of string" type="array"/>
+    </docblock>
+  </member>
+  <member name="isVarArgs" visibility="private" static="false" line="32">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="calls" visibility="private" static="false" line="37">
+    <docblock>
+      <description/>
+      <var description="of FactoryCall" type="array"/>
+    </docblock>
+  </member>
+  <member name="parameters" visibility="private" static="false" line="42">
+    <docblock>
+      <description/>
+      <var description="FactoryParameter" type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="44" end="51" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="class" byreference="false" type="object">
+      <type full="FactoryClass" namespace="" name="FactoryClass"/>
+    </parameter>
+    <parameter name="reflector" byreference="false" type="object">
+      <type full="ReflectionMethod" namespace="" name="ReflectionMethod"/>
+    </parameter>
+  </constructor>
+  <method name="extractCommentWithoutLeadingShashesAndStars" start="53" end="61" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="trimLeadingBlankLinesFromComment" start="63" end="72" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="trimTrailingBlankLinesFromComment" start="74" end="83" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="extractFactoryNamesFromComment" start="85" end="94" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="extractFactoryNamesFromLine" start="96" end="107" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="line" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="extractFactoryNamesFromAnnotation" start="109" end="124" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="createCalls" start="126" end="134" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="names" byreference="false" type="array"/>
+  </method>
+  <method name="extractParameters" start="136" end="144" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getParameterDeclarations" start="146" end="157" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getParameterInvocations" start="159" end="169" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getClass" start="172" end="175" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getClassName" start="177" end="180" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getName" start="182" end="185" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="isFactory" start="187" end="190" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getCalls" start="192" end="195" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="acceptsVariableArguments" start="197" end="200" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="hasParameters" start="202" end="205" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getParameters" start="207" end="210" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getFullName" start="212" end="215" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getCommentText" start="217" end="220" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getComment" start="222" end="230" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="indent" byreference="false" type="string" default="''"/>
+  </method>
+</class>

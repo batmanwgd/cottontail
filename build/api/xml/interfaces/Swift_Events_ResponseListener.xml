@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Events_ResponseListener" namespace="" name="Swift_Events_ResponseListener" abstract="false" final="false" start="16" end="22">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events" file="ResponseListener.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseListener.php" size="526" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="910150e9ec0638d09d76dd689ce1322bb87e43ef" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseListener.php"/>
+  <docblock>
+    <description compact="Listens for responses from a remote SMTP server."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+  <method name="responseReceived" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Invoked immediately following a response coming back."/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_ResponseEvent" namespace="" name="Swift_Events_ResponseEvent"/>
+    </parameter>
+  </method>
+  <parent full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+</interface>

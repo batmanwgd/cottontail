@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views" file="toolbar.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/toolbar.blade.php" size="1135" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="088c30bead81ea7c9d6cd633bab5718cc32f0f6c" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/toolbar.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/** @var array|\Illuminate\Support\Collection $entries */</token>
+  </line>
+  <line no="3">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;!-- START of Laravel Telescope Toolbar --&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;div id="sfMiniToolbar-{{ $token }}" class="sf-minitoolbar" data-no-turbolink&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;a class="open-button" href="#" title="Show Telescope toolbar" tabindex="-1" id="sfToolbarMiniToggler-{{ $token }}" accesskey="D"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        @ttIcon('telescope')</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;/a&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;div id="sfToolbarClearer-{{ $token }}" class="sf-toolbar-clearer"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;div id="sfToolbarMainContent-{{ $token }}" class="sf-toolbarreset clear-fix" data-no-turbolink&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">    @include("telescope-toolbar::collectors.ajax")</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @foreach (config('telescope-toolbar.collectors') as $type =&gt; $templates)</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        @if(isset($entries[$type]))</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            @foreach($templates as $template)</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                @include($template, ['entries' =&gt; $entries[$type]])</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            @endforeach</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">    @endforeach</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">    @include("telescope-toolbar::collectors.config")</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;a class="hide-button" id="sfToolbarHideButton-{{ $token }}" title="Close Toolbar" tabindex="-1" accesskey="D"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        @ttIcon('telescope')</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;/a&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">&lt;!-- END of Laravel Telescope Toolbar --&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Flyfinder\Path" namespace="Flyfinder" name="Path" abstract="false" final="true" start="21" end="45">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/flyfinder/src" file="Path.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/flyfinder/src/Path.php" size="841" time="2018-08-07T13:52:51+00:00" unixtime="1533649971" sha1="1fc88f04786709371436b3e167d28f4a2d3e61e4" relative="vendor/phpdocumentor/flyfinder/src/Path.php"/>
+  <docblock>
+    <description compact="Value Object for paths.">This can be absolute or relative.</description>
+  </docblock>
+  <member name="path" visibility="private" static="false" line="28">
+    <docblock>
+      <description compact="file path"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="33" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Initializes the path."/>
+    </docblock>
+    <parameter name="path" byreference="false" type="string"/>
+  </constructor>
+  <method name="__toString" start="41" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="returns a string representation of the path."/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+</class>

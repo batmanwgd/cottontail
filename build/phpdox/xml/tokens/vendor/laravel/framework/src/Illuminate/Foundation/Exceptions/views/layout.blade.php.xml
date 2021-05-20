@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views" file="layout.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/layout.blade.php" size="1437" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="59d0c7f27e9f5562bed47b9a588b7b03352c1e7f" relative="vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/layout.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;title&gt;@yield('title')&lt;/title&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;!-- Fonts --&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;link rel="preconnect" href="https://fonts.gstatic.com"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        &lt;link href="https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;!-- Styles --&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;style&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            html, body {</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                background-color: #fff;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                color: #636b6f;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                font-family: 'Nunito', sans-serif;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                font-weight: 100;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                height: 100vh;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                margin: 0;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">            .full-height {</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                height: 100vh;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_INLINE_HTML">            .flex-center {</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                align-items: center;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                display: flex;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                justify-content: center;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">            .position-ref {</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                position: relative;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">            .content {</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                text-align: center;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">            .title {</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                font-size: 36px;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                padding: 20px;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">        &lt;/style&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">    &lt;/head&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">    &lt;body&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">        &lt;div class="flex-center position-ref full-height"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">            &lt;div class="content"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                &lt;div class="title"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    @yield('message')</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">    &lt;/body&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="58"/>
+</source>

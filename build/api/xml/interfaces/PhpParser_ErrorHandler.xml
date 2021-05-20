@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="PhpParser\ErrorHandler" namespace="PhpParser" name="ErrorHandler" abstract="false" final="false" start="5" end="13">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser" file="ErrorHandler.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser/ErrorHandler.php" size="294" time="2021-05-03T19:11:20+00:00" unixtime="1620069080" sha1="06c9f9dc892422e1c8b04d958fe496a1151ffe09" relative="vendor/nikic/php-parser/lib/PhpParser/ErrorHandler.php"/>
+  <method name="handleError" start="12" end="12" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an error generated during lexing, parsing or some other operation."/>
+      <param description="The error that needs to be handled" type="object" variable="$error">
+        <type full="PhpParser\Error" namespace="PhpParser" name="Error"/>
+      </param>
+    </docblock>
+    <parameter name="error" byreference="false" type="object">
+      <type full="PhpParser\Error" namespace="PhpParser" name="Error"/>
+    </parameter>
+  </method>
+</interface>

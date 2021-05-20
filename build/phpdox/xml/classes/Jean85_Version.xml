@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Jean85\Version" namespace="Jean85" name="Version" abstract="false" final="false" start="5" end="97">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/jean85/pretty-package-versions/src" file="Version.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/jean85/pretty-package-versions/src/Version.php" size="2231" time="2021-02-04T16:20:16+00:00" unixtime="1612455616" sha1="dd77e2f766ce4b6b0a60ea35192b6b60a9464f35" relative="vendor/jean85/pretty-package-versions/src/Version.php"/>
+  <constant type="{unknown}" name="SHORT_COMMIT_LENGTH" value="" constant="PrettyVersions::SHORT_COMMIT_LENGTH"/>
+  <member name="packageName" visibility="private" static="false" line="10">
+    <docblock>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="shortVersion" visibility="private" static="false" line="13">
+    <docblock>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="commitHash" visibility="private" static="false" line="16">
+    <docblock>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="versionIsTagged" visibility="private" static="false" line="19">
+    <docblock>
+      <var type="object">
+        <type full="Jean85\bool" namespace="Jean85" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="21" end="28" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="packageName" byreference="false" type="string"/>
+    <parameter name="version" byreference="false" type="string"/>
+  </constructor>
+  <method name="getPrettyVersion" start="30" end="37" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getFullVersion" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getVersionWithShortReference" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getVersionWithShortCommit" start="52" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <deprecated value="since 1.6, use getVersionWithShortReference instead"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getPackageName" start="57" end="60" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getShortVersion" start="62" end="65" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getReference" start="67" end="70" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getCommitHash" start="75" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <deprecated value="since 1.6, use getReference instead"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getShortReference" start="80" end="83" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="getShortCommitHash" start="88" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <deprecated value="since 1.6, use getShortReference instead"/>
+    </docblock>
+    <return type="string" nullable="false"/>
+  </method>
+  <method name="__toString" start="93" end="96" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+</class>

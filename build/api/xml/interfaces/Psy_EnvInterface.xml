@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Psy\EnvInterface" namespace="Psy" name="EnvInterface" abstract="false" final="false" start="17" end="25">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src" file="EnvInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src/EnvInterface.php" size="436" time="2021-04-10T16:23:39+00:00" unixtime="1618071819" sha1="eceae575572065858531d091658965dbbfda250c" relative="vendor/psy/psysh/src/EnvInterface.php"/>
+  <docblock>
+    <description compact="Abstraction around environment variables."/>
+  </docblock>
+  <method name="get" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get an environment variable by name."/>
+      <return type="object">
+        <type full="Psy\string|null" namespace="Psy" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Psy\SuperglobalsEnv" namespace="Psy" name="SuperglobalsEnv"/>
+  </implementors>
+</interface>

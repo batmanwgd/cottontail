@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="JsonSchema\SchemaStorageInterface" namespace="JsonSchema" name="SchemaStorageInterface" abstract="false" final="false" start="5" end="41">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/justinrainbow/json-schema/src/JsonSchema" file="SchemaStorageInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/justinrainbow/json-schema/src/JsonSchema/SchemaStorageInterface.php" size="802" time="2020-05-27T16:41:55+00:00" unixtime="1590597715" sha1="a4af273d0f469dc8f36646fde7900165eb4e5a53" relative="vendor/justinrainbow/json-schema/src/JsonSchema/SchemaStorageInterface.php"/>
+  <method name="addSchema" start="13" end="13" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Adds schema with given identifier"/>
+      <param type="string" variable="$id"/>
+      <param type="object" variable="$schema"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="schema" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="getSchema" start="22" end="22" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns schema for given identifier, or null if it does not exist"/>
+      <param type="string" variable="$id"/>
+      <return type="object"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="resolveRef" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns schema for given reference with all sub-references resolved"/>
+      <param type="string" variable="$ref"/>
+      <return type="object"/>
+    </docblock>
+    <parameter name="ref" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="resolveRefSchema" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns schema referenced by '$ref' property"/>
+      <param type="mixed" variable="$refSchema"/>
+      <return type="object"/>
+    </docblock>
+    <parameter name="refSchema" byreference="false" type="{unknown}"/>
+  </method>
+</interface>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Signer" namespace="" name="Swift_Signer" abstract="false" final="false" start="16" end="19">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="Signer.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signer.php" size="365" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="23ccc1679bce0bbb5f173a117d26f33eb42464cd" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signer.php"/>
+  <docblock>
+    <description compact="Base Class of Signer Infrastructure."/>
+    <author value="Xavier De Cock &lt;xdecock@gmail.com&gt;"/>
+  </docblock>
+  <method name="reset" start="18" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  <extenders>
+    <extender full="Swift_Signers_BodySigner" namespace="" name="Swift_Signers_BodySigner"/>
+    <extender full="Swift_Signers_HeaderSigner" namespace="" name="Swift_Signers_HeaderSigner"/>
+  </extenders>
+</interface>

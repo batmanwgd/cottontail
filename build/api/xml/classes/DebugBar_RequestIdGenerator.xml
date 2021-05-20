@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="DebugBar\RequestIdGenerator" namespace="DebugBar" name="RequestIdGenerator" abstract="false" final="false" start="16" end="43">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/maximebf/debugbar/src/DebugBar" file="RequestIdGenerator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/maximebf/debugbar/src/DebugBar/RequestIdGenerator.php" size="1511" time="2020-12-07T11:07:24+00:00" unixtime="1607339244" sha1="f92c1aa9492bb40218ad8191e1abe4775534c32b" relative="vendor/maximebf/debugbar/src/DebugBar/RequestIdGenerator.php"/>
+  <docblock>
+    <description compact="Basic request ID generator"/>
+  </docblock>
+  <implements full="DebugBar\RequestIdGeneratorInterface" namespace="DebugBar" name="RequestIdGeneratorInterface"/>
+  <member name="index" default="0" type="integer" visibility="protected" static="false" line="18"/>
+  <method name="generate" start="23" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <interface full="DebugBar\RequestIdGeneratorInterface" namespace="DebugBar" name="RequestIdGeneratorInterface">
+    <method name="generate" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Generates a unique id for the current request.  If called repeatedly, a new unique id must always be returned on each call to generate() - even across different object instances.">To avoid any potential confusion in ID --&gt; value maps, the returned value must be
+guaranteed to not be all-numeric.</description>
+        <return type="string"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/guzzlehttp/guzzle/src" file="functions.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/guzzlehttp/guzzle/src/functions.php" size="5690" time="2021-03-23T11:33:13+00:00" unixtime="1616499193" sha1="f1174740c2e89ac6e4804e3c91456715f9984aac" relative="vendor/guzzlehttp/guzzle/src/functions.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">GuzzleHttp</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Debug function used to describe the provided value type and class.</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @param mixed $input Any type of variable to describe the type of. This</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> *                     parameter misses a typehint because of that.</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @return string Returns a string containing the type of the variable and</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *                if a class is provided, the class name.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @deprecated describe_type will be removed in guzzlehttp/guzzle:8.0. Use Utils::describeType instead.</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="16">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">describe_type</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$input</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">string</token>
+  </line>
+  <line no="17">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">describeType</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$input</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="19">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * Parses an array of header lines into an associative array of headers.</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * @param iterable $lines Header lines array of strings in the following</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *                        format: "Name: Value"</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * @deprecated headers_from_lines will be removed in guzzlehttp/guzzle:8.0. Use Utils::headersFromLines instead.</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="29">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">headers_from_lines</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">iterable</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$lines</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+  </line>
+  <line no="30">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="31">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">headersFromLines</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$lines</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="32">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * Returns a debug stream based on the provided variable.</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * @param mixed $value Optional value</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> * @return resource</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * @deprecated debug_resource will be removed in guzzlehttp/guzzle:8.0. Use Utils::debugResource instead.</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="43">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">debug_resource</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="44">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="45">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">debugResource</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="46">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> * Chooses and creates a default handler to use based on the environment.</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> * The returned handler is not wrapped by any default middlewares.</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> * @throws \RuntimeException if no viable Handler is available.</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> * @return callable(\Psr\Http\Message\RequestInterface, array): \GuzzleHttp\Promise\PromiseInterface Returns the best handler for the given system.</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> * @deprecated choose_handler will be removed in guzzlehttp/guzzle:8.0. Use Utils::chooseHandler instead.</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="59">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">choose_handler</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CALLABLE">callable</token>
+  </line>
+  <line no="60">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="61">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">chooseHandler</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="62">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT"> * Get the default User-Agent string to use with Guzzle.</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT"> * @deprecated default_user_agent will be removed in guzzlehttp/guzzle:8.0. Use Utils::defaultUserAgent instead.</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="69">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">default_user_agent</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">string</token>
+  </line>
+  <line no="70">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="71">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">defaultUserAgent</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="72">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT"> * Returns the default cacert bundle for the current system.</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="77">
+    <token name="T_DOC_COMMENT"> * First, the openssl.cafile and curl.cainfo php.ini settings are checked.</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT"> * If those settings are not configured, then the common locations for</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT"> * bundles found on Red Hat, CentOS, Fedora, Ubuntu, Debian, FreeBSD, OS X</token>
+  </line>
+  <line no="80">
+    <token name="T_DOC_COMMENT"> * and Windows are checked. If any of these file locations are found on</token>
+  </line>
+  <line no="81">
+    <token name="T_DOC_COMMENT"> * disk, they will be utilized.</token>
+  </line>
+  <line no="82">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="83">
+    <token name="T_DOC_COMMENT"> * Note: the result of this function is cached for subsequent calls.</token>
+  </line>
+  <line no="84">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="85">
+    <token name="T_DOC_COMMENT"> * @throws \RuntimeException if no bundle can be found.</token>
+  </line>
+  <line no="86">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="87">
+    <token name="T_DOC_COMMENT"> * @deprecated default_ca_bundle will be removed in guzzlehttp/guzzle:8.0. This function is not needed in PHP 5.6+.</token>
+  </line>
+  <line no="88">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="89">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">default_ca_bundle</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">string</token>
+  </line>
+  <line no="90">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="91">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">defaultCaBundle</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="92">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="95">
+    <token name="T_DOC_COMMENT"> * Creates an associative array of lowercase header names to the actual</token>
+  </line>
+  <line no="96">
+    <token name="T_DOC_COMMENT"> * header casing.</token>
+  </line>
+  <line no="97">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="98">
+    <token name="T_DOC_COMMENT"> * @deprecated normalize_header_keys will be removed in guzzlehttp/guzzle:8.0. Use Utils::normalizeHeaderKeys instead.</token>
+  </line>
+  <line no="99">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="100">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">normalize_header_keys</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$headers</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+  </line>
+  <line no="101">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="102">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">normalizeHeaderKeys</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$headers</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="103">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT"> * Returns true if the provided host matches any of the no proxy areas.</token>
+  </line>
+  <line no="107">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="108">
+    <token name="T_DOC_COMMENT"> * This method will strip a port from the host if it is present. Each pattern</token>
+  </line>
+  <line no="109">
+    <token name="T_DOC_COMMENT"> * can be matched with an exact match (e.g., "foo.com" == "foo.com") or a</token>
+  </line>
+  <line no="110">
+    <token name="T_DOC_COMMENT"> * partial match: (e.g., "foo.com" == "baz.foo.com" and ".foo.com" ==</token>
+  </line>
+  <line no="111">
+    <token name="T_DOC_COMMENT"> * "baz.foo.com", but ".foo.com" != "foo.com").</token>
+  </line>
+  <line no="112">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="113">
+    <token name="T_DOC_COMMENT"> * Areas are matched in the following cases:</token>
+  </line>
+  <line no="114">
+    <token name="T_DOC_COMMENT"> * 1. "*" (without quotes) always matches any hosts.</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT"> * 2. An exact match.</token>
+  </line>
+  <line no="116">
+    <token name="T_DOC_COMMENT"> * 3. The area starts with "." and the area is the last part of the host. e.g.</token>
+  </line>
+  <line no="117">
+    <token name="T_DOC_COMMENT"> *    '.mit.edu' will match any host that ends with '.mit.edu'.</token>
+  </line>
+  <line no="118">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT"> * @param string   $host         Host to check against the patterns.</token>
+  </line>
+  <line no="120">
+    <token name="T_DOC_COMMENT"> * @param string[] $noProxyArray An array of host patterns.</token>
+  </line>
+  <line no="121">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="122">
+    <token name="T_DOC_COMMENT"> * @throws Exception\InvalidArgumentException</token>
+  </line>
+  <line no="123">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="124">
+    <token name="T_DOC_COMMENT"> * @deprecated is_host_in_noproxy will be removed in guzzlehttp/guzzle:8.0. Use Utils::isHostInNoProxy instead.</token>
+  </line>
+  <line no="125">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="126">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">is_host_in_noproxy</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">string</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$host</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$noProxyArray</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">bool</token>
+  </line>
+  <line no="127">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="128">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">isHostInNoProxy</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$host</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$noProxyArray</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="129">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="130"/>
+  <line no="131">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="132">
+    <token name="T_DOC_COMMENT"> * Wrapper for json_decode that throws when an error occurs.</token>
+  </line>
+  <line no="133">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="134">
+    <token name="T_DOC_COMMENT"> * @param string $json    JSON data to parse</token>
+  </line>
+  <line no="135">
+    <token name="T_DOC_COMMENT"> * @param bool   $assoc   When true, returned objects will be converted</token>
+  </line>
+  <line no="136">
+    <token name="T_DOC_COMMENT"> *                        into associative arrays.</token>
+  </line>
+  <line no="137">
+    <token name="T_DOC_COMMENT"> * @param int    $depth   User specified recursion depth.</token>
+  </line>
+  <line no="138">
+    <token name="T_DOC_COMMENT"> * @param int    $options Bitmask of JSON decode options.</token>
+  </line>
+  <line no="139">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="140">
+    <token name="T_DOC_COMMENT"> * @return object|array|string|int|float|bool|null</token>
+  </line>
+  <line no="141">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="142">
+    <token name="T_DOC_COMMENT"> * @throws Exception\InvalidArgumentException if the JSON cannot be decoded.</token>
+  </line>
+  <line no="143">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="144">
+    <token name="T_DOC_COMMENT"> * @link https://www.php.net/manual/en/function.json-decode.php</token>
+  </line>
+  <line no="145">
+    <token name="T_DOC_COMMENT"> * @deprecated json_decode will be removed in guzzlehttp/guzzle:8.0. Use Utils::jsonDecode instead.</token>
+  </line>
+  <line no="146">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="147">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">json_decode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">string</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$json</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">bool</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$assoc</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">int</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$depth</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">512</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">int</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$options</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="148">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="149">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">jsonDecode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$json</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$assoc</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$depth</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$options</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="150">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="151"/>
+  <line no="152">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="153">
+    <token name="T_DOC_COMMENT"> * Wrapper for JSON encoding that throws when an error occurs.</token>
+  </line>
+  <line no="154">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="155">
+    <token name="T_DOC_COMMENT"> * @param mixed $value   The value being encoded</token>
+  </line>
+  <line no="156">
+    <token name="T_DOC_COMMENT"> * @param int   $options JSON encode option bitmask</token>
+  </line>
+  <line no="157">
+    <token name="T_DOC_COMMENT"> * @param int   $depth   Set the maximum depth. Must be greater than zero.</token>
+  </line>
+  <line no="158">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="159">
+    <token name="T_DOC_COMMENT"> * @throws Exception\InvalidArgumentException if the JSON cannot be encoded.</token>
+  </line>
+  <line no="160">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="161">
+    <token name="T_DOC_COMMENT"> * @link https://www.php.net/manual/en/function.json-encode.php</token>
+  </line>
+  <line no="162">
+    <token name="T_DOC_COMMENT"> * @deprecated json_encode will be removed in guzzlehttp/guzzle:8.0. Use Utils::jsonEncode instead.</token>
+  </line>
+  <line no="163">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="164">
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">json_encode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">int</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$options</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">int</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$depth</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">512</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">string</token>
+  </line>
+  <line no="165">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="166">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Utils</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">jsonEncode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$options</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$depth</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="167">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="168"/>
+</source>

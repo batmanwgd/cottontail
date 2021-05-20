@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html" file="footer.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/footer.blade.php" size="236" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="d8c59bfbd59462761b4912acfc582e0f527f55e8" relative="vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/footer.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;td&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;table class="footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;td class="content-cell" align="center"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">{{ Illuminate\Mail\Markdown::parse($slot) }}</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">&lt;/table&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="12"/>
+</source>

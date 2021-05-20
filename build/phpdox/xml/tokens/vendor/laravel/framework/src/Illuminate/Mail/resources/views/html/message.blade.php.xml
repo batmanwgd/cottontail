@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html" file="message.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/message.blade.php" size="495" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="6bd596477cdf0fdd8f7048dc12f166e8a69078dd" relative="vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/message.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@component('mail::layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">{{-- Header --}}</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">@slot('header')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@component('mail::header', ['url' =&gt; config('app.url')])</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">{{ config('app.name') }}</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">@endslot</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">{{-- Body --}}</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">{{ $slot }}</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">{{-- Subcopy --}}</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">@isset($subcopy)</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">@slot('subcopy')</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">@component('mail::subcopy')</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">{{ $subcopy }}</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">@endslot</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">@endisset</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">{{-- Footer --}}</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">@slot('footer')</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">@component('mail::footer')</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">&#xA9; {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">@endslot</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="28"/>
+</source>

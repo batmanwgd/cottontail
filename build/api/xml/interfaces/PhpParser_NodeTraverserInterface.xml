@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="PhpParser\NodeTraverserInterface" namespace="PhpParser" name="NodeTraverserInterface" abstract="false" final="false" start="5" end="29">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser" file="NodeTraverserInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser/NodeTraverserInterface.php" size="629" time="2021-05-03T19:11:20+00:00" unixtime="1620069080" sha1="c2e249c830a7f5083f55a9d377533c65fbb1e19b" relative="vendor/nikic/php-parser/lib/PhpParser/NodeTraverserInterface.php"/>
+  <method name="addVisitor" start="12" end="12" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Adds a visitor."/>
+      <param description="Visitor to add" type="object" variable="$visitor">
+        <type full="PhpParser\NodeVisitor" namespace="PhpParser" name="NodeVisitor"/>
+      </param>
+    </docblock>
+    <parameter name="visitor" byreference="false" type="object">
+      <type full="PhpParser\NodeVisitor" namespace="PhpParser" name="NodeVisitor"/>
+    </parameter>
+  </method>
+  <method name="removeVisitor" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Removes an added visitor."/>
+      <param type="object" variable="$visitor">
+        <type full="PhpParser\NodeVisitor" namespace="PhpParser" name="NodeVisitor"/>
+      </param>
+    </docblock>
+    <parameter name="visitor" byreference="false" type="object">
+      <type full="PhpParser\NodeVisitor" namespace="PhpParser" name="NodeVisitor"/>
+    </parameter>
+  </method>
+  <method name="traverse" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Traverses an array of nodes using the registered visitors."/>
+      <param description="Array of nodes" type="array" variable="$nodes" of="object">
+        <type full="PhpParser\Node" namespace="PhpParser" name="Node"/>
+      </param>
+      <return description="Traversed array of nodes" type="array" of="object">
+        <type full="PhpParser\Node" namespace="PhpParser" name="Node"/>
+      </return>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="nodes" byreference="false" type="array"/>
+  </method>
+</interface>

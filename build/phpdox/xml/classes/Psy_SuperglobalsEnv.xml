@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Psy\SuperglobalsEnv" namespace="Psy" name="SuperglobalsEnv" abstract="false" final="false" start="17" end="32">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src" file="SuperglobalsEnv.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/psy/psysh/src/SuperglobalsEnv.php" size="613" time="2021-04-10T16:23:39+00:00" unixtime="1618071819" sha1="465d5de4d95d59442c49a3f1cf0c35112011db4b" relative="vendor/psy/psysh/src/SuperglobalsEnv.php"/>
+  <docblock>
+    <description compact="Environment variables implementation via $_SERVER superglobal."/>
+  </docblock>
+  <implements full="Psy\EnvInterface" namespace="Psy" name="EnvInterface"/>
+  <method name="get" start="24" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get an environment variable by name."/>
+      <return type="object">
+        <type full="Psy\string|null" namespace="Psy" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Psy\EnvInterface" namespace="Psy" name="EnvInterface">
+    <method name="get" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get an environment variable by name."/>
+        <return type="object">
+          <type full="Psy\string|null" namespace="Psy" name="string|null"/>
+        </return>
+      </docblock>
+      <parameter name="key" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

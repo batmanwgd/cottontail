@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="request.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/request.blade.php" size="2432" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="c9b927359b32318f04223e68d5dffd6803b9df2a" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/request.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/** @var \Illuminate\Support\Collection|\Laravel\Telescope\EntryResult[] $entries */</token>
+  </line>
+  <line no="3">
+    <token name="T_VARIABLE">$data</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$entries</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">first</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">content</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_VARIABLE">$statusCode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$data</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'response_status'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6">
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$statusCode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_GT">&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">400</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="7">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$statusColor</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'red'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="8">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ELSEIF">elseif</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$statusCode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_GT">&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">300</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$statusColor</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'yellow'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$statusColor</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'green'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="13">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'request', 'link' =&gt; true])</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-status sf-toolbar-status-{{ $statusColor }}"&gt;{{ $statusCode }}&lt;/span&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        @ttIcon('requests')</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value sf-toolbar-info-piece-additional"&gt;{{ $data['method'] }} {{ $data['uri'] }}&lt;/span&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">    @slot('text')</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-group"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;b&gt;HTTP status&lt;/b&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;span&gt;{{ $statusCode }}&lt;/span&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">            @if($data['method'] !== 'GET')</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;b&gt;Method&lt;/b&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                &lt;span&gt;{{ $data['method'] }}&lt;/span&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                &lt;b&gt;Request URI&lt;/b&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                &lt;span title="{{ $data['uri'] }}"&gt;{{ $data['method'] }} {{ $data['uri'] }}&lt;/span&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                &lt;b&gt;Controller Action&lt;/b&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                &lt;span&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                    {{ $data['controller_action'] }}</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                &lt;b&gt;Middleware&lt;/b&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                &lt;span&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    {{ implode(', ', array_filter($data['middleware'])) ?: '-' }}</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_INLINE_HTML">            @if(isset($data['response']['view']))</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                    &lt;b&gt;View&lt;/b&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                    &lt;span&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                       {{ str_replace(base_path(), '', $data['response']['view']) }}</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                    &lt;/span&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">            @elseif(isset($data['response']) &amp;&amp; is_string($data['response']))</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                    &lt;b&gt;Response&lt;/b&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                    &lt;span&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                       {{ \Illuminate\Support\Str::limit($data['response'], 60) }}</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                    &lt;/span&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="71"/>
+  <line no="72">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+  <line no="76"/>
+</source>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Transport_Esmtp_Auth_XOAuth2Authenticator" namespace="" name="Swift_Transport_Esmtp_Auth_XOAuth2Authenticator" abstract="false" final="false" start="26" end="64">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth" file="XOAuth2Authenticator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" size="1665" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="7f5dcdff1f8af4f5477f4d23a9fd5293d0503b4b" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php"/>
+  <docblock>
+    <description compact="Handles XOAUTH2 authentication.">Example:
+&lt;code&gt;
+$transport = (new Swift_SmtpTransport('smtp.gmail.com', 587, 'tls'))
+  -&gt;setAuthMode('XOAUTH2')
+  -&gt;setUsername('YOUR_EMAIL_ADDRESS')
+  -&gt;setPassword('YOUR_ACCESS_TOKEN');
+&lt;/code&gt;</description>
+    <author value="xu.li&lt;AthenaLightenedMyPath@gmail.com&gt;"/>
+    <see value="https://developers.google.com/google-apps/gmail/xoauth2_protocol"/>
+  </docblock>
+  <implements full="Swift_Transport_Esmtp_Authenticator" namespace="" name="Swift_Transport_Esmtp_Authenticator"/>
+  <method name="getAuthKeyword" start="33" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the name of the AUTH mechanism this Authenticator handles."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="authenticate" start="41" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <parameter name="agent" byreference="false" type="object">
+      <type full="Swift_Transport_SmtpAgent" namespace="" name="Swift_Transport_SmtpAgent"/>
+    </parameter>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="token" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="constructXOAuth2Params" start="60" end="63" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Construct the auth parameter."/>
+      <see value="https://developers.google.com/google-apps/gmail/xoauth2_protocol#the_sasl_xoauth2_mechanism"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="token" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Transport_Esmtp_Authenticator" namespace="" name="Swift_Transport_Esmtp_Authenticator">
+    <method name="getAuthKeyword" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the name of the AUTH mechanism this Authenticator handles."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+    <method name="authenticate" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Try to authenticate the user with $username and $password."/>
+        <param type="string" variable="$username"/>
+        <param type="string" variable="$password"/>
+        <return description="true if authentication worked (returning false is deprecated, throw a Swift_TransportException instead)" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+        <throws description="Allows the message to bubble up when authentication was not successful" type="object">
+          <type full="Swift_TransportException" namespace="" name="Swift_TransportException"/>
+        </throws>
+      </docblock>
+      <parameter name="agent" byreference="false" type="object">
+        <type full="Swift_Transport_SmtpAgent" namespace="" name="Swift_Transport_SmtpAgent"/>
+      </parameter>
+      <parameter name="username" byreference="false" type="{unknown}"/>
+      <parameter name="password" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

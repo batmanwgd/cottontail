@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views" file="semantic-ui.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/semantic-ui.blade.php" size="1682" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="f3e54de42e3605452948ba150f1db0dbba4d0172" relative="vendor/laravel/framework/src/Illuminate/Pagination/resources/views/semantic-ui.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if ($paginator-&gt;hasPages())</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;div class="ui pagination menu" role="navigation"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        {{-- Previous Page Link --}}</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        @if ($paginator-&gt;onFirstPage())</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;a class="icon item disabled" aria-disabled="true" aria-label="@lang('pagination.previous')"&gt; &lt;i class="left chevron icon"&gt;&lt;/i&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        @else</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;a class="icon item" href="{{ $paginator-&gt;previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')"&gt; &lt;i class="left chevron icon"&gt;&lt;/i&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">        {{-- Pagination Elements --}}</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        @foreach ($elements as $element)</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            {{-- "Three Dots" Separator --}}</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            @if (is_string($element))</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;a class="icon item disabled" aria-disabled="true"&gt;{{ $element }}&lt;/a&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">            {{-- Array Of Links --}}</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            @if (is_array($element))</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                @foreach ($element as $page =&gt; $url)</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    @if ($page == $paginator-&gt;currentPage())</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                        &lt;a class="item active" href="{{ $url }}" aria-current="page"&gt;{{ $page }}&lt;/a&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    @else</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                        &lt;a class="item" href="{{ $url }}"&gt;{{ $page }}&lt;/a&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                @endforeach</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        @endforeach</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">        {{-- Next Page Link --}}</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        @if ($paginator-&gt;hasMorePages())</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;a class="icon item" href="{{ $paginator-&gt;nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')"&gt; &lt;i class="right chevron icon"&gt;&lt;/i&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        @else</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;a class="icon item disabled" aria-disabled="true" aria-label="@lang('pagination.next')"&gt; &lt;i class="right chevron icon"&gt;&lt;/i&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="37"/>
+</source>

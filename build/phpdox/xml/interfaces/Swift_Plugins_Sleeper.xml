@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Sleeper" namespace="" name="Swift_Plugins_Sleeper" abstract="false" final="false" start="16" end="24">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins" file="Sleeper.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Sleeper.php" size="431" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="a6d01c23083bc5d003412783defc4fd15be818a2" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Sleeper.php"/>
+  <docblock>
+    <description compact="Sleeps for a duration of time."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="sleep" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sleep for $seconds."/>
+      <param type="int" variable="$seconds"/>
+    </docblock>
+    <parameter name="seconds" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Swift_Plugins_ThrottlerPlugin" namespace="" name="Swift_Plugins_ThrottlerPlugin"/>
+    <class full="Swift_Plugins_AntiFloodPlugin" namespace="" name="Swift_Plugins_AntiFloodPlugin"/>
+  </implementors>
+</interface>

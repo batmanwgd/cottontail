@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_AddressEncoder" namespace="" name="Swift_AddressEncoder" abstract="false" final="false" start="16" end="25">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="AddressEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder.php" size="595" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="645141c4053fb6fac59011ad963c53232f794a1a" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder.php"/>
+  <docblock>
+    <description compact="Email address encoder."/>
+    <author value="Christian Schmidt"/>
+  </docblock>
+  <method name="encodeString" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encodes an email address."/>
+      <throws description="if the email cannot be represented in" type="object">the encoding implemented by this class<type full="Swift_AddressEncoderException" namespace="" name="Swift_AddressEncoderException"/></throws>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="address" byreference="false" type="string"/>
+  </method>
+  <implementors>
+    <class full="Swift_AddressEncoder_Utf8AddressEncoder" namespace="" name="Swift_AddressEncoder_Utf8AddressEncoder"/>
+    <class full="Swift_AddressEncoder_IdnAddressEncoder" namespace="" name="Swift_AddressEncoder_IdnAddressEncoder"/>
+  </implementors>
+</interface>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Transport_IoBuffer" namespace="" name="Swift_Transport_IoBuffer" abstract="false" final="false" start="16" end="65">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport" file="IoBuffer.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/IoBuffer.php" size="1636" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="68027217f1e0d30631209ca4e977ffbcb5987b48" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/IoBuffer.php"/>
+  <docblock>
+    <description compact="Buffers input and output to a resource."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+  <extends full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+  <constant type="integer" name="TYPE_SOCKET" value="0x0001">
+    <docblock>
+      <description compact="A socket buffer over TCP"/>
+    </docblock>
+  </constant>
+  <constant type="integer" name="TYPE_PROCESS" value="0x0010">
+    <docblock>
+      <description compact="A process buffer with I/O support"/>
+    </docblock>
+  </constant>
+  <method name="initialize" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Perform any initialization needed, using the given $params.">Parameters will vary depending upon the type of IoBuffer used.</description>
+    </docblock>
+    <parameter name="params" byreference="false" type="array"/>
+  </method>
+  <method name="setParam" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set an individual param on the buffer (e.g. switching to SSL)."/>
+      <param type="string" variable="$param"/>
+      <param type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="param" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="terminate" start="42" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Perform any shutdown logic needed."/>
+    </docblock>
+  </method>
+  <method name="setWriteTranslations" start="52" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set an array of string replacements which should be made on data written to the buffer.">This could replace LF with CRLF for example.</description>
+      <param type="array" variable="$replacements" of="string"/>
+    </docblock>
+    <parameter name="replacements" byreference="false" type="array"/>
+  </method>
+  <method name="readLine" start="64" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a line of output (including any CRLF).">The $sequence number comes from any writes and may or may not be used
+depending upon the implementation.</description>
+      <param description="of last write to scan from" type="int" variable="$sequence"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="sequence" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream">
+    <method name="write" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Writes $bytes to the end of the stream.">Writing may not happen immediately if the stream chooses to buffer.  If
+you want to write these bytes with immediate effect, call <link xmlns="http://xml.phpdox.net/src" value="commit()"/>after calling write().
+This method returns the sequence ID of the write (i.e. 1 for first, 2 for
+second, etc etc).
+</description>
+        <param type="string" variable="$bytes"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="int"/>
+      </docblock>
+      <parameter name="bytes" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="commit" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="For any bytes that are currently buffered inside the stream, force them off the buffer."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+    <method name="bind" start="55" end="55" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Attach $is to this stream.">The stream acts as an observer, receiving all data that is written.
+All <link xmlns="http://xml.phpdox.net/src" value="write()"/> and <link xmlns="http://xml.phpdox.net/src" value="flushBuffers()"/> operations will be mirrored.
+</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="unbind" start="66" end="66" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove an already bound stream.">If $is is not bound, no errors will be raised.
+If the stream currently has any buffered data it will be written to $is
+before unbinding occurs.</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="flushBuffers" start="74" end="74" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+  </parent>
+  <parent full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream">
+    <method name="read" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Reads $length bytes from the stream into a string and moves the pointer through the stream by $length.">If less bytes exist than are requested the remaining bytes are given instead.
+If no bytes are remaining at all, boolean false is returned.</description>
+        <param type="int" variable="$length"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="object">
+          <type full="string|bool" namespace="" name="string|bool"/>
+        </return>
+      </docblock>
+      <parameter name="length" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setReadPointer" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Move the internal read pointer to $byteOffset in the stream."/>
+        <param type="int" variable="$byteOffset"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="byteOffset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</interface>

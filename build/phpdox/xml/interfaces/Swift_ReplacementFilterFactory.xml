@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_ReplacementFilterFactory" namespace="" name="Swift_ReplacementFilterFactory" abstract="false" final="false" start="16" end="27">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="ReplacementFilterFactory.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ReplacementFilterFactory.php" size="549" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="3744311baa568ad57dcf9d3afadb9813d6992e12" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/ReplacementFilterFactory.php"/>
+  <docblock>
+    <description compact="Creates StreamFilters."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="createFilter" start="26" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a filter to replace $search with $replace."/>
+      <param type="mixed" variable="$search"/>
+      <param type="mixed" variable="$replace"/>
+      <return type="object">
+        <type full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+      </return>
+    </docblock>
+    <parameter name="search" byreference="false" type="{unknown}"/>
+    <parameter name="replace" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="Swift_StreamFilters_StringReplacementFilterFactory" namespace="" name="Swift_StreamFilters_StringReplacementFilterFactory"/>
+  </implementors>
+</interface>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_IdGenerator" namespace="" name="Swift_IdGenerator" abstract="false" final="false" start="14" end="22">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="IdGenerator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/IdGenerator.php" size="433" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="738ce5beab073fbf291557f64d33bdb6e959fa6a" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/IdGenerator.php"/>
+  <docblock>
+    <description compact="Message ID generator."/>
+  </docblock>
+  <method name="generateId" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a globally unique string to use for Message-ID or Content-ID."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Mime_IdGenerator" namespace="" name="Swift_Mime_IdGenerator"/>
+  </implementors>
+</interface>

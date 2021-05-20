@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Carbon\CarbonConverterInterface" namespace="Carbon" name="CarbonConverterInterface" abstract="false" final="false" start="15" end="18">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nesbot/carbon/src/Carbon" file="CarbonConverterInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nesbot/carbon/src/Carbon/CarbonConverterInterface.php" size="416" time="2021-05-07T10:08:30+00:00" unixtime="1620382110" sha1="ba82eb3894824d3eeec9ece7b4326bb2cf9717b1" relative="vendor/nesbot/carbon/src/Carbon/CarbonConverterInterface.php"/>
+  <method name="convertDate" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Carbon\CarbonInterface" namespace="Carbon" name="CarbonInterface"/>
+    </return>
+    <parameter name="dateTime" byreference="false" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+    <parameter name="negated" byreference="false" type="boolean" default="false"/>
+  </method>
+</interface>

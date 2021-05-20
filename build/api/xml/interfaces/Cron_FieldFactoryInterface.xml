@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Cron\FieldFactoryInterface" namespace="Cron" name="FieldFactoryInterface" abstract="false" final="false" start="5" end="8">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron" file="FieldFactoryInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron/FieldFactoryInterface.php" size="121" time="2020-11-24T19:55:57+00:00" unixtime="1606247757" sha1="446b0ec0bc54475762268e3a1ebc67ee9a837220" relative="vendor/dragonmantank/cron-expression/src/Cron/FieldFactoryInterface.php"/>
+  <method name="getField" start="7" end="7" abstract="false" final="false" static="false" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+    </return>
+    <parameter name="position" byreference="false" type="int"/>
+  </method>
+  <implementors>
+    <class full="Cron\FieldFactory" namespace="Cron" name="FieldFactory"/>
+  </implementors>
+</interface>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Encoder" namespace="" name="Swift_Encoder" abstract="false" final="false" start="16" end="28">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="Encoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder.php" size="734" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="1d65d8d9465aee61214de296a7a3c65ef810913c" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder.php"/>
+  <docblock>
+    <description compact="Interface for all Encoder schemes."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver"/>
+  <method name="encodeString" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Encode a given string to produce an encoded string."/>
+      <param type="string" variable="$string"/>
+      <param description="if first line needs to be shorter" type="int" variable="$firstLineOffset"/>
+      <param description="- 0 indicates the default length for this encoding" type="int" variable="$maxLineLength"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="firstLineOffset" byreference="false" type="integer" default="0"/>
+    <parameter name="maxLineLength" byreference="false" type="integer" default="0"/>
+  </method>
+  <parent full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver">
+    <method name="charsetChanged" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Notify this observer that the entity's charset has changed."/>
+        <param type="string" variable="$charset"/>
+      </docblock>
+      <parameter name="charset" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+  <implementors>
+    <class full="Swift_Encoder_Base64Encoder" namespace="" name="Swift_Encoder_Base64Encoder"/>
+    <class full="Swift_Mime_HeaderEncoder_Base64HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder_Base64HeaderEncoder"/>
+  </implementors>
+  <extenders>
+    <extender full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder"/>
+    <extender full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+  </extenders>
+</interface>

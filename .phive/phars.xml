@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phive xmlns="https://phar.io/phive">
+  <phar name="phpunit" version="^9.5.4" installed="9.5.4" location="./tools/phpunit" copy="false"/>
+  <phar name="theseer/autoload" version="^1.26.0" installed="1.26.0" location="./tools/phpab" copy="false"/>
+  <phar name="phpdocumentor" version="^3.0.0" installed="3.0.0" location="./tools/phpDocumentor" copy="false"/>
+</phive>

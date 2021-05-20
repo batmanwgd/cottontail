@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_KeyCache_NullKeyCache" namespace="" name="Swift_KeyCache_NullKeyCache" abstract="false" final="false" start="16" end="113">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache" file="NullKeyCache.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/NullKeyCache.php" size="2586" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="1458f7422d85ccb45fe54b82d8d2292a09bd47fe" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/NullKeyCache.php"/>
+  <docblock>
+    <description compact="A null KeyCache that does not cache at all."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_KeyCache" namespace="" name="Swift_KeyCache"/>
+  <method name="setString" start="28" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set a string into the cache under $itemKey for the namespace $nsKey."/>
+      <see value="MODE_WRITE, MODE_APPEND"/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <param type="string" variable="$string"/>
+      <param type="int" variable="$mode"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="mode" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="importFromByteStream" start="41" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set a ByteStream into the cache under $itemKey for the namespace $nsKey."/>
+      <see value="MODE_WRITE, MODE_APPEND"/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <param type="int" variable="$mode"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    <parameter name="os" byreference="false" type="object">
+      <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+    </parameter>
+    <parameter name="mode" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getInputByteStream" start="55" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Provides a ByteStream which when written to, writes data to $itemKey.">NOTE: The stream will always write in append mode.</description>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <return type="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </return>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    <parameter name="writeThrough" byreference="false" type="object" default="NULL">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="getString" start="67" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get data back out of the cache as a string."/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="exportToByteStream" start="78" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get data back out of the cache as a ByteStream."/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <param description="to write the data to" type="object" variable="$is">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </param>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="hasKey" start="90" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Check if the given $itemKey exists in the namespace $nsKey."/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="clearKey" start="101" end="103" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Clear data for $itemKey in the namespace $nsKey if it exists."/>
+      <param type="string" variable="$nsKey"/>
+      <param type="string" variable="$itemKey"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="clearAll" start="110" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Clear all data in the namespace $nsKey if it exists."/>
+      <param type="string" variable="$nsKey"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_KeyCache" namespace="" name="Swift_KeyCache">
+    <constant type="{unknown}" name="MODE_WRITE" value="1">
+      <docblock>
+        <description compact="Mode for replacing existing cached data"/>
+      </docblock>
+    </constant>
+    <constant type="{unknown}" name="MODE_APPEND" value="2">
+      <docblock>
+        <description compact="Mode for appending data to the end of existing cached data"/>
+      </docblock>
+    </constant>
+    <method name="setString" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set a string into the cache under $itemKey for the namespace $nsKey."/>
+        <see value="MODE_WRITE, MODE_APPEND"/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <param type="string" variable="$string"/>
+        <param type="int" variable="$mode"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+      <parameter name="string" byreference="false" type="{unknown}"/>
+      <parameter name="mode" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="importFromByteStream" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set a ByteStream into the cache under $itemKey for the namespace $nsKey."/>
+        <see value="MODE_WRITE, MODE_APPEND"/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <param type="int" variable="$mode"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+      <parameter name="os" byreference="false" type="object">
+        <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+      </parameter>
+      <parameter name="mode" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="getInputByteStream" start="59" end="59" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Provides a ByteStream which when written to, writes data to $itemKey.">NOTE: The stream will always write in append mode.
+If the optional third parameter is passed all writes will go through $is.</description>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <param description="optional input stream" type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+        <return type="object">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </return>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+      <parameter name="is" byreference="false" type="object" default="NULL">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </parameter>
+    </method>
+    <method name="getString" start="69" end="69" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get data back out of the cache as a string."/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <return type="string"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="exportToByteStream" start="78" end="78" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get data back out of the cache as a ByteStream."/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <param description="stream to write the data to" type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+      <parameter name="is" byreference="false" type="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </parameter>
+    </method>
+    <method name="hasKey" start="88" end="88" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Check if the given $itemKey exists in the namespace $nsKey."/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="clearKey" start="96" end="96" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Clear data for $itemKey in the namespace $nsKey if it exists."/>
+        <param type="string" variable="$nsKey"/>
+        <param type="string" variable="$itemKey"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="clearAll" start="103" end="103" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Clear all data in the namespace $nsKey if it exists."/>
+        <param type="string" variable="$nsKey"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

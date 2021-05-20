@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/diglactic/laravel-breadcrumbs/resources/views" file="uikit.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/diglactic/laravel-breadcrumbs/resources/views/uikit.blade.php" size="488" time="2021-04-12T18:06:07+00:00" unixtime="1618250767" sha1="2b33a104e19d33550214e7ab41f85a7d56c6a69f" relative="vendor/diglactic/laravel-breadcrumbs/resources/views/uikit.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@unless ($breadcrumbs-&gt;isEmpty())</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;ul class="uk-breadcrumb"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        @foreach ($breadcrumbs as $breadcrumb)</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            @if ($loop-&gt;last)</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;span&gt;{{ $breadcrumb-&gt;title }}&lt;/span&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            @elseif ($breadcrumb-&gt;url)</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;a href="{{ $breadcrumb-&gt;url }}"&gt;{{ $breadcrumb-&gt;title }}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;li class="uk-disabled"&gt;&lt;a&gt;{{ $breadcrumb-&gt;title }}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        @endforeach</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">@endunless</token>
+  </line>
+  <line no="16"/>
+</source>

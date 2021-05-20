@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/diglactic/laravel-breadcrumbs/resources/views" file="bootstrap3.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/diglactic/laravel-breadcrumbs/resources/views/bootstrap3.blade.php" size="394" time="2021-04-12T18:06:07+00:00" unixtime="1618250767" sha1="07aa8330a069c06563d1d57d6823c4285d41d6b2" relative="vendor/diglactic/laravel-breadcrumbs/resources/views/bootstrap3.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@unless ($breadcrumbs-&gt;isEmpty())</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;ol class="breadcrumb"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        @foreach ($breadcrumbs as $breadcrumb)</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">            @if ($breadcrumb-&gt;url &amp;&amp; !$loop-&gt;last)</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;a href="{{ $breadcrumb-&gt;url }}"&gt;{{ $breadcrumb-&gt;title }}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                &lt;li class="active"&gt;{{ $breadcrumb-&gt;title }}&lt;/li&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">        @endforeach</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;/ol&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">@endunless</token>
+  </line>
+  <line no="16"/>
+</source>

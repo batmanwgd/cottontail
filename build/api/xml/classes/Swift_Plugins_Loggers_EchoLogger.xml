@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Loggers_EchoLogger" namespace="" name="Swift_Plugins_Loggers_EchoLogger" abstract="false" final="false" start="16" end="58">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers" file="EchoLogger.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" size="1077" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="24022925171e4cb2d5b1fb9a4a188b16373e3c19" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/EchoLogger.php"/>
+  <docblock>
+    <description compact="Prints all log messages in real time."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_Plugins_Logger" namespace="" name="Swift_Plugins_Logger"/>
+  <member name="isHtml" visibility="private" static="false" line="19">
+    <docblock>
+      <description compact="Whether or not HTML should be output"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new EchoLogger."/>
+      <param type="object" variable="$isHtml">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="isHtml" byreference="false" type="boolean" default="true"/>
+  </constructor>
+  <method name="add" start="36" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add a log entry."/>
+      <param type="string" variable="$entry"/>
+    </docblock>
+    <parameter name="entry" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="clear" start="48" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not implemented."/>
+    </docblock>
+  </method>
+  <method name="dump" start="55" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not implemented."/>
+    </docblock>
+  </method>
+  <interface full="Swift_Plugins_Logger" namespace="" name="Swift_Plugins_Logger">
+    <method name="add" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Add a log entry."/>
+        <param type="string" variable="$entry"/>
+      </docblock>
+      <parameter name="entry" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="clear" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Clear the log contents."/>
+      </docblock>
+    </method>
+    <method name="dump" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get this log as a string."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+  </interface>
+</class>

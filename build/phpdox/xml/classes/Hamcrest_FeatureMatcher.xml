@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hamcrest\FeatureMatcher" namespace="Hamcrest" name="FeatureMatcher" abstract="true" final="false" start="13" end="67">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="FeatureMatcher.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/FeatureMatcher.php" size="1993" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="29b63b2c6ad3149adc0068280fdc0f4f71f39db5" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/FeatureMatcher.php"/>
+  <docblock>
+    <description compact="Supporting class for matching a feature of an object. Implement &lt;code&gt;featureValueOf()&lt;/code&gt; in a subclass to pull out the feature to be matched against."/>
+  </docblock>
+  <extends full="Hamcrest\TypeSafeDiagnosingMatcher" namespace="Hamcrest" name="TypeSafeDiagnosingMatcher"/>
+  <member name="_subMatcher" visibility="private" static="false" line="16"/>
+  <member name="_featureDescription" visibility="private" static="false" line="17"/>
+  <member name="_featureName" visibility="private" static="false" line="18"/>
+  <constructor name="__construct" start="29" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor."/>
+      <param type="string" variable="$type"/>
+      <param type="string" variable="$subtype"/>
+      <param description="The matcher to apply to the feature" type="object" variable="$subMatcher">
+        <type full="\Hamcrest\Matcher" namespace="\Hamcrest" name="Matcher"/>
+      </param>
+      <param description="Descriptive text to use in describeTo" type="string" variable="$featureDescription"/>
+      <param description="Identifying text for mismatch message" type="string" variable="$featureName"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="subtype" byreference="false" type="{unknown}"/>
+    <parameter name="subMatcher" byreference="false" type="object">
+      <type full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher"/>
+    </parameter>
+    <parameter name="featureDescription" byreference="false" type="{unknown}"/>
+    <parameter name="featureName" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="featureValueOf" start="45" end="45" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Implement this to extract the interesting feature."/>
+      <param description="the target object" type="mixed" variable="$actual"/>
+      <return description="the feature to be matched" type="mixed"/>
+    </docblock>
+    <parameter name="actual" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="matchesSafelyWithDiagnosticDescription" start="47" end="59" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="actual" byreference="false" type="{unknown}"/>
+    <parameter name="mismatchDescription" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <method name="describeTo" start="61" end="66" abstract="false" final="true" static="false" visibility="public">
+    <parameter name="description" byreference="false" type="object">
+      <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+    </parameter>
+  </method>
+  <parent full="Hamcrest\TypeSafeDiagnosingMatcher" namespace="Hamcrest" name="TypeSafeDiagnosingMatcher">
+    <extends full="Hamcrest\TypeSafeMatcher" namespace="Hamcrest" name="TypeSafeMatcher"/>
+    <method name="matchesSafely" start="12" end="15" abstract="false" final="true" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="describeMismatchSafely" start="17" end="20" abstract="false" final="true" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="mismatchDescription" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+    <method name="matchesSafelyWithDiagnosticDescription" start="28" end="28" abstract="true" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="Subclasses should implement these. The item will already have been checked for the specific type."/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="mismatchDescription" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+  </parent>
+  <parent full="Hamcrest\TypeSafeMatcher" namespace="Hamcrest" name="TypeSafeMatcher">
+    <extends full="Hamcrest\BaseMatcher" namespace="Hamcrest" name="BaseMatcher"/>
+    <constant type="{unknown}" name="TYPE_ANY" value="0"/>
+    <constant type="{unknown}" name="TYPE_STRING" value="1"/>
+    <constant type="{unknown}" name="TYPE_NUMERIC" value="2"/>
+    <constant type="{unknown}" name="TYPE_ARRAY" value="3"/>
+    <constant type="{unknown}" name="TYPE_OBJECT" value="4"/>
+    <constant type="{unknown}" name="TYPE_RESOURCE" value="5"/>
+    <constant type="{unknown}" name="TYPE_BOOLEAN" value="6"/>
+    <constructor name="__construct" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="expectedType" byreference="false" type="{unknown}"/>
+      <parameter name="expectedSubtype" byreference="false" type="{unknown}" default="NULL"/>
+    </constructor>
+    <method name="matches" start="45" end="48" abstract="false" final="true" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="describeMismatch" start="50" end="57" abstract="false" final="true" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="mismatchDescription" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+    <method name="matchesSafely" start="64" end="64" abstract="true" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="The item will already have been checked for the specific type and subtype."/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="describeMismatchSafely" start="69" end="69" abstract="true" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="The item will already have been checked for the specific type and subtype."/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="mismatchDescription" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+  </parent>
+  <parent full="Hamcrest\BaseMatcher" namespace="Hamcrest" name="BaseMatcher">
+    <implements full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher"/>
+    <method name="describeMismatch" start="16" end="19" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="description" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+    <method name="__toString" start="21" end="24" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="__invoke" start="26" end="29" abstract="false" final="false" static="false" visibility="public"/>
+  </parent>
+  <interface full="Hamcrest\Matcher" namespace="Hamcrest" name="Matcher">
+    <extends full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+    <method name="matches" start="36" end="36" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Evaluates the matcher for argument &lt;var&gt;$item&lt;/var&gt;."/>
+        <param description="the object against which the matcher is evaluated." type="mixed" variable="$item"/>
+        <return description="&lt;code&gt;true&lt;/code&gt; if &lt;var&gt;$item&lt;/var&gt; matches," type="boolean">otherwise &lt;code&gt;false&lt;/code&gt;.</return>
+        <see value="Hamcrest\BaseMatcher"/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="describeMismatch" start="49" end="49" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Generate a description of why the matcher has not accepted the item.">The description will be part of a larger description of why a matching
+failed, so it should be concise.
+This method assumes that &lt;code&gt;matches($item)&lt;/code&gt; is false, but
+will not check this.</description>
+        <param description="The item that the Matcher has rejected." type="mixed" variable="$item"/>
+        <param type="object" variable="$description">
+          <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+        </param>
+        <return/>
+      </docblock>
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="description" byreference="false" type="object">
+        <type full="Hamcrest\Description" namespace="Hamcrest" name="Description"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

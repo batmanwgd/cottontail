@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_CharacterStream" namespace="" name="Swift_CharacterStream" abstract="false" final="false" start="20" end="87">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="CharacterStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream.php" size="2158" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="693d5b43cbe879c2657d0d8e4f791ccb17ada359" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream.php"/>
+  <docblock>
+    <description compact="An abstract means of reading and writing data in terms of characters as opposed to bytes.">Classes implementing this interface may use a subsystem which requires less
+memory than working with large strings of data.</description>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="setCharacterSet" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the character set used in this CharacterStream."/>
+      <param type="string" variable="$charset"/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setCharacterReaderFactory" start="32" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the CharacterReaderFactory for multi charset support."/>
+    </docblock>
+    <parameter name="factory" byreference="false" type="object">
+      <type full="Swift_CharacterReaderFactory" namespace="" name="Swift_CharacterReaderFactory"/>
+    </parameter>
+  </method>
+  <method name="importByteStream" start="39" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Overwrite this character stream using the byte sequence in the byte stream."/>
+      <param description="output stream to read from" type="object" variable="$os">
+        <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+      </param>
+    </docblock>
+    <parameter name="os" byreference="false" type="object">
+      <type full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream"/>
+    </parameter>
+  </method>
+  <method name="importString" start="47" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Import a string a bytes into this CharacterStream, overwriting any existing data in the stream."/>
+      <param type="string" variable="$string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="read" start="57" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Read $length characters from the stream and move the internal pointer $length further into the stream."/>
+      <param type="int" variable="$length"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="length" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="readBytes" start="67" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Read $length characters from the stream and return a 1-dimensional array containing there octet values."/>
+      <param type="int" variable="$length"/>
+      <return type="array" of="int"/>
+    </docblock>
+    <parameter name="length" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="write" start="74" end="74" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Write $chars to the end of the stream."/>
+      <param type="string" variable="$chars"/>
+    </docblock>
+    <parameter name="chars" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setPointer" start="81" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Move the internal pointer to $charOffset in the stream."/>
+      <param type="int" variable="$charOffset"/>
+    </docblock>
+    <parameter name="charOffset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="flushContents" start="86" end="86" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Empty the stream and reset the internal pointer."/>
+    </docblock>
+  </method>
+</interface>

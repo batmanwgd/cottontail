@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\QuickDefinitionsConfiguration" namespace="Mockery" name="QuickDefinitionsConfiguration" abstract="false" final="false" start="23" end="56">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="QuickDefinitionsConfiguration.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/QuickDefinitionsConfiguration.php" size="2161" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="7ef4ee969275d6cce6284150eb24e77d28367199" relative="vendor/mockery/mockery/library/Mockery/QuickDefinitionsConfiguration.php"/>
+  <constant type="string" name="QUICK_DEFINITIONS_MODE_MOCK_AT_LEAST_ONCE" value="'QUICK_DEFINITIONS_MODE_MOCK_AT_LEAST_ONCE'"/>
+  <constant type="string" name="QUICK_DEFINITIONS_MODE_DEFAULT_EXPECTATION" value="'QUICK_DEFINITIONS_MODE_DEFAULT_EXPECTATION'"/>
+  <member name="_quickDefinitionsApplicationMode" default="" type="{unknown}" constant="self::QUICK_DEFINITIONS_MODE_DEFAULT_EXPECTATION" visibility="protected" static="false" line="38">
+    <docblock>
+      <description compact="Defines what a quick definition should produce.">Possible options are:
+- self::QUICK_DEFINITIONS_MODE_DEFAULT_EXPECTATION: in this case quick
+definitions define a stub.
+- self::QUICK_DEFINITIONS_MODE_MOCK_AT_LEAST_ONCE: in this case quick
+definitions define a mock with an 'at least once' expectation.</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <method name="shouldBeCalledAtLeastOnce" start="46" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns true if quick definitions should setup a stub, returns false when quick definitions should setup a mock with 'at least once' expectation.">When parameter $newValue is specified it sets the configuration with the
+given value.</description>
+    </docblock>
+    <return type="bool" nullable="false"/>
+    <parameter name="newValue" byreference="false" nullable="true" type="bool" default="NULL"/>
+  </method>
+</class>

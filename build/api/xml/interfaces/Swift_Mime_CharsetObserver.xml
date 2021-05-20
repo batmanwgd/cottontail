@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mime_CharsetObserver" namespace="" name="Swift_Mime_CharsetObserver" abstract="false" final="false" start="16" end="24">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="CharsetObserver.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php" size="509" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="10eba844ba179adecf347e5ff0742f94a16933d1" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php"/>
+  <docblock>
+    <description compact="Observes changes in an Mime entity's character set."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="charsetChanged" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Notify this observer that the entity's charset has changed."/>
+      <param type="string" variable="$charset"/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Swift_Encoder" namespace="" name="Swift_Encoder"/>
+    <extender full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder"/>
+    <extender full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+  </extenders>
+</interface>

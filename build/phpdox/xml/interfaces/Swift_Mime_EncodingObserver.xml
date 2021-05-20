@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mime_EncodingObserver" namespace="" name="Swift_Mime_EncodingObserver" abstract="false" final="false" start="16" end="22">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="EncodingObserver.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EncodingObserver.php" size="516" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="b7a657edb6659e35c3986d8dc6bacc63a749bd83" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EncodingObserver.php"/>
+  <docblock>
+    <description compact="Observes changes for a Mime entity's ContentEncoder."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="encoderChanged" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Notify this observer that the observed entity's ContentEncoder has changed."/>
+    </docblock>
+    <parameter name="encoder" byreference="false" type="object">
+      <type full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+    </parameter>
+  </method>
+</interface>

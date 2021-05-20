@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_KeyCache_SimpleKeyCacheInputStream" namespace="" name="Swift_KeyCache_SimpleKeyCacheInputStream" abstract="false" final="false" start="16" end="123">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache" file="SimpleKeyCacheInputStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" size="2674" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="57a97f2f4c09df7cbafdb20fb1b27e5c4762b439" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php"/>
+  <docblock>
+    <description compact="Writes data to a KeyCache using a stream."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_KeyCache_KeyCacheInputStream" namespace="" name="Swift_KeyCache_KeyCacheInputStream"/>
+  <member name="keyCache" visibility="private" static="false" line="19">
+    <docblock>
+      <description compact="The KeyCache being written to"/>
+    </docblock>
+  </member>
+  <member name="nsKey" visibility="private" static="false" line="22">
+    <docblock>
+      <description compact="The nsKey of the KeyCache being written to"/>
+    </docblock>
+  </member>
+  <member name="itemKey" visibility="private" static="false" line="25">
+    <docblock>
+      <description compact="The itemKey of the KeyCache being written to"/>
+    </docblock>
+  </member>
+  <member name="writeThrough" default="NULL" visibility="private" static="false" line="28">
+    <docblock>
+      <description compact="A stream to write through on each write()"/>
+    </docblock>
+  </member>
+  <method name="setKeyCache" start="33" end="36" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the KeyCache to wrap."/>
+    </docblock>
+    <parameter name="keyCache" byreference="false" type="object">
+      <type full="Swift_KeyCache" namespace="" name="Swift_KeyCache"/>
+    </parameter>
+  </method>
+  <method name="setWriteThroughStream" start="41" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Specify a stream to write through for each write()."/>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="write" start="52" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Writes $bytes to the end of the stream."/>
+      <param type="string" variable="$bytes"/>
+      <param description="optional" type="object" variable="$is">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </param>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+    <parameter name="is" byreference="false" type="object" default="NULL">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="commit" start="68" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not used."/>
+    </docblock>
+  </method>
+  <method name="bind" start="75" end="77" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not used."/>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="unbind" start="82" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Not used."/>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="flushBuffers" start="90" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+    </docblock>
+  </method>
+  <method name="setNsKey" start="100" end="103" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the nsKey which will be written to."/>
+      <param type="string" variable="$nsKey"/>
+    </docblock>
+    <parameter name="nsKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setItemKey" start="110" end="113" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the itemKey which will be written to."/>
+      <param type="string" variable="$itemKey"/>
+    </docblock>
+    <parameter name="itemKey" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__clone" start="119" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Any implementation should be cloneable, allowing the clone to access a separate $nsKey and $itemKey."/>
+    </docblock>
+  </method>
+  <interface full="Swift_KeyCache_KeyCacheInputStream" namespace="" name="Swift_KeyCache_KeyCacheInputStream">
+    <extends full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    <method name="setKeyCache" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set the KeyCache to wrap."/>
+      </docblock>
+      <parameter name="keyCache" byreference="false" type="object">
+        <type full="Swift_KeyCache" namespace="" name="Swift_KeyCache"/>
+      </parameter>
+    </method>
+    <method name="setNsKey" start="28" end="28" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set the nsKey which will be written to."/>
+        <param type="string" variable="$nsKey"/>
+      </docblock>
+      <parameter name="nsKey" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setItemKey" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set the itemKey which will be written to."/>
+        <param type="string" variable="$itemKey"/>
+      </docblock>
+      <parameter name="itemKey" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setWriteThroughStream" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Specify a stream to write through for each write()."/>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </parameter>
+    </method>
+    <method name="__clone" start="46" end="46" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Any implementation should be cloneable, allowing the clone to access a separate $nsKey and $itemKey."/>
+      </docblock>
+    </method>
+  </interface>
+</class>

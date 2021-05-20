@@ -1,0 +1,2227 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views" file="base_js.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/base_js.blade.php" size="39283" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="1aa85d90f999c23b28faf290994f187320041ca4" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/base_js.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;script @if(isset($csp_script_nonce) &amp;&amp; $csp_script_nonce) nonce="{{ $csp_script_nonce }}" @endif&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    Sfjs = (function() {</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        "use strict";</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">        if ('classList' in document.documentElement) {</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            var hasClass = function (el, cssClass) { return el.classList.contains(cssClass); };</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            var removeClass = function(el, cssClass) { el.classList.remove(cssClass); };</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            var addClass = function(el, cssClass) { el.classList.add(cssClass); };</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            var toggleClass = function(el, cssClass) { el.classList.toggle(cssClass); };</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        } else {</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            var hasClass = function (el, cssClass) { return el.className.match(new RegExp('\\b' + cssClass + '\\b')); };</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            var removeClass = function(el, cssClass) { el.className = el.className.replace(new RegExp('\\b' + cssClass + '\\b'), ' '); };</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            var addClass = function(el, cssClass) { if (!hasClass(el, cssClass)) { el.className += " " + cssClass; } };</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            var toggleClass = function(el, cssClass) { hasClass(el, cssClass) ? removeClass(el, cssClass) : addClass(el, cssClass); };</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">        var noop = function() {};</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">        var profilerStorageKey = 'laravel/telescope-toolbar/';</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">        var addEventListener;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">        var el = document.createElement('div');</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        if (!('addEventListener' in el)) {</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            addEventListener = function (element, eventName, callback) {</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                element.attachEvent('on' + eventName, callback);</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        } else {</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">            addEventListener = function (element, eventName, callback) {</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                element.addEventListener(eventName, callback, false);</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">        var request = function(url, onSuccess, onError, payload, options) {</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            options = options || {};</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            options.maxTries = options.maxTries || 0;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">            xhr.open(options.method || 'GET', url, true);</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">            xhr.onreadystatechange = function(state) {</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                if (4 !== xhr.readyState) {</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    return null;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_INLINE_HTML">                if (xhr.status == 404 &amp;&amp; options.maxTries &gt; 1) {</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                    setTimeout(function(){</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                        options.maxTries--;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        request(url, onSuccess, onError, payload, options);</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    }, 1000);</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">                    return null;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="53"/>
+  <line no="54">
+    <token name="T_INLINE_HTML">                if (200 === xhr.status) {</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                    (onSuccess || noop)(xhr);</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    (onError || noop)(xhr);</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">            xhr.send(payload || '');</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">        var getPreference = function(name) {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            if (!window.localStorage) {</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                return null;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">            return localStorage.getItem(profilerStorageKey + name);</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">        var setPreference = function(name, value) {</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">            if (!window.localStorage) {</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                return null;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">            localStorage.setItem(profilerStorageKey + name, value);</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="78"/>
+  <line no="79">
+    <token name="T_INLINE_HTML">        var requestStack = [];</token>
+  </line>
+  <line no="80"/>
+  <line no="81">
+    <token name="T_INLINE_HTML">        var extractHeaders = function(xhr, stackElement) {</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">            /* Here we avoid to call xhr.getResponseHeader in order to */</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">            /* prevent polluting the console with CORS security errors */</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">            var allHeaders = xhr.getAllResponseHeaders();</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">            var ret;</token>
+  </line>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_INLINE_HTML">            if (ret = allHeaders.match(/^x-debug-token:\s+(.*)$/im)) {</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                stackElement.profile = ret[1];</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">            if (ret = allHeaders.match(/^x-debug-token-link:\s+(.*)$/im)) {</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                stackElement.profilerUrl = ret[1];</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="94"/>
+  <line no="95">
+    <token name="T_INLINE_HTML">        var togglePreference = function() {</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">            var newState = Sfjs.getPreference('toolbar/ajax/replace') !== 'manual' ?  'manual' : 'auto' ;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">            Sfjs.setPreference('toolbar/ajax/replace', newState);</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">            document.querySelector('.sf-toolbar-ajax-replace-state').innerHTML =  newState === 'manual' ? 'Manual' : 'Auto';</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">        var successStreak = 4;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">        var pendingRequests = 0;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">        var renderAjaxRequests = function() {</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">            var requestCounter = document.querySelector('.sf-toolbar-ajax-request-counter');</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">            if (!requestCounter) {</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                return;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">            requestCounter.textContent = requestStack.length;</token>
+  </line>
+  <line no="109"/>
+  <line no="110">
+    <token name="T_INLINE_HTML">            var infoSpan = document.querySelector(".sf-toolbar-ajax-info");</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">            if (infoSpan) {</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                infoSpan.textContent = requestStack.length + ' Request' + (requestStack.length !== 1 ? 's' : '');</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="114"/>
+  <line no="115">
+    <token name="T_INLINE_HTML">            var ajaxToolbarPanel = document.querySelector('.sf-toolbar-block-ajax');</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">            if (requestStack.length) {</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                ajaxToolbarPanel.style.display = 'block';</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                ajaxToolbarPanel.style.display = 'none';</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">            if (pendingRequests &gt; 0) {</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                addClass(ajaxToolbarPanel, 'sf-ajax-request-loading');</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">            } else if (successStreak &lt; 4) {</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                addClass(ajaxToolbarPanel, 'sf-toolbar-status-red');</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                removeClass(ajaxToolbarPanel, 'sf-ajax-request-loading');</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                removeClass(ajaxToolbarPanel, 'sf-toolbar-status-red');</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="130"/>
+  <line no="131">
+    <token name="T_INLINE_HTML">            addEventListener(document.querySelector('.sf-toolbar-ajax-clear'), 'click', function() {</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                requestStack = [];</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                renderAjaxRequests();</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                successStreak = 4;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                document.querySelector('.sf-toolbar-ajax-request-list').innerHTML = '';</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="137"/>
+  <line no="138">
+    <token name="T_INLINE_HTML">            document.querySelector('.sf-toolbar-ajax-replace-state').innerHTML = Sfjs.getPreference('toolbar/ajax/replace') === 'manual' ? 'Manual' : 'Auto';</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">            addEventListener(document.querySelector('.sf-toolbar-ajax-replace-toggle'), 'click', togglePreference);</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_INLINE_HTML">        var startAjaxRequest = function(index) {</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">            var tbody = document.querySelector('.sf-toolbar-ajax-request-list');</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">            if (!tbody) {</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                return;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="147"/>
+  <line no="148">
+    <token name="T_INLINE_HTML">            var nbOfAjaxRequest = tbody.rows.length;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">            if (nbOfAjaxRequest &gt;= 100) {</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                tbody.deleteRow(0);</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="152"/>
+  <line no="153">
+    <token name="T_INLINE_HTML">            var request = requestStack[index];</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">            pendingRequests++;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">            var row = document.createElement('tr');</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">            request.DOMNode = row;</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_INLINE_HTML">            var requestNumberCell = document.createElement('td');</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">            requestNumberCell.textContent = index + 1;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">            row.appendChild(requestNumberCell);</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">            var profilerCell = document.createElement('td');</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">            profilerCell.textContent = 'n/a';</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">            row.appendChild(profilerCell);</token>
+  </line>
+  <line no="165"/>
+  <line no="166">
+    <token name="T_INLINE_HTML">            var methodCell = document.createElement('td');</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">            methodCell.textContent = request.method;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">            row.appendChild(methodCell);</token>
+  </line>
+  <line no="169"/>
+  <line no="170">
+    <token name="T_INLINE_HTML">            var typeCell = document.createElement('td');</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">            typeCell.textContent = request.type;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">            row.appendChild(typeCell);</token>
+  </line>
+  <line no="173"/>
+  <line no="174">
+    <token name="T_INLINE_HTML">            var statusCodeCell = document.createElement('td');</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">            var statusCode = document.createElement('span');</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">            statusCode.textContent = 'n/a';</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">            statusCodeCell.appendChild(statusCode);</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">            row.appendChild(statusCodeCell);</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_INLINE_HTML">            var pathCell = document.createElement('td');</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">            pathCell.className = 'sf-ajax-request-url';</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">            if ('GET' === request.method) {</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                var pathLink = document.createElement('a');</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                pathLink.setAttribute('href', request.url);</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                pathLink.textContent = request.url;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                pathCell.appendChild(pathLink);</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                pathCell.textContent = request.url;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">            pathCell.setAttribute('title', request.url);</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">            row.appendChild(pathCell);</token>
+  </line>
+  <line no="192"/>
+  <line no="193">
+    <token name="T_INLINE_HTML">            var durationCell = document.createElement('td');</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">            durationCell.className = 'sf-ajax-request-duration';</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">            durationCell.textContent = 'n/a';</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">            row.appendChild(durationCell);</token>
+  </line>
+  <line no="197"/>
+  <line no="198">
+    <token name="T_INLINE_HTML">            request.liveDurationHandle = setInterval(function() {</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                durationCell.textContent = (new Date() - request.start) + 'ms';</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">            }, 100);</token>
+  </line>
+  <line no="201"/>
+  <line no="202">
+    <token name="T_INLINE_HTML">            row.className = 'sf-ajax-request sf-ajax-request-loading';</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">            tbody.insertBefore(row, null);</token>
+  </line>
+  <line no="204"/>
+  <line no="205">
+    <token name="T_INLINE_HTML">            var toolbarInfo = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">            if (toolbarInfo) {</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">              toolbarInfo.scrollTop = toolbarInfo.scrollHeight;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="209"/>
+  <line no="210">
+    <token name="T_INLINE_HTML">            renderAjaxRequests();</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="212"/>
+  <line no="213">
+    <token name="T_INLINE_HTML">        var finishAjaxRequest = function(index) {</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">            var request = requestStack[index];</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">            clearInterval(request.liveDurationHandle);</token>
+  </line>
+  <line no="216"/>
+  <line no="217">
+    <token name="T_INLINE_HTML">            if (!request.DOMNode) {</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                return;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="220"/>
+  <line no="221">
+    <token name="T_INLINE_HTML">            if (Sfjs.getPreference('toolbar/ajax/replace') !== 'manual' &amp;&amp; !request.toolbarReplaceFinished &amp;&amp; request.profile) {</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                /* Flag as complete because finishAjaxRequest can be called multiple times. */</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                request.toolbarReplaceFinished = true;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                /* Search up through the DOM to find the toolbar's container ID. */</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                for (var elem = request.DOMNode; elem &amp;&amp; elem !== document; elem = elem.parentNode) {</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                    if (elem.id.match(/^sfwdt/)) {</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                        Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                        break;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="232"/>
+  <line no="233">
+    <token name="T_INLINE_HTML">            pendingRequests--;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">            var row = request.DOMNode;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">            /* Unpack the children from the row */</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">            var profilerCell = row.children[1];</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">            var methodCell = row.children[2];</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">            var statusCodeCell = row.children[4];</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">            var statusCodeElem = statusCodeCell.children[0];</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">            var durationCell = row.children[6];</token>
+  </line>
+  <line no="241"/>
+  <line no="242">
+    <token name="T_INLINE_HTML">            if (request.error) {</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                row.className = 'sf-ajax-request sf-ajax-request-error';</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                methodCell.className = 'sf-ajax-request-error';</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                successStreak = 0;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                row.className = 'sf-ajax-request sf-ajax-request-ok';</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                successStreak++;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">            if (request.statusCode) {</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                if (request.statusCode &lt; 300) {</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                    statusCodeElem.setAttribute('class', 'sf-toolbar-status');</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                } else if (request.statusCode &lt; 400) {</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-yellow');</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                    statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                statusCodeElem.textContent = request.statusCode;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                statusCodeElem.setAttribute('class', 'sf-toolbar-status sf-toolbar-status-red');</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="263"/>
+  <line no="264">
+    <token name="T_INLINE_HTML">            if (request.duration) {</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                durationCell.textContent = request.duration + 'ms';</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="267"/>
+  <line no="268">
+    <token name="T_INLINE_HTML">            if (request.profile) {</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                profilerCell.textContent = '';</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                var profilerLink = document.createElement('a');</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                profilerLink.setAttribute('href', request.profilerUrl || '#');</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                profilerLink.setAttribute('target', '_profiler');</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                profilerLink.textContent = 'Load';</token>
+  </line>
+  <line no="274"/>
+  <line no="275">
+    <token name="T_INLINE_HTML">                profilerLink.addEventListener("click", function(e){</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">                    e.preventDefault();</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                    for (var elem = request.DOMNode; elem &amp;&amp; elem !== document; elem = elem.parentNode) {</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                        if (elem.id.match(/^sfwdt/)) {</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                            Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                            return false;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="284"/>
+  <line no="285">
+    <token name="T_INLINE_HTML">                profilerCell.appendChild(profilerLink);</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="287"/>
+  <line no="288">
+    <token name="T_INLINE_HTML">            renderAjaxRequests();</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="290"/>
+  <line no="291">
+    <token name="T_INLINE_HTML">        @if(isset($excluded_ajax_paths))</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">        if (window.fetch &amp;&amp; window.fetch.polyfill === undefined) {</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">            var oldFetch = window.fetch;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">            window.fetch = function () {</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                var promise = oldFetch.apply(this, arguments);</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                var url = arguments[0];</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">                var params = arguments[1];</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                var paramType = Object.prototype.toString.call(arguments[0]);</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                if (paramType === '[object Request]') {</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">                    url = arguments[0].url;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">                    params = {</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">                        method: arguments[0].method,</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">                        credentials: arguments[0].credentials,</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                        headers: arguments[0].headers,</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                        mode: arguments[0].mode,</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                        redirect: arguments[0].redirect</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                    };</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">                    url = String(url);</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">                if (!url.match(new RegExp(@json($excluded_ajax_paths)))) {</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">                    var method = 'GET';</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">                    if (params &amp;&amp; params.method !== undefined) {</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">                        method = params.method;</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="316"/>
+  <line no="317">
+    <token name="T_INLINE_HTML">                    var stackElement = {</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                        error: false,</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                        url: url,</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                        method: method,</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                        type: 'fetch',</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">                        start: new Date()</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">                    };</token>
+  </line>
+  <line no="324"/>
+  <line no="325">
+    <token name="T_INLINE_HTML">                    var idx = requestStack.push(stackElement) - 1;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                    promise.then(function (r) {</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">                        stackElement.duration = new Date() - stackElement.start;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">                        stackElement.error = r.status &lt; 200 || r.status &gt;= 400;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">                        stackElement.statusCode = r.status;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                        stackElement.profile = r.headers.get('x-debug-token');</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">                        stackElement.profilerUrl = r.headers.get('x-debug-token-link');</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">                        stackElement.toolbarReplaceFinished = false;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">                        finishAjaxRequest(idx);</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">                    }, function (e){</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">                        stackElement.error = true;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">                        finishAjaxRequest(idx);</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">                    startAjaxRequest(idx);</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="340"/>
+  <line no="341">
+    <token name="T_INLINE_HTML">                return promise;</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">        if (window.XMLHttpRequest &amp;&amp; XMLHttpRequest.prototype.addEventListener) {</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">            var proxied = XMLHttpRequest.prototype.open;</token>
+  </line>
+  <line no="346"/>
+  <line no="347">
+    <token name="T_INLINE_HTML">            XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">                var self = this;</token>
+  </line>
+  <line no="349"/>
+  <line no="350">
+    <token name="T_INLINE_HTML">                /* prevent logging AJAX calls to static and inline files, like templates */</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">                var path = url;</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">                if (url.substr(0, 1) === '/') {</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">                    if (0 === url.indexOf('{{ asset('/') }}')) {</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">                        path = url.substr({{ strlen( asset('/')) }});</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                else if (0 === url.indexOf('{{ url('/') }}')) {</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                    path = url.substr({{ strlen( url('/')) }});</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="360"/>
+  <line no="361">
+    <token name="T_INLINE_HTML">                if (!path.match(new RegExp(@json($excluded_ajax_paths)))) {</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">                    var stackElement = {</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">                        error: false,</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">                        url: path,</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">                        method: method,</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">                        type: 'xhr',</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">                        start: new Date()</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">                    };</token>
+  </line>
+  <line no="369"/>
+  <line no="370">
+    <token name="T_INLINE_HTML">                    var idx = requestStack.push(stackElement) - 1;</token>
+  </line>
+  <line no="371"/>
+  <line no="372">
+    <token name="T_INLINE_HTML">                    this.addEventListener('readystatechange', function() {</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">                        if (self.readyState == 4) {</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">                            stackElement.duration = new Date() - stackElement.start;</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">                            stackElement.error = self.status &lt; 200 || self.status &gt;= 400;</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">                            stackElement.statusCode = self.status;</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">                            extractHeaders(self, stackElement);</token>
+  </line>
+  <line no="378"/>
+  <line no="379">
+    <token name="T_INLINE_HTML">                            finishAjaxRequest(idx);</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">                    }, false);</token>
+  </line>
+  <line no="382"/>
+  <line no="383">
+    <token name="T_INLINE_HTML">                    startAjaxRequest(idx);</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="385"/>
+  <line no="386">
+    <token name="T_INLINE_HTML">                proxied.apply(this, Array.prototype.slice.call(arguments));</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="388">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="389">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="390"/>
+  <line no="391">
+    <token name="T_INLINE_HTML">        return {</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">            hasClass: hasClass,</token>
+  </line>
+  <line no="393"/>
+  <line no="394">
+    <token name="T_INLINE_HTML">            removeClass: removeClass,</token>
+  </line>
+  <line no="395"/>
+  <line no="396">
+    <token name="T_INLINE_HTML">            addClass: addClass,</token>
+  </line>
+  <line no="397"/>
+  <line no="398">
+    <token name="T_INLINE_HTML">            toggleClass: toggleClass,</token>
+  </line>
+  <line no="399"/>
+  <line no="400">
+    <token name="T_INLINE_HTML">            getPreference: getPreference,</token>
+  </line>
+  <line no="401"/>
+  <line no="402">
+    <token name="T_INLINE_HTML">            setPreference: setPreference,</token>
+  </line>
+  <line no="403"/>
+  <line no="404">
+    <token name="T_INLINE_HTML">            addEventListener: addEventListener,</token>
+  </line>
+  <line no="405"/>
+  <line no="406">
+    <token name="T_INLINE_HTML">            request: request,</token>
+  </line>
+  <line no="407"/>
+  <line no="408">
+    <token name="T_INLINE_HTML">            requestStack: requestStack,</token>
+  </line>
+  <line no="409"/>
+  <line no="410">
+    <token name="T_INLINE_HTML">            renderAjaxRequests: renderAjaxRequests,</token>
+  </line>
+  <line no="411"/>
+  <line no="412">
+    <token name="T_INLINE_HTML">            load: function(selector, url, onSuccess, onError, options) {</token>
+  </line>
+  <line no="413">
+    <token name="T_INLINE_HTML">                var el = document.getElementById(selector);</token>
+  </line>
+  <line no="414"/>
+  <line no="415">
+    <token name="T_INLINE_HTML">                if (el &amp;&amp; el.getAttribute('data-sfurl') !== url) {</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">                    request(</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">                        url,</token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">                        function(xhr) {</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">                            el.innerHTML = xhr.responseText;</token>
+  </line>
+  <line no="420">
+    <token name="T_INLINE_HTML">                            el.setAttribute('data-sfurl', url);</token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">                            removeClass(el, 'loading');</token>
+  </line>
+  <line no="422">
+    <token name="T_INLINE_HTML">                            var pending = pendingRequests;</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">                            for (var i = 0; i &lt; requestStack.length; i++) {</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">                                startAjaxRequest(i);</token>
+  </line>
+  <line no="425">
+    <token name="T_INLINE_HTML">                                if (requestStack[i].duration) {</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">                                    finishAjaxRequest(i);</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="429">
+    <token name="T_INLINE_HTML">                            /* Revert the pending state in case there was a start called without a finish above. */</token>
+  </line>
+  <line no="430">
+    <token name="T_INLINE_HTML">                            pendingRequests = pending;</token>
+  </line>
+  <line no="431">
+    <token name="T_INLINE_HTML">                            (onSuccess || noop)(xhr, el);</token>
+  </line>
+  <line no="432">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">                        function(xhr) { (onError || noop)(xhr, el); },</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">                        '',</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">                        options</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">                    );</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="438"/>
+  <line no="439">
+    <token name="T_INLINE_HTML">                return this;</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">            },</token>
+  </line>
+  <line no="441"/>
+  <line no="442">
+    <token name="T_INLINE_HTML">            loadToolbar: function(token, newToken) {</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">                newToken = (newToken || token);</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">                this.load(</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">                    'sfwdt' + token,</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">                    '{{ route("telescope-toolbar.render", ["token" =&gt; "xxxxxx"]) }}'.replace(/xxxxxx/, newToken),</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">                    function(xhr, el) {</token>
+  </line>
+  <line no="448"/>
+  <line no="449">
+    <token name="T_INLINE_HTML">                        /* Evaluate in global scope scripts embedded inside the toolbar */</token>
+  </line>
+  <line no="450">
+    <token name="T_INLINE_HTML">                        var i, scripts = [].slice.call(el.querySelectorAll('script'));</token>
+  </line>
+  <line no="451">
+    <token name="T_INLINE_HTML">                        for (i = 0; i &lt; scripts.length; ++i) {</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">                            eval.call({}, scripts[i].firstChild.nodeValue);</token>
+  </line>
+  <line no="453">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="454"/>
+  <line no="455">
+    <token name="T_INLINE_HTML">                        el.style.display = -1 !== xhr.responseText.indexOf('sf-toolbarreset') ? 'block' : 'none';</token>
+  </line>
+  <line no="456"/>
+  <line no="457">
+    <token name="T_INLINE_HTML">                        if (el.style.display == 'none') {</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">                            return;</token>
+  </line>
+  <line no="459">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="460"/>
+  <line no="461">
+    <token name="T_INLINE_HTML">                        if (getPreference('toolbar/displayState') == 'none') {</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="468">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'none';</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="470"/>
+  <line no="471">
+    <token name="T_INLINE_HTML">                        /* Handle toolbar-info position */</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">                        var toolbarBlocks = [].slice.call(el.querySelectorAll('.sf-toolbar-block'));</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">                        for (i = 0; i &lt; toolbarBlocks.length; ++i) {</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">                            toolbarBlocks[i].onmouseover = function () {</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">                                var toolbarInfo = this.querySelectorAll('.sf-toolbar-info')[0];</token>
+  </line>
+  <line no="476">
+    <token name="T_INLINE_HTML">                                var pageWidth = document.body.clientWidth;</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">                                var elementWidth = toolbarInfo.offsetWidth;</token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">                                var leftValue = (elementWidth + this.offsetLeft) - pageWidth;</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                                var rightValue = (elementWidth + (pageWidth - this.offsetLeft)) - pageWidth;</token>
+  </line>
+  <line no="480"/>
+  <line no="481">
+    <token name="T_INLINE_HTML">                                /* Reset right and left value, useful on window resize */</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                                toolbarInfo.style.right = '';</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                                toolbarInfo.style.left = '';</token>
+  </line>
+  <line no="484"/>
+  <line no="485">
+    <token name="T_INLINE_HTML">                                if (elementWidth &gt; pageWidth) {</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">                                    toolbarInfo.style.left = 0;</token>
+  </line>
+  <line no="487">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">                                else if (leftValue &gt; 0 &amp;&amp; rightValue &gt; 0) {</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                                    toolbarInfo.style.right = (rightValue * -1) + 'px';</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                                } else if (leftValue &lt; 0) {</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                                    toolbarInfo.style.left = 0;</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">                                } else {</token>
+  </line>
+  <line no="493">
+    <token name="T_INLINE_HTML">                                    toolbarInfo.style.right = '0px';</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">                            };</token>
+  </line>
+  <line no="496">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="497">
+    <token name="T_INLINE_HTML">                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">                            event.preventDefault();</token>
+  </line>
+  <line no="499"/>
+  <line no="500">
+    <token name="T_INLINE_HTML">                            var p = this.parentNode;</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">                            p.style.display = 'none';</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">                            (p.previousElementSibling || p.previousSibling).style.display = 'none';</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">                            document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">                            setPreference('toolbar/displayState', 'none');</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">                            event.preventDefault();</token>
+  </line>
+  <line no="508"/>
+  <line no="509">
+    <token name="T_INLINE_HTML">                            var elem = this.parentNode;</token>
+  </line>
+  <line no="510">
+    <token name="T_INLINE_HTML">                            if (elem.style.display == 'none') {</token>
+  </line>
+  <line no="511">
+    <token name="T_INLINE_HTML">                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'none';</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'none';</token>
+  </line>
+  <line no="513">
+    <token name="T_INLINE_HTML">                                elem.style.display = 'block';</token>
+  </line>
+  <line no="514">
+    <token name="T_INLINE_HTML">                            } else {</token>
+  </line>
+  <line no="515">
+    <token name="T_INLINE_HTML">                                document.getElementById('sfToolbarMainContent-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="516">
+    <token name="T_INLINE_HTML">                                document.getElementById('sfToolbarClearer-' + newToken).style.display = 'block';</token>
+  </line>
+  <line no="517">
+    <token name="T_INLINE_HTML">                                elem.style.display = 'none'</token>
+  </line>
+  <line no="518">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="519"/>
+  <line no="520">
+    <token name="T_INLINE_HTML">                            setPreference('toolbar/displayState', 'block');</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">                        renderAjaxRequests();</token>
+  </line>
+  <line no="523">
+    <token name="T_INLINE_HTML">                        addEventListener(document.querySelector('.sf-toolbar-block-ajax'), 'mouseenter', function (event) {</token>
+  </line>
+  <line no="524">
+    <token name="T_INLINE_HTML">                            var elem = document.querySelector('.sf-toolbar-block-ajax .sf-toolbar-info');</token>
+  </line>
+  <line no="525">
+    <token name="T_INLINE_HTML">                            elem.scrollTop = elem.scrollHeight;</token>
+  </line>
+  <line no="526">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                        addEventListener(document.querySelector('.sf-toolbar-block-ajax &gt; .sf-toolbar-icon'), 'click', function (event) {</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                            event.preventDefault();</token>
+  </line>
+  <line no="529"/>
+  <line no="530">
+    <token name="T_INLINE_HTML">                            toggleClass(this.parentNode, 'hover');</token>
+  </line>
+  <line no="531">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="532"/>
+  <line no="533">
+    <token name="T_INLINE_HTML">                        var dumpInfo = document.querySelector('.sf-toolbar-block-dump .sf-toolbar-info');</token>
+  </line>
+  <line no="534">
+    <token name="T_INLINE_HTML">                        if (null !== dumpInfo) {</token>
+  </line>
+  <line no="535">
+    <token name="T_INLINE_HTML">                            addEventListener(dumpInfo, 'sfbeforedumpcollapse', function () {</token>
+  </line>
+  <line no="536">
+    <token name="T_INLINE_HTML">                                dumpInfo.style.minHeight = dumpInfo.getBoundingClientRect().height+'px';</token>
+  </line>
+  <line no="537">
+    <token name="T_INLINE_HTML">                            });</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">                            addEventListener(dumpInfo, 'mouseleave', function () {</token>
+  </line>
+  <line no="539">
+    <token name="T_INLINE_HTML">                                dumpInfo.style.minHeight = '';</token>
+  </line>
+  <line no="540">
+    <token name="T_INLINE_HTML">                            });</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="542">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="543">
+    <token name="T_INLINE_HTML">                    function(xhr) {</token>
+  </line>
+  <line no="544">
+    <token name="T_INLINE_HTML">                        if (xhr.status !== 0) {</token>
+  </line>
+  <line no="545">
+    <token name="T_INLINE_HTML">                            var errorMessage = 'An ' + xhr.status + ' error occurred while loading the Telescope Toolbar. Make sure you configured/installed Telescope correctly.';</token>
+  </line>
+  <line no="546">
+    <token name="T_INLINE_HTML">                            if (xhr.status === 401 || xhr.status === 403) {</token>
+  </line>
+  <line no="547">
+    <token name="T_INLINE_HTML">                                errorMessage = 'You are unauthorized to view Telescope Requests';</token>
+  </line>
+  <line no="548">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="549">
+    <token name="T_INLINE_HTML">                            var sfwdt = document.getElementById('sfwdt' + token);</token>
+  </line>
+  <line no="550">
+    <token name="T_INLINE_HTML">                            var url = '{{ route("telescope") }}';</token>
+  </line>
+  <line no="551">
+    <token name="T_INLINE_HTML">                            sfwdt.innerHTML = '\</token>
+  </line>
+  <line no="552">
+    <token name="T_INLINE_HTML">                                &lt;div class="sf-toolbarreset"&gt;\</token>
+  </line>
+  <line no="553">
+    <token name="T_INLINE_HTML">                                    &lt;div class="sf-toolbar-icon"&gt;&lt;svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"&gt;&lt;path fill="#AAA" d="M0 40a39.87 39.87 0 0 1 11.72-28.28A40 40 0 1 1 0 40zm34 10a4 4 0 0 1-4-4v-2a2 2 0 1 0-4 0v2a4 4 0 0 1-4 4h-2a2 2 0 1 0 0 4h2a4 4 0 0 1 4 4v2a2 2 0 1 0 4 0v-2a4 4 0 0 1 4-4h2a2 2 0 1 0 0-4h-2zm24-24a6 6 0 0 1-6-6v-3a3 3 0 0 0-6 0v3a6 6 0 0 1-6 6h-3a3 3 0 0 0 0 6h3a6 6 0 0 1 6 6v3a3 3 0 0 0 6 0v-3a6 6 0 0 1 6-6h3a3 3 0 0 0 0-6h-3zm-4 36a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM21 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"&gt;&lt;/path&gt;\&lt;/svg&gt;&lt;/div&gt;\</token>
+  </line>
+  <line no="554">
+    <token name="T_INLINE_HTML">                                    ' + errorMessage + ' &lt;a href="' + url + '"&gt;Open Telescope.&lt;/a&gt;\</token>
+  </line>
+  <line no="555">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;\</token>
+  </line>
+  <line no="556">
+    <token name="T_INLINE_HTML">                            ';</token>
+  </line>
+  <line no="557">
+    <token name="T_INLINE_HTML">                            sfwdt.setAttribute('class', 'sf-toolbar sf-error-toolbar');</token>
+  </line>
+  <line no="558">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="559">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="560">
+    <token name="T_INLINE_HTML">                    { maxTries: 5 }</token>
+  </line>
+  <line no="561">
+    <token name="T_INLINE_HTML">                );</token>
+  </line>
+  <line no="562"/>
+  <line no="563">
+    <token name="T_INLINE_HTML">                return this;</token>
+  </line>
+  <line no="564">
+    <token name="T_INLINE_HTML">            },</token>
+  </line>
+  <line no="565"/>
+  <line no="566">
+    <token name="T_INLINE_HTML">            toggle: function(selector, elOn, elOff) {</token>
+  </line>
+  <line no="567">
+    <token name="T_INLINE_HTML">                var tmp = elOn.style.display,</token>
+  </line>
+  <line no="568">
+    <token name="T_INLINE_HTML">                    el = document.getElementById(selector);</token>
+  </line>
+  <line no="569"/>
+  <line no="570">
+    <token name="T_INLINE_HTML">                elOn.style.display = elOff.style.display;</token>
+  </line>
+  <line no="571">
+    <token name="T_INLINE_HTML">                elOff.style.display = tmp;</token>
+  </line>
+  <line no="572"/>
+  <line no="573">
+    <token name="T_INLINE_HTML">                if (el) {</token>
+  </line>
+  <line no="574">
+    <token name="T_INLINE_HTML">                    el.style.display = 'none' === tmp ? 'none' : 'block';</token>
+  </line>
+  <line no="575">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="576"/>
+  <line no="577">
+    <token name="T_INLINE_HTML">                return this;</token>
+  </line>
+  <line no="578">
+    <token name="T_INLINE_HTML">            },</token>
+  </line>
+  <line no="579"/>
+  <line no="580">
+    <token name="T_INLINE_HTML">            createTabs: function() {</token>
+  </line>
+  <line no="581">
+    <token name="T_INLINE_HTML">                var tabGroups = document.querySelectorAll('.sf-tabs:not([data-processed=true])');</token>
+  </line>
+  <line no="582"/>
+  <line no="583">
+    <token name="T_INLINE_HTML">                /* create the tab navigation for each group of tabs */</token>
+  </line>
+  <line no="584">
+    <token name="T_INLINE_HTML">                for (var i = 0; i &lt; tabGroups.length; i++) {</token>
+  </line>
+  <line no="585">
+    <token name="T_INLINE_HTML">                    var tabs = tabGroups[i].querySelectorAll(':scope &gt; .tab');</token>
+  </line>
+  <line no="586">
+    <token name="T_INLINE_HTML">                    var tabNavigation = document.createElement('ul');</token>
+  </line>
+  <line no="587">
+    <token name="T_INLINE_HTML">                    tabNavigation.className = 'tab-navigation';</token>
+  </line>
+  <line no="588"/>
+  <line no="589">
+    <token name="T_INLINE_HTML">                    var selectedTabId = 'tab-' + i + '-0'; /* select the first tab by default */</token>
+  </line>
+  <line no="590">
+    <token name="T_INLINE_HTML">                    for (var j = 0; j &lt; tabs.length; j++) {</token>
+  </line>
+  <line no="591">
+    <token name="T_INLINE_HTML">                        var tabId = 'tab-' + i + '-' + j;</token>
+  </line>
+  <line no="592">
+    <token name="T_INLINE_HTML">                        var tabTitle = tabs[j].querySelector('.tab-title').innerHTML;</token>
+  </line>
+  <line no="593"/>
+  <line no="594">
+    <token name="T_INLINE_HTML">                        var tabNavigationItem = document.createElement('li');</token>
+  </line>
+  <line no="595">
+    <token name="T_INLINE_HTML">                        tabNavigationItem.setAttribute('data-tab-id', tabId);</token>
+  </line>
+  <line no="596">
+    <token name="T_INLINE_HTML">                        if (hasClass(tabs[j], 'active')) { selectedTabId = tabId; }</token>
+  </line>
+  <line no="597">
+    <token name="T_INLINE_HTML">                        if (hasClass(tabs[j], 'disabled')) { addClass(tabNavigationItem, 'disabled'); }</token>
+  </line>
+  <line no="598">
+    <token name="T_INLINE_HTML">                        tabNavigationItem.innerHTML = tabTitle;</token>
+  </line>
+  <line no="599">
+    <token name="T_INLINE_HTML">                        tabNavigation.appendChild(tabNavigationItem);</token>
+  </line>
+  <line no="600"/>
+  <line no="601">
+    <token name="T_INLINE_HTML">                        var tabContent = tabs[j].querySelector('.tab-content');</token>
+  </line>
+  <line no="602">
+    <token name="T_INLINE_HTML">                        tabContent.parentElement.setAttribute('id', tabId);</token>
+  </line>
+  <line no="603">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="604"/>
+  <line no="605">
+    <token name="T_INLINE_HTML">                    tabGroups[i].insertBefore(tabNavigation, tabGroups[i].firstChild);</token>
+  </line>
+  <line no="606">
+    <token name="T_INLINE_HTML">                    addClass(document.querySelector('[data-tab-id="' + selectedTabId + '"]'), 'active');</token>
+  </line>
+  <line no="607">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="608"/>
+  <line no="609">
+    <token name="T_INLINE_HTML">                /* display the active tab and add the 'click' event listeners */</token>
+  </line>
+  <line no="610">
+    <token name="T_INLINE_HTML">                for (i = 0; i &lt; tabGroups.length; i++) {</token>
+  </line>
+  <line no="611">
+    <token name="T_INLINE_HTML">                    tabNavigation = tabGroups[i].querySelectorAll(':scope &gt; .tab-navigation li');</token>
+  </line>
+  <line no="612"/>
+  <line no="613">
+    <token name="T_INLINE_HTML">                    for (j = 0; j &lt; tabNavigation.length; j++) {</token>
+  </line>
+  <line no="614">
+    <token name="T_INLINE_HTML">                        tabId = tabNavigation[j].getAttribute('data-tab-id');</token>
+  </line>
+  <line no="615">
+    <token name="T_INLINE_HTML">                        document.getElementById(tabId).querySelector('.tab-title').className = 'hidden';</token>
+  </line>
+  <line no="616"/>
+  <line no="617">
+    <token name="T_INLINE_HTML">                        if (hasClass(tabNavigation[j], 'active')) {</token>
+  </line>
+  <line no="618">
+    <token name="T_INLINE_HTML">                            document.getElementById(tabId).className = 'block';</token>
+  </line>
+  <line no="619">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="620">
+    <token name="T_INLINE_HTML">                            document.getElementById(tabId).className = 'hidden';</token>
+  </line>
+  <line no="621">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="622"/>
+  <line no="623">
+    <token name="T_INLINE_HTML">                        tabNavigation[j].addEventListener('click', function(e) {</token>
+  </line>
+  <line no="624">
+    <token name="T_INLINE_HTML">                            var activeTab = e.target || e.srcElement;</token>
+  </line>
+  <line no="625"/>
+  <line no="626">
+    <token name="T_INLINE_HTML">                            /* needed because when the tab contains HTML contents, user can click */</token>
+  </line>
+  <line no="627">
+    <token name="T_INLINE_HTML">                            /* on any of those elements instead of their parent '&lt;li&gt;' element */</token>
+  </line>
+  <line no="628">
+    <token name="T_INLINE_HTML">                            while (activeTab.tagName.toLowerCase() !== 'li') {</token>
+  </line>
+  <line no="629">
+    <token name="T_INLINE_HTML">                                activeTab = activeTab.parentNode;</token>
+  </line>
+  <line no="630">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="631"/>
+  <line no="632">
+    <token name="T_INLINE_HTML">                            /* get the full list of tabs through the parent of the active tab element */</token>
+  </line>
+  <line no="633">
+    <token name="T_INLINE_HTML">                            var tabNavigation = activeTab.parentNode.children;</token>
+  </line>
+  <line no="634">
+    <token name="T_INLINE_HTML">                            for (var k = 0; k &lt; tabNavigation.length; k++) {</token>
+  </line>
+  <line no="635">
+    <token name="T_INLINE_HTML">                                var tabId = tabNavigation[k].getAttribute('data-tab-id');</token>
+  </line>
+  <line no="636">
+    <token name="T_INLINE_HTML">                                document.getElementById(tabId).className = 'hidden';</token>
+  </line>
+  <line no="637">
+    <token name="T_INLINE_HTML">                                removeClass(tabNavigation[k], 'active');</token>
+  </line>
+  <line no="638">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="639"/>
+  <line no="640">
+    <token name="T_INLINE_HTML">                            addClass(activeTab, 'active');</token>
+  </line>
+  <line no="641">
+    <token name="T_INLINE_HTML">                            var activeTabId = activeTab.getAttribute('data-tab-id');</token>
+  </line>
+  <line no="642">
+    <token name="T_INLINE_HTML">                            document.getElementById(activeTabId).className = 'block';</token>
+  </line>
+  <line no="643">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="644">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="645"/>
+  <line no="646">
+    <token name="T_INLINE_HTML">                    tabGroups[i].setAttribute('data-processed', 'true');</token>
+  </line>
+  <line no="647">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="648">
+    <token name="T_INLINE_HTML">            },</token>
+  </line>
+  <line no="649"/>
+  <line no="650">
+    <token name="T_INLINE_HTML">            createToggles: function() {</token>
+  </line>
+  <line no="651">
+    <token name="T_INLINE_HTML">                var toggles = document.querySelectorAll('.sf-toggle:not([data-processed=true])');</token>
+  </line>
+  <line no="652"/>
+  <line no="653">
+    <token name="T_INLINE_HTML">                for (var i = 0; i &lt; toggles.length; i++) {</token>
+  </line>
+  <line no="654">
+    <token name="T_INLINE_HTML">                    var elementSelector = toggles[i].getAttribute('data-toggle-selector');</token>
+  </line>
+  <line no="655">
+    <token name="T_INLINE_HTML">                    var element = document.querySelector(elementSelector);</token>
+  </line>
+  <line no="656"/>
+  <line no="657">
+    <token name="T_INLINE_HTML">                    addClass(element, 'sf-toggle-content');</token>
+  </line>
+  <line no="658"/>
+  <line no="659">
+    <token name="T_INLINE_HTML">                    if (toggles[i].hasAttribute('data-toggle-initial') &amp;&amp; toggles[i].getAttribute('data-toggle-initial') == 'display') {</token>
+  </line>
+  <line no="660">
+    <token name="T_INLINE_HTML">                        addClass(toggles[i], 'sf-toggle-on');</token>
+  </line>
+  <line no="661">
+    <token name="T_INLINE_HTML">                        addClass(element, 'sf-toggle-visible');</token>
+  </line>
+  <line no="662">
+    <token name="T_INLINE_HTML">                    } else {</token>
+  </line>
+  <line no="663">
+    <token name="T_INLINE_HTML">                        addClass(toggles[i], 'sf-toggle-off');</token>
+  </line>
+  <line no="664">
+    <token name="T_INLINE_HTML">                        addClass(element, 'sf-toggle-hidden');</token>
+  </line>
+  <line no="665">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="666"/>
+  <line no="667">
+    <token name="T_INLINE_HTML">                    addEventListener(toggles[i], 'click', function(e) {</token>
+  </line>
+  <line no="668">
+    <token name="T_INLINE_HTML">                        e.preventDefault();</token>
+  </line>
+  <line no="669"/>
+  <line no="670">
+    <token name="T_INLINE_HTML">                        if ('' !== window.getSelection().toString()) {</token>
+  </line>
+  <line no="671">
+    <token name="T_INLINE_HTML">                            /* Don't do anything on text selection */</token>
+  </line>
+  <line no="672">
+    <token name="T_INLINE_HTML">                            return;</token>
+  </line>
+  <line no="673">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="674"/>
+  <line no="675">
+    <token name="T_INLINE_HTML">                        var toggle = e.target || e.srcElement;</token>
+  </line>
+  <line no="676"/>
+  <line no="677">
+    <token name="T_INLINE_HTML">                        /* needed because when the toggle contains HTML contents, user can click */</token>
+  </line>
+  <line no="678">
+    <token name="T_INLINE_HTML">                        /* on any of those elements instead of their parent '.sf-toggle' element */</token>
+  </line>
+  <line no="679">
+    <token name="T_INLINE_HTML">                        while (!hasClass(toggle, 'sf-toggle')) {</token>
+  </line>
+  <line no="680">
+    <token name="T_INLINE_HTML">                            toggle = toggle.parentNode;</token>
+  </line>
+  <line no="681">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="682"/>
+  <line no="683">
+    <token name="T_INLINE_HTML">                        var element = document.querySelector(toggle.getAttribute('data-toggle-selector'));</token>
+  </line>
+  <line no="684"/>
+  <line no="685">
+    <token name="T_INLINE_HTML">                        toggleClass(toggle, 'sf-toggle-on');</token>
+  </line>
+  <line no="686">
+    <token name="T_INLINE_HTML">                        toggleClass(toggle, 'sf-toggle-off');</token>
+  </line>
+  <line no="687">
+    <token name="T_INLINE_HTML">                        toggleClass(element, 'sf-toggle-hidden');</token>
+  </line>
+  <line no="688">
+    <token name="T_INLINE_HTML">                        toggleClass(element, 'sf-toggle-visible');</token>
+  </line>
+  <line no="689"/>
+  <line no="690">
+    <token name="T_INLINE_HTML">                        /* the toggle doesn't change its contents when clicking on it */</token>
+  </line>
+  <line no="691">
+    <token name="T_INLINE_HTML">                        if (!toggle.hasAttribute('data-toggle-alt-content')) {</token>
+  </line>
+  <line no="692">
+    <token name="T_INLINE_HTML">                            return;</token>
+  </line>
+  <line no="693">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="694"/>
+  <line no="695">
+    <token name="T_INLINE_HTML">                        if (!toggle.hasAttribute('data-toggle-original-content')) {</token>
+  </line>
+  <line no="696">
+    <token name="T_INLINE_HTML">                            toggle.setAttribute('data-toggle-original-content', toggle.innerHTML);</token>
+  </line>
+  <line no="697">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="698"/>
+  <line no="699">
+    <token name="T_INLINE_HTML">                        var currentContent = toggle.innerHTML;</token>
+  </line>
+  <line no="700">
+    <token name="T_INLINE_HTML">                        var originalContent = toggle.getAttribute('data-toggle-original-content');</token>
+  </line>
+  <line no="701">
+    <token name="T_INLINE_HTML">                        var altContent = toggle.getAttribute('data-toggle-alt-content');</token>
+  </line>
+  <line no="702">
+    <token name="T_INLINE_HTML">                        toggle.innerHTML = currentContent !== altContent ? altContent : originalContent;</token>
+  </line>
+  <line no="703">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="704"/>
+  <line no="705">
+    <token name="T_INLINE_HTML">                    /* Prevents from disallowing clicks on links inside toggles */</token>
+  </line>
+  <line no="706">
+    <token name="T_INLINE_HTML">                    var toggleLinks = toggles[i].querySelectorAll('a');</token>
+  </line>
+  <line no="707">
+    <token name="T_INLINE_HTML">                    for (var j = 0; j &lt; toggleLinks.length; j++) {</token>
+  </line>
+  <line no="708">
+    <token name="T_INLINE_HTML">                        addEventListener(toggleLinks[j], 'click', function(e) {</token>
+  </line>
+  <line no="709">
+    <token name="T_INLINE_HTML">                            e.stopPropagation();</token>
+  </line>
+  <line no="710">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="711">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="712"/>
+  <line no="713">
+    <token name="T_INLINE_HTML">                    toggles[i].setAttribute('data-processed', 'true');</token>
+  </line>
+  <line no="714">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="715">
+    <token name="T_INLINE_HTML">            },</token>
+  </line>
+  <line no="716"/>
+  <line no="717">
+    <token name="T_INLINE_HTML">            createFilters: function() {</token>
+  </line>
+  <line no="718">
+    <token name="T_INLINE_HTML">                document.querySelectorAll('[data-filters] [data-filter]').forEach(function (filter) {</token>
+  </line>
+  <line no="719">
+    <token name="T_INLINE_HTML">                    var filters = filter.closest('[data-filters]'),</token>
+  </line>
+  <line no="720">
+    <token name="T_INLINE_HTML">                        type = 'choice',</token>
+  </line>
+  <line no="721">
+    <token name="T_INLINE_HTML">                        name = filter.dataset.filter,</token>
+  </line>
+  <line no="722">
+    <token name="T_INLINE_HTML">                        ucName = name.charAt(0).toUpperCase()+name.slice(1),</token>
+  </line>
+  <line no="723">
+    <token name="T_INLINE_HTML">                        list = document.createElement('ul'),</token>
+  </line>
+  <line no="724">
+    <token name="T_INLINE_HTML">                        values = filters.dataset['filter'+ucName] || filters.querySelectorAll('[data-filter-'+name+']'),</token>
+  </line>
+  <line no="725">
+    <token name="T_INLINE_HTML">                        labels = {},</token>
+  </line>
+  <line no="726">
+    <token name="T_INLINE_HTML">                        defaults = null,</token>
+  </line>
+  <line no="727">
+    <token name="T_INLINE_HTML">                        indexed = {},</token>
+  </line>
+  <line no="728">
+    <token name="T_INLINE_HTML">                        processed = {};</token>
+  </line>
+  <line no="729">
+    <token name="T_INLINE_HTML">                    if (typeof values === 'string') {</token>
+  </line>
+  <line no="730">
+    <token name="T_INLINE_HTML">                        type = 'level';</token>
+  </line>
+  <line no="731">
+    <token name="T_INLINE_HTML">                        labels = values.split(',');</token>
+  </line>
+  <line no="732">
+    <token name="T_INLINE_HTML">                        values = values.toLowerCase().split(',');</token>
+  </line>
+  <line no="733">
+    <token name="T_INLINE_HTML">                        defaults = values.length - 1;</token>
+  </line>
+  <line no="734">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="735">
+    <token name="T_INLINE_HTML">                    addClass(list, 'filter-list');</token>
+  </line>
+  <line no="736">
+    <token name="T_INLINE_HTML">                    addClass(list, 'filter-list-'+type);</token>
+  </line>
+  <line no="737">
+    <token name="T_INLINE_HTML">                    values.forEach(function (value, i) {</token>
+  </line>
+  <line no="738">
+    <token name="T_INLINE_HTML">                        if (value instanceof HTMLElement) {</token>
+  </line>
+  <line no="739">
+    <token name="T_INLINE_HTML">                            value = value.dataset['filter'+ucName];</token>
+  </line>
+  <line no="740">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="741">
+    <token name="T_INLINE_HTML">                        if (value in processed) {</token>
+  </line>
+  <line no="742">
+    <token name="T_INLINE_HTML">                            return;</token>
+  </line>
+  <line no="743">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="744">
+    <token name="T_INLINE_HTML">                        var option = document.createElement('li'),</token>
+  </line>
+  <line no="745">
+    <token name="T_INLINE_HTML">                            label = i in labels ? labels[i] : value,</token>
+  </line>
+  <line no="746">
+    <token name="T_INLINE_HTML">                            active = false,</token>
+  </line>
+  <line no="747">
+    <token name="T_INLINE_HTML">                            matches;</token>
+  </line>
+  <line no="748">
+    <token name="T_INLINE_HTML">                        if ('' === label) {</token>
+  </line>
+  <line no="749">
+    <token name="T_INLINE_HTML">                            option.innerHTML = '&lt;em&gt;(none)&lt;/em&gt;';</token>
+  </line>
+  <line no="750">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="751">
+    <token name="T_INLINE_HTML">                            option.innerText = label;</token>
+  </line>
+  <line no="752">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="753">
+    <token name="T_INLINE_HTML">                        option.dataset.filter = value;</token>
+  </line>
+  <line no="754">
+    <token name="T_INLINE_HTML">                        option.setAttribute('title', 1 === (matches = filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').length) ? 'Matches 1 row' : 'Matches '+matches+' rows');</token>
+  </line>
+  <line no="755">
+    <token name="T_INLINE_HTML">                        indexed[value] = i;</token>
+  </line>
+  <line no="756">
+    <token name="T_INLINE_HTML">                        list.appendChild(option);</token>
+  </line>
+  <line no="757">
+    <token name="T_INLINE_HTML">                        addEventListener(option, 'click', function () {</token>
+  </line>
+  <line no="758">
+    <token name="T_INLINE_HTML">                            if ('choice' === type) {</token>
+  </line>
+  <line no="759">
+    <token name="T_INLINE_HTML">                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {</token>
+  </line>
+  <line no="760">
+    <token name="T_INLINE_HTML">                                    if (option.dataset.filter === row.dataset['filter'+ucName]) {</token>
+  </line>
+  <line no="761">
+    <token name="T_INLINE_HTML">                                        toggleClass(row, 'filter-hidden-'+name);</token>
+  </line>
+  <line no="762">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="763">
+    <token name="T_INLINE_HTML">                                });</token>
+  </line>
+  <line no="764">
+    <token name="T_INLINE_HTML">                                toggleClass(option, 'active');</token>
+  </line>
+  <line no="765">
+    <token name="T_INLINE_HTML">                            } else if ('level' === type) {</token>
+  </line>
+  <line no="766">
+    <token name="T_INLINE_HTML">                                if (i === this.parentNode.querySelectorAll('.active').length - 1) {</token>
+  </line>
+  <line no="767">
+    <token name="T_INLINE_HTML">                                    return;</token>
+  </line>
+  <line no="768">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="769">
+    <token name="T_INLINE_HTML">                                this.parentNode.querySelectorAll('li').forEach(function (currentOption, j) {</token>
+  </line>
+  <line no="770">
+    <token name="T_INLINE_HTML">                                    if (j &lt;= i) {</token>
+  </line>
+  <line no="771">
+    <token name="T_INLINE_HTML">                                        addClass(currentOption, 'active');</token>
+  </line>
+  <line no="772">
+    <token name="T_INLINE_HTML">                                        if (i === j) {</token>
+  </line>
+  <line no="773">
+    <token name="T_INLINE_HTML">                                            addClass(currentOption, 'last-active');</token>
+  </line>
+  <line no="774">
+    <token name="T_INLINE_HTML">                                        } else {</token>
+  </line>
+  <line no="775">
+    <token name="T_INLINE_HTML">                                            removeClass(currentOption, 'last-active');</token>
+  </line>
+  <line no="776">
+    <token name="T_INLINE_HTML">                                        }</token>
+  </line>
+  <line no="777">
+    <token name="T_INLINE_HTML">                                    } else {</token>
+  </line>
+  <line no="778">
+    <token name="T_INLINE_HTML">                                        removeClass(currentOption, 'active');</token>
+  </line>
+  <line no="779">
+    <token name="T_INLINE_HTML">                                        removeClass(currentOption, 'last-active');</token>
+  </line>
+  <line no="780">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="781">
+    <token name="T_INLINE_HTML">                                });</token>
+  </line>
+  <line no="782">
+    <token name="T_INLINE_HTML">                                filters.querySelectorAll('[data-filter-'+name+']').forEach(function (row) {</token>
+  </line>
+  <line no="783">
+    <token name="T_INLINE_HTML">                                    if (i &lt; indexed[row.dataset['filter'+ucName]]) {</token>
+  </line>
+  <line no="784">
+    <token name="T_INLINE_HTML">                                        addClass(row, 'filter-hidden-'+name);</token>
+  </line>
+  <line no="785">
+    <token name="T_INLINE_HTML">                                    } else {</token>
+  </line>
+  <line no="786">
+    <token name="T_INLINE_HTML">                                        removeClass(row, 'filter-hidden-'+name);</token>
+  </line>
+  <line no="787">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="788">
+    <token name="T_INLINE_HTML">                                });</token>
+  </line>
+  <line no="789">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="790">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="791">
+    <token name="T_INLINE_HTML">                        if ('choice' === type) {</token>
+  </line>
+  <line no="792">
+    <token name="T_INLINE_HTML">                            active = null === defaults || 0 &lt;= defaults.indexOf(value);</token>
+  </line>
+  <line no="793">
+    <token name="T_INLINE_HTML">                        } else if ('level' === type) {</token>
+  </line>
+  <line no="794">
+    <token name="T_INLINE_HTML">                            active = i &lt;= defaults;</token>
+  </line>
+  <line no="795">
+    <token name="T_INLINE_HTML">                            if (active &amp;&amp; i === defaults) {</token>
+  </line>
+  <line no="796">
+    <token name="T_INLINE_HTML">                                addClass(option, 'last-active');</token>
+  </line>
+  <line no="797">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="798">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="799">
+    <token name="T_INLINE_HTML">                        if (active) {</token>
+  </line>
+  <line no="800">
+    <token name="T_INLINE_HTML">                            addClass(option, 'active');</token>
+  </line>
+  <line no="801">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="802">
+    <token name="T_INLINE_HTML">                            filters.querySelectorAll('[data-filter-'+name+'="'+value+'"]').forEach(function (row) {</token>
+  </line>
+  <line no="803">
+    <token name="T_INLINE_HTML">                                toggleClass(row, 'filter-hidden-'+name);</token>
+  </line>
+  <line no="804">
+    <token name="T_INLINE_HTML">                            });</token>
+  </line>
+  <line no="805">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="806">
+    <token name="T_INLINE_HTML">                        processed[value] = true;</token>
+  </line>
+  <line no="807">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="808"/>
+  <line no="809">
+    <token name="T_INLINE_HTML">                    if (1 &lt; list.childNodes.length) {</token>
+  </line>
+  <line no="810">
+    <token name="T_INLINE_HTML">                        filter.appendChild(list);</token>
+  </line>
+  <line no="811">
+    <token name="T_INLINE_HTML">                        filter.dataset.filtered = '';</token>
+  </line>
+  <line no="812">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="813">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="814">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="815">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="816">
+    <token name="T_INLINE_HTML">    })();</token>
+  </line>
+  <line no="817"/>
+  <line no="818">
+    <token name="T_INLINE_HTML">    Sfjs.addEventListener(document, 'DOMContentLoaded', function() {</token>
+  </line>
+  <line no="819">
+    <token name="T_INLINE_HTML">        Sfjs.createTabs();</token>
+  </line>
+  <line no="820">
+    <token name="T_INLINE_HTML">        Sfjs.createToggles();</token>
+  </line>
+  <line no="821">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="822">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="823"/>
+</source>

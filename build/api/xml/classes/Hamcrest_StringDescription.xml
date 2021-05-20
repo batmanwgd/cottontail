@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Hamcrest\StringDescription" namespace="Hamcrest" name="StringDescription" abstract="false" final="false" start="11" end="57">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest" file="StringDescription.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/StringDescription.php" size="1123" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="c179df707c4992d79498b6adf7ee81e42e6f6bb7" relative="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/StringDescription.php"/>
+  <docblock>
+    <description compact="A {@link Hamcrest\Description} that is stored as a string."/>
+  </docblock>
+  <extends full="Hamcrest\BaseDescription" namespace="Hamcrest" name="BaseDescription" unresolved="true"/>
+  <member name="_out" visibility="private" static="false" line="14"/>
+  <constructor name="__construct" start="16" end="19" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="out" byreference="false" type="string" default="''"/>
+  </constructor>
+  <method name="__toString" start="21" end="24" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="toString" start="36" end="41" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return the description of a {@link Hamcrest\SelfDescribing} object as a String."/>
+      <param type="object" variable="$selfDescribing">The object to be described.<type full="\Hamcrest\SelfDescribing" namespace="\Hamcrest" name="SelfDescribing"/></param>
+      <return type="string">The description of the object.</return>
+    </docblock>
+    <parameter name="selfDescribing" byreference="false" type="object">
+      <type full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+    </parameter>
+  </method>
+  <method name="asString" start="46" end="49" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Alias for {@link toString()}."/>
+    </docblock>
+    <parameter name="selfDescribing" byreference="false" type="object">
+      <type full="Hamcrest\SelfDescribing" namespace="Hamcrest" name="SelfDescribing"/>
+    </parameter>
+  </method>
+  <method name="append" start="53" end="56" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+</class>

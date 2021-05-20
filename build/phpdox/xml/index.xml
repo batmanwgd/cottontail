@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail">
+  <namespace name="Hamcrest">
+    <class name="BaseMatcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/BaseMatcher.php" description="BaseClass for all Matcher implementations." xml="classes/Hamcrest_BaseMatcher.xml"/>
+    <interface name="SelfDescribing" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/SelfDescribing.php" description="The ability of an object to describe itself." xml="interfaces/Hamcrest_SelfDescribing.xml"/>
+    <class name="DiagnosingMatcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/DiagnosingMatcher.php" description="Official documentation for this class is missing." xml="classes/Hamcrest_DiagnosingMatcher.xml"/>
+    <class name="TypeSafeDiagnosingMatcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeDiagnosingMatcher.php" description="Convenient base class for Matchers that require a value of a specific type." xml="classes/Hamcrest_TypeSafeDiagnosingMatcher.xml"/>
+    <class name="FeatureMatcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/FeatureMatcher.php" description="Supporting class for matching a feature of an object. Implement &lt;code&gt;featureValueOf()&lt;/code&gt; in a subclass to pull out the feature to be matched against." xml="classes/Hamcrest_FeatureMatcher.xml"/>
+    <interface name="Matcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Matcher.php" description="A matcher over acceptable values." xml="interfaces/Hamcrest_Matcher.xml"/>
+    <interface name="Description" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/Description.php" description="A description of a Matcher. A Matcher will describe itself to a description which can later be used for reporting." xml="interfaces/Hamcrest_Description.xml"/>
+    <class name="NullDescription" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/NullDescription.php" description="Null implementation of {@link Hamcrest\Description}." xml="classes/Hamcrest_NullDescription.xml"/>
+    <class name="TypeSafeMatcher" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/TypeSafeMatcher.php" description="Convenient base class for Matchers that require a value of a specific type." xml="classes/Hamcrest_TypeSafeMatcher.xml"/>
+    <class name="StringDescription" src="vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest/StringDescription.php" description="A {@link Hamcrest\Description} that is stored as a string." xml="classes/Hamcrest_StringDescription.xml"/>
+  </namespace>
+  <namespace name="">
+    <class name="FactoryFile" src="vendor/hamcrest/hamcrest-php/generator/FactoryFile.php" xml="classes/FactoryFile.xml"/>
+    <class name="GlobalFunctionFile" src="vendor/hamcrest/hamcrest-php/generator/GlobalFunctionFile.php" xml="classes/GlobalFunctionFile.xml"/>
+    <class name="FactoryMethod" src="vendor/hamcrest/hamcrest-php/generator/FactoryMethod.php" description="Represents a single static factory method from a {@link Matcher} class." xml="classes/FactoryMethod.xml"/>
+    <class name="StaticMethodFile" src="vendor/hamcrest/hamcrest-php/generator/StaticMethodFile.php" xml="classes/StaticMethodFile.xml"/>
+    <class name="FactoryClass" src="vendor/hamcrest/hamcrest-php/generator/FactoryClass.php" xml="classes/FactoryClass.xml"/>
+    <class name="FactoryParameter" src="vendor/hamcrest/hamcrest-php/generator/FactoryParameter.php" xml="classes/FactoryParameter.xml"/>
+    <class name="FactoryCall" src="vendor/hamcrest/hamcrest-php/generator/FactoryCall.php" xml="classes/FactoryCall.xml"/>
+    <class name="FactoryGenerator" src="vendor/hamcrest/hamcrest-php/generator/FactoryGenerator.php" description="Controls the process of extracting @factory doctags and generating factory method files." xml="classes/FactoryGenerator.xml"/>
+    <interface name="Packing" src="vendor/phpdocumentor/reflection/tests/integration/data/Packing.php" description="This file is part of phpDocumentor." xml="interfaces/Packing.xml"/>
+    <class name="Pizza" src="vendor/phpdocumentor/reflection/tests/integration/data/Pizza.php" description="Pizza base class" xml="classes/Pizza.xml"/>
+    <interface name="Swift_IdGenerator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/IdGenerator.php" description="Message ID generator." xml="interfaces/Swift_IdGenerator.xml"/>
+    <interface name="Swift_CharacterReader" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReader.php" description="Analyzes characters for a specific character set." xml="interfaces/Swift_CharacterReader.xml"/>
+    <interface name="Swift_CharacterStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterStream.php" description="An abstract means of reading and writing data in terms of characters as opposed to bytes." xml="interfaces/Swift_CharacterStream.xml"/>
+    <interface name="Swift_Signer" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signer.php" description="Base Class of Signer Infrastructure." xml="interfaces/Swift_Signer.xml"/>
+    <interface name="Swift_Spool" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Spool.php" description="Interface for spools." xml="interfaces/Swift_Spool.xml"/>
+    <class name="Swift_MemorySpool" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/MemorySpool.php" description="Stores Messages in memory." xml="classes/Swift_MemorySpool.xml"/>
+    <class name="Swift_Mailer" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php" description="Swift Mailer class." xml="classes/Swift_Mailer.xml"/>
+    <class name="Swift_Transport_Esmtp_SmtpUtf8Handler" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/SmtpUtf8Handler.php" description="An ESMTP handler for SMTPUTF8 support (RFC 6531)." xml="classes/Swift_Transport_Esmtp_SmtpUtf8Handler.xml"/>
+    <class name="Swift_Transport_Esmtp_Auth_XOAuth2Authenticator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/XOAuth2Authenticator.php" description="Handles XOAUTH2 authentication." xml="classes/Swift_Transport_Esmtp_Auth_XOAuth2Authenticator.xml"/>
+    <class name="Swift_Transport_Esmtp_Auth_LoginAuthenticator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/LoginAuthenticator.php" description="Handles LOGIN authentication." xml="classes/Swift_Transport_Esmtp_Auth_LoginAuthenticator.xml"/>
+    <interface name="Swift_Transport_Esmtp_Authenticator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/Authenticator.php" description="An Authentication mechanism." xml="interfaces/Swift_Transport_Esmtp_Authenticator.xml"/>
+    <class name="Swift_Transport_Esmtp_EightBitMimeHandler" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/EightBitMimeHandler.php" description="An ESMTP handler for 8BITMIME support (RFC 6152)." xml="classes/Swift_Transport_Esmtp_EightBitMimeHandler.xml"/>
+    <interface name="Swift_Transport_SmtpAgent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SmtpAgent.php" description="Wraps an IoBuffer to send/receive SMTP commands/responses." xml="interfaces/Swift_Transport_SmtpAgent.xml"/>
+    <interface name="Swift_Transport_IoBuffer" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/IoBuffer.php" description="Buffers input and output to a resource." xml="interfaces/Swift_Transport_IoBuffer.xml"/>
+    <class name="Swift_Transport_SpoolTransport" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SpoolTransport.php" description="Stores Messages in a queue." xml="classes/Swift_Transport_SpoolTransport.xml"/>
+    <interface name="Swift_Transport_EsmtpHandler" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpHandler.php" description="An ESMTP handler." xml="interfaces/Swift_Transport_EsmtpHandler.xml"/>
+    <interface name="Swift_ReplacementFilterFactory" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/ReplacementFilterFactory.php" description="Creates StreamFilters." xml="interfaces/Swift_ReplacementFilterFactory.xml"/>
+    <class name="Swift_AddressEncoderException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoderException.php" description="AddressEncoderException when the specified email address is in a format that cannot be encoded by a given address encoder." xml="classes/Swift_AddressEncoderException.xml"/>
+    <interface name="Swift_Encoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder.php" description="Interface for all Encoder schemes." xml="interfaces/Swift_Encoder.xml"/>
+    <interface name="Swift_Plugins_Sleeper" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Sleeper.php" description="Sleeps for a duration of time." xml="interfaces/Swift_Plugins_Sleeper.xml"/>
+    <interface name="Swift_Plugins_Logger" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Logger.php" description="Logs events in the Transport system." xml="interfaces/Swift_Plugins_Logger.xml"/>
+    <class name="Swift_Plugins_Pop_Pop3Exception" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Exception.php" description="Pop3Exception thrown when an error occurs connecting to a POP3 host." xml="classes/Swift_Plugins_Pop_Pop3Exception.xml"/>
+    <interface name="Swift_Plugins_Pop_Pop3Connection" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Pop/Pop3Connection.php" description="Pop3Connection interface for connecting and disconnecting to a POP3 host." xml="interfaces/Swift_Plugins_Pop_Pop3Connection.xml"/>
+    <class name="Swift_Plugins_Loggers_EchoLogger" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Loggers/EchoLogger.php" description="Prints all log messages in real time." xml="classes/Swift_Plugins_Loggers_EchoLogger.xml"/>
+    <class name="Swift_Plugins_ThrottlerPlugin" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ThrottlerPlugin.php" description="Throttles the rate at which emails are sent." xml="classes/Swift_Plugins_ThrottlerPlugin.xml"/>
+    <interface name="Swift_Plugins_Decorator_Replacements" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Decorator/Replacements.php" description="Allows customization of Messages on-the-fly." xml="interfaces/Swift_Plugins_Decorator_Replacements.xml"/>
+    <class name="Swift_Plugins_PopBeforeSmtpPlugin" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/PopBeforeSmtpPlugin.php" description="Makes sure a connection to a POP3 host has been established prior to connecting to SMTP." xml="classes/Swift_Plugins_PopBeforeSmtpPlugin.xml"/>
+    <interface name="Swift_Plugins_Timer" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Timer.php" description="Provides timestamp data." xml="interfaces/Swift_Plugins_Timer.xml"/>
+    <class name="Swift_Plugins_AntiFloodPlugin" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/AntiFloodPlugin.php" description="Reduces network flooding when sending large amounts of mail." xml="classes/Swift_Plugins_AntiFloodPlugin.xml"/>
+    <class name="Swift_Plugins_ImpersonatePlugin" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/ImpersonatePlugin.php" description="Replaces the sender of a message." xml="classes/Swift_Plugins_ImpersonatePlugin.xml"/>
+    <class name="Swift_Plugins_Reporters_HitReporter" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HitReporter.php" description="A reporter which &quot;collects&quot; failures for the Reporter plugin." xml="classes/Swift_Plugins_Reporters_HitReporter.xml"/>
+    <class name="Swift_Plugins_Reporters_HtmlReporter" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" description="A HTML output reporter for the Reporter plugin." xml="classes/Swift_Plugins_Reporters_HtmlReporter.xml"/>
+    <interface name="Swift_Plugins_Reporter" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporter.php" description="The Reporter plugin sends pass/fail notification to a Reporter." xml="interfaces/Swift_Plugins_Reporter.xml"/>
+    <interface name="Swift_FileStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/FileStream.php" description="An OutputByteStream which specifically reads from a file." xml="interfaces/Swift_FileStream.xml"/>
+    <class name="Swift_Encoder_Base64Encoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Encoder/Base64Encoder.php" description="Handles Base 64 Encoding in Swift Mailer." xml="classes/Swift_Encoder_Base64Encoder.xml"/>
+    <class name="Swift_IoException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/IoException.php" description="I/O Exception class." xml="classes/Swift_IoException.xml"/>
+    <class name="Swift_Mailer_ArrayRecipientIterator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/ArrayRecipientIterator.php" description="Wraps a standard PHP array in an iterator." xml="classes/Swift_Mailer_ArrayRecipientIterator.xml"/>
+    <interface name="Swift_Mailer_RecipientIterator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer/RecipientIterator.php" description="Provides an abstract way of specifying recipients for batch sending." xml="interfaces/Swift_Mailer_RecipientIterator.xml"/>
+    <interface name="Swift_Filterable" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Filterable.php" description="Allows StreamFilters to operate on a stream." xml="interfaces/Swift_Filterable.xml"/>
+    <class name="Swift_ByteStream_AbstractFilterableInputStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" description="Provides the base functionality for an InputStream supporting filters." xml="classes/Swift_ByteStream_AbstractFilterableInputStream.xml"/>
+    <interface name="Swift_CharacterReaderFactory" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/CharacterReaderFactory.php" description="A factory for creating CharacterReaders." xml="interfaces/Swift_CharacterReaderFactory.xml"/>
+    <interface name="Swift_Transport" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport.php" description="Sends Messages via an abstract Transport subsystem." xml="interfaces/Swift_Transport.xml"/>
+    <class name="Swift_TransportException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/TransportException.php" description="TransportException thrown when an error occurs in the Transport subsystem." xml="classes/Swift_TransportException.xml"/>
+    <class name="Swift_DependencyException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/DependencyException.php" description="DependencyException gets thrown when a requested dependency is missing." xml="classes/Swift_DependencyException.xml"/>
+    <interface name="Swift_OutputByteStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/OutputByteStream.php" description="An abstract means of reading data." xml="interfaces/Swift_OutputByteStream.xml"/>
+    <class name="Swift_ConfigurableSpool" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/ConfigurableSpool.php" description="Base class for Spools (implements time and message limits)." xml="classes/Swift_ConfigurableSpool.xml"/>
+    <class name="Swift_Mime_IdGenerator" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/IdGenerator.php" description="Message ID generator." xml="classes/Swift_Mime_IdGenerator.xml"/>
+    <class name="Swift_Mime_EmbeddedFile" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EmbeddedFile.php" description="An embedded file, in a multipart message." xml="classes/Swift_Mime_EmbeddedFile.xml"/>
+    <class name="Swift_Mime_HeaderEncoder_Base64HeaderEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder/Base64HeaderEncoder.php" description="Handles Base64 (B) Header Encoding in Swift Mailer." xml="classes/Swift_Mime_HeaderEncoder_Base64HeaderEncoder.xml"/>
+    <class name="Swift_Mime_ContentEncoder_QpContentEncoderProxy" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/QpContentEncoderProxy.php" description="Proxy for quoted-printable content encoders." xml="classes/Swift_Mime_ContentEncoder_QpContentEncoderProxy.xml"/>
+    <class name="Swift_Mime_ContentEncoder_NullContentEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/NullContentEncoder.php" description="Handles the case where the email body is already encoded and you just need specify the correct encoding without actually changing the encoding of the body." xml="classes/Swift_Mime_ContentEncoder_NullContentEncoder.xml"/>
+    <class name="Swift_Mime_ContentEncoder_RawContentEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder/RawContentEncoder.php" description="Handles raw Transfer Encoding in Swift Mailer." xml="classes/Swift_Mime_ContentEncoder_RawContentEncoder.xml"/>
+    <interface name="Swift_Mime_HeaderEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/HeaderEncoder.php" description="Interface for all Header Encoding schemes." xml="interfaces/Swift_Mime_HeaderEncoder.xml"/>
+    <interface name="Swift_Mime_Header" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php" description="A MIME Header." xml="interfaces/Swift_Mime_Header.xml"/>
+    <class name="Swift_Mime_Headers_UnstructuredHeader" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" description="A Simple MIME Header." xml="classes/Swift_Mime_Headers_UnstructuredHeader.xml"/>
+    <class name="Swift_Mime_Headers_DateHeader" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/DateHeader.php" description="A Date MIME Header for Swift Mailer." xml="classes/Swift_Mime_Headers_DateHeader.xml"/>
+    <class name="Swift_Mime_Headers_OpenDKIMHeader" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/OpenDKIMHeader.php" description="An OpenDKIM Specific Header using only raw header datas without encoding." xml="classes/Swift_Mime_Headers_OpenDKIMHeader.xml"/>
+    <interface name="Swift_Mime_EncodingObserver" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EncodingObserver.php" description="Observes changes for a Mime entity's ContentEncoder." xml="interfaces/Swift_Mime_EncodingObserver.xml"/>
+    <interface name="Swift_Mime_CharsetObserver" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/CharsetObserver.php" description="Observes changes in an Mime entity's character set." xml="interfaces/Swift_Mime_CharsetObserver.xml"/>
+    <interface name="Swift_Mime_ContentEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/ContentEncoder.php" description="Interface for all Transfer Encoding schemes." xml="interfaces/Swift_Mime_ContentEncoder.xml"/>
+    <class name="Swift_RfcComplianceException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/RfcComplianceException.php" description="RFC Compliance Exception class." xml="classes/Swift_RfcComplianceException.xml"/>
+    <interface name="Swift_KeyCache" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache.php" description="Provides a mechanism for storing data using two keys." xml="interfaces/Swift_KeyCache.xml"/>
+    <interface name="Swift_InputByteStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/InputByteStream.php" description="An abstract means of writing data." xml="interfaces/Swift_InputByteStream.xml"/>
+    <class name="Swift_Events_SendEvent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendEvent.php" description="Generated when a message is being sent." xml="classes/Swift_Events_SendEvent.xml"/>
+    <class name="Swift_Events_TransportChangeEvent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeEvent.php" description="Generated when the state of a Transport is changed (i.e. stopped/started)." xml="classes/Swift_Events_TransportChangeEvent.xml"/>
+    <interface name="Swift_Events_Event" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/Event.php" description="The minimum interface for an Event." xml="interfaces/Swift_Events_Event.xml"/>
+    <interface name="Swift_Events_EventListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventListener.php" description="An identity interface which all EventListeners must extend." xml="interfaces/Swift_Events_EventListener.xml"/>
+    <interface name="Swift_Events_ResponseListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseListener.php" description="Listens for responses from a remote SMTP server." xml="interfaces/Swift_Events_ResponseListener.xml"/>
+    <class name="Swift_Events_ResponseEvent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/ResponseEvent.php" description="Generated when a response is received on a SMTP connection." xml="classes/Swift_Events_ResponseEvent.xml"/>
+    <class name="Swift_Events_TransportExceptionEvent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportExceptionEvent.php" description="Generated when a TransportException is thrown from the Transport system." xml="classes/Swift_Events_TransportExceptionEvent.xml"/>
+    <interface name="Swift_Events_EventDispatcher" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventDispatcher.php" description="Interface for the EventDispatcher which handles the event dispatching layer." xml="interfaces/Swift_Events_EventDispatcher.xml"/>
+    <class name="Swift_Events_CommandEvent" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/CommandEvent.php" description="Generated when a command is sent over an SMTP connection." xml="classes/Swift_Events_CommandEvent.xml"/>
+    <interface name="Swift_Events_TransportExceptionListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportExceptionListener.php" description="Listens for Exceptions thrown from within the Transport system." xml="interfaces/Swift_Events_TransportExceptionListener.xml"/>
+    <class name="Swift_Events_EventObject" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventObject.php" description="A base Event which all Event classes inherit from." xml="classes/Swift_Events_EventObject.xml"/>
+    <interface name="Swift_Events_SendListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/SendListener.php" description="Listens for Messages being sent from within the Transport system." xml="interfaces/Swift_Events_SendListener.xml"/>
+    <interface name="Swift_Events_TransportChangeListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeListener.php" description="Listens for changes within the Transport system." xml="interfaces/Swift_Events_TransportChangeListener.xml"/>
+    <interface name="Swift_Events_CommandListener" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/CommandListener.php" description="Listens for Transports to send commands to the server." xml="interfaces/Swift_Events_CommandListener.xml"/>
+    <interface name="Swift_StreamFilter" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilter.php" description="Processes bytes as they pass through a stream and performs filtering." xml="interfaces/Swift_StreamFilter.xml"/>
+    <class name="Swift_StreamFilters_StringReplacementFilterFactory" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilterFactory.php" description="Creates filters for replacing needles in a string buffer." xml="classes/Swift_StreamFilters_StringReplacementFilterFactory.xml"/>
+    <class name="Swift_StreamFilters_StringReplacementFilter" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/StreamFilters/StringReplacementFilter.php" description="Processes bytes as they pass through a buffer and replaces sequences in it." xml="classes/Swift_StreamFilters_StringReplacementFilter.xml"/>
+    <class name="Swift_Preferences" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Preferences.php" description="Changes some global preference settings in Swift Mailer." xml="classes/Swift_Preferences.xml"/>
+    <class name="Swift_KeyCache_SimpleKeyCacheInputStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/SimpleKeyCacheInputStream.php" description="Writes data to a KeyCache using a stream." xml="classes/Swift_KeyCache_SimpleKeyCacheInputStream.xml"/>
+    <class name="Swift_KeyCache_NullKeyCache" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/NullKeyCache.php" description="A null KeyCache that does not cache at all." xml="classes/Swift_KeyCache_NullKeyCache.xml"/>
+    <interface name="Swift_KeyCache_KeyCacheInputStream" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/KeyCacheInputStream.php" description="Writes data to a KeyCache using a stream." xml="interfaces/Swift_KeyCache_KeyCacheInputStream.xml"/>
+    <class name="Swift_SwiftException" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/SwiftException.php" description="Base Exception class." xml="classes/Swift_SwiftException.xml"/>
+    <interface name="Swift_Signers_BodySigner" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/BodySigner.php" description="Body Signer Interface used to apply Body-Based Signature to a message." xml="interfaces/Swift_Signers_BodySigner.xml"/>
+    <interface name="Swift_Signers_HeaderSigner" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Signers/HeaderSigner.php" description="Header Signer Interface used to apply Header-Based Signature to a message." xml="interfaces/Swift_Signers_HeaderSigner.xml"/>
+    <class name="Swift_Image" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Image.php" description="An image, embedded in a multipart message." xml="classes/Swift_Image.xml"/>
+    <interface name="Swift_AddressEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder.php" description="Email address encoder." xml="interfaces/Swift_AddressEncoder.xml"/>
+    <class name="Swift_AddressEncoder_Utf8AddressEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/Utf8AddressEncoder.php" description="A UTF-8 email address encoder." xml="classes/Swift_AddressEncoder_Utf8AddressEncoder.xml"/>
+    <class name="Swift_AddressEncoder_IdnAddressEncoder" src="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/IdnAddressEncoder.php" description="An IDN email address encoder." xml="classes/Swift_AddressEncoder_IdnAddressEncoder.xml"/>
+    <class name="JsonException" src="vendor/symfony/polyfill-php73/Resources/stubs/JsonException.php" xml="classes/JsonException.xml"/>
+    <class name="ValueError" src="vendor/symfony/polyfill-php80/Resources/stubs/ValueError.php" xml="classes/ValueError.xml"/>
+    <class name="UnhandledMatchError" src="vendor/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php" xml="classes/UnhandledMatchError.xml"/>
+    <class name="Exception" xml="classes/Exception.xml"/>
+    <interface name="JsonSerializable" xml="interfaces/JsonSerializable.xml"/>
+    <interface name="Throwable" xml="interfaces/Throwable.xml"/>
+    <class name="Error" xml="classes/Error.xml"/>
+  </namespace>
+  <namespace name="Jean85">
+    <class name="Version" src="vendor/jean85/pretty-package-versions/src/Version.php" xml="classes/Jean85_Version.xml"/>
+  </namespace>
+  <namespace name="PhpParser">
+    <class name="NodeVisitorAbstract" src="vendor/nikic/php-parser/lib/PhpParser/NodeVisitorAbstract.php" xml="classes/PhpParser_NodeVisitorAbstract.xml"/>
+    <interface name="NodeVisitor" src="vendor/nikic/php-parser/lib/PhpParser/NodeVisitor.php" xml="interfaces/PhpParser_NodeVisitor.xml"/>
+    <interface name="Parser" src="vendor/nikic/php-parser/lib/PhpParser/Parser.php" xml="interfaces/PhpParser_Parser.xml"/>
+    <interface name="Builder" src="vendor/nikic/php-parser/lib/PhpParser/Builder.php" xml="interfaces/PhpParser_Builder.xml"/>
+    <interface name="ErrorHandler" src="vendor/nikic/php-parser/lib/PhpParser/ErrorHandler.php" xml="interfaces/PhpParser_ErrorHandler.xml"/>
+    <interface name="NodeTraverserInterface" src="vendor/nikic/php-parser/lib/PhpParser/NodeTraverserInterface.php" xml="interfaces/PhpParser_NodeTraverserInterface.xml"/>
+  </namespace>
+  <namespace name="GuzzleHttp">
+    <class name="RequestOptions" src="vendor/guzzlehttp/guzzle/src/RequestOptions.php" description="This class contains a list of built-in Guzzle request options." xml="classes/GuzzleHttp_RequestOptions.xml"/>
+  </namespace>
+  <namespace name="Grpc">
+    <class name="UnaryCall" src="vendor/grpc/grpc/src/lib/UnaryCall.php" description="Represents an active call that sends a single message and then gets a single response." xml="classes/Grpc_UnaryCall.xml"/>
+    <class name="DefaultCallInvoker" src="vendor/grpc/grpc/src/lib/DefaultCallInvoker.php" description="Default call invoker in the gRPC stub." xml="classes/Grpc_DefaultCallInvoker.xml"/>
+    <class name="ServerStreamingCall" src="vendor/grpc/grpc/src/lib/ServerStreamingCall.php" description="Represents an active call that sends a single message and then gets a stream of responses." xml="classes/Grpc_ServerStreamingCall.xml"/>
+    <interface name="CallInvoker" src="vendor/grpc/grpc/src/lib/CallInvoker.php" description="CallInvoker is used to pass the self defined channel into the stub, while intercept each RPC with the channel accessible." xml="interfaces/Grpc_CallInvoker.xml"/>
+    <class name="AbstractCall" src="vendor/grpc/grpc/src/lib/AbstractCall.php" description="Class AbstractCall." xml="classes/Grpc_AbstractCall.xml"/>
+    <class name="BidiStreamingCall" src="vendor/grpc/grpc/src/lib/BidiStreamingCall.php" description="Represents an active call that allows for sending and receiving messages in streams in any order." xml="classes/Grpc_BidiStreamingCall.xml"/>
+    <class name="Status" src="vendor/grpc/grpc/src/lib/Status.php" description="Class Status" xml="classes/Grpc_Status.xml"/>
+    <class name="ClientStreamingCall" src="vendor/grpc/grpc/src/lib/ClientStreamingCall.php" description="Represents an active call that sends a stream of messages and then gets a single response." xml="classes/Grpc_ClientStreamingCall.xml"/>
+  </namespace>
+  <namespace name="Mockery">
+    <class name="QuickDefinitionsConfiguration" src="vendor/mockery/mockery/library/Mockery/QuickDefinitionsConfiguration.php" xml="classes/Mockery_QuickDefinitionsConfiguration.xml"/>
+    <class name="HigherOrderMessage" src="vendor/mockery/mockery/library/Mockery/HigherOrderMessage.php" xml="classes/Mockery_HigherOrderMessage.xml"/>
+    <class name="ReceivedMethodCalls" src="vendor/mockery/mockery/library/Mockery/ReceivedMethodCalls.php" xml="classes/Mockery_ReceivedMethodCalls.xml"/>
+    <class name="MethodCall" src="vendor/mockery/mockery/library/Mockery/MethodCall.php" xml="classes/Mockery_MethodCall.xml"/>
+    <class name="Undefined" src="vendor/mockery/mockery/library/Mockery/Undefined.php" xml="classes/Mockery_Undefined.xml"/>
+    <class name="VerificationExpectation" src="vendor/mockery/mockery/library/Mockery/VerificationExpectation.php" xml="classes/Mockery_VerificationExpectation.xml"/>
+    <interface name="ExpectationInterface" src="vendor/mockery/mockery/library/Mockery/ExpectationInterface.php" xml="interfaces/Mockery_ExpectationInterface.xml"/>
+    <class name="CompositeExpectation" src="vendor/mockery/mockery/library/Mockery/CompositeExpectation.php" xml="classes/Mockery_CompositeExpectation.xml"/>
+    <class name="ExpectsHigherOrderMessage" src="vendor/mockery/mockery/library/Mockery/ExpectsHigherOrderMessage.php" xml="classes/Mockery_ExpectsHigherOrderMessage.xml"/>
+    <class name="VerificationDirector" src="vendor/mockery/mockery/library/Mockery/VerificationDirector.php" xml="classes/Mockery_VerificationDirector.xml"/>
+  </namespace>
+  <namespace name="PackageVersions">
+    <class name="FallbackVersions" src="vendor/composer/package-versions-deprecated/src/PackageVersions/FallbackVersions.php" xml="classes/PackageVersions_FallbackVersions.xml"/>
+  </namespace>
+  <namespace name="Marios">
+    <class name="PizzeriaTest" src="vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/tests/PizzeriaTest.php" xml="classes/Marios_PizzeriaTest.xml"/>
+    <interface name="Product" src="vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Product.php" xml="interfaces/Marios_Product.xml"/>
+    <class name="Pizza" src="vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Pizza.php" xml="classes/Marios_Pizza.xml"/>
+  </namespace>
+  <namespace name="phpDocumentor">
+    <class name="Application" src="vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Application.php" description="Application class for phpDocumentor." xml="classes/phpDocumentor_Application.xml"/>
+  </namespace>
+  <namespace name="Flyfinder">
+    <class name="Path" src="vendor/phpdocumentor/flyfinder/src/Path.php" description="Value Object for paths." xml="classes/Flyfinder_Path.xml"/>
+  </namespace>
+  <namespace name="Luigi">
+    <interface name="Valued" src="vendor/phpdocumentor/reflection/tests/integration/data/Luigi/Valued.php" description="Any class implementing this interface has an associated price." xml="interfaces/Luigi_Valued.xml"/>
+    <trait name="ExampleNestedTrait" src="vendor/phpdocumentor/reflection/tests/integration/data/Luigi/ExampleNestedTrait.php" xml="traits/Luigi_ExampleNestedTrait.xml"/>
+  </namespace>
+  <namespace name="Psy">
+    <interface name="ContextAware" src="vendor/psy/psysh/src/ContextAware.php" description="ContextAware interface." xml="interfaces/Psy_ContextAware.xml"/>
+    <class name="SuperglobalsEnv" src="vendor/psy/psysh/src/SuperglobalsEnv.php" description="Environment variables implementation via $_SERVER superglobal." xml="classes/Psy_SuperglobalsEnv.xml"/>
+    <interface name="EnvInterface" src="vendor/psy/psysh/src/EnvInterface.php" description="Abstraction around environment variables." xml="interfaces/Psy_EnvInterface.xml"/>
+  </namespace>
+  <namespace name="Carbon">
+    <class name="Language" src="vendor/nesbot/carbon/src/Carbon/Language.php" xml="classes/Carbon_Language.xml"/>
+    <interface name="CarbonConverterInterface" src="vendor/nesbot/carbon/src/Carbon/CarbonConverterInterface.php" xml="interfaces/Carbon_CarbonConverterInterface.xml"/>
+    <class name="FactoryImmutable" src="vendor/nesbot/carbon/src/Carbon/FactoryImmutable.php" description="A factory to generate CarbonImmutable instances with common settings." xml="classes/Carbon_FactoryImmutable.xml"/>
+  </namespace>
+  <namespace name="PHPUnit">
+    <interface name="Exception" src="vendor/phpunit/phpunit/src/Exception.php" xml="interfaces/PHPUnit_Exception.xml"/>
+  </namespace>
+  <namespace name="Faker">
+    <class name="DefaultGenerator" src="vendor/fakerphp/faker/src/Faker/DefaultGenerator.php" description="This generator returns a default value for all called properties and methods. It works with Faker\Generator\Base-&gt;optional()." xml="classes/Faker_DefaultGenerator.xml"/>
+  </namespace>
+  <namespace name="JsonSchema">
+    <interface name="UriRetrieverInterface" src="vendor/justinrainbow/json-schema/src/JsonSchema/UriRetrieverInterface.php" xml="interfaces/JsonSchema_UriRetrieverInterface.xml"/>
+    <interface name="UriResolverInterface" src="vendor/justinrainbow/json-schema/src/JsonSchema/UriResolverInterface.php" xml="interfaces/JsonSchema_UriResolverInterface.xml"/>
+    <interface name="SchemaStorageInterface" src="vendor/justinrainbow/json-schema/src/JsonSchema/SchemaStorageInterface.php" xml="interfaces/JsonSchema_SchemaStorageInterface.xml"/>
+  </namespace>
+  <namespace name="Monolog">
+    <class name="Registry" src="vendor/monolog/monolog/src/Monolog/Registry.php" description="Monolog log registry" xml="classes/Monolog_Registry.xml"/>
+    <interface name="ResettableInterface" src="vendor/monolog/monolog/src/Monolog/ResettableInterface.php" description="Handler or Processor implementing this interface will be reset when Logger::reset() is called." xml="interfaces/Monolog_ResettableInterface.xml"/>
+  </namespace>
+  <namespace name="Cron">
+    <class name="FieldFactory" src="vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php" description="CRON field factory implementing a flyweight factory." xml="classes/Cron_FieldFactory.xml"/>
+    <class name="DayOfMonthField" src="vendor/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php" description="Day of month field.  Allows: * , / - ? L W." xml="classes/Cron_DayOfMonthField.xml"/>
+    <interface name="FieldFactoryInterface" src="vendor/dragonmantank/cron-expression/src/Cron/FieldFactoryInterface.php" xml="interfaces/Cron_FieldFactoryInterface.xml"/>
+    <interface name="FieldInterface" src="vendor/dragonmantank/cron-expression/src/Cron/FieldInterface.php" description="CRON field interface." xml="interfaces/Cron_FieldInterface.xml"/>
+    <class name="MonthField" src="vendor/dragonmantank/cron-expression/src/Cron/MonthField.php" description="Month field.  Allows: * , / -." xml="classes/Cron_MonthField.xml"/>
+  </namespace>
+  <namespace name="Twig">
+    <class name="Source" src="vendor/twig/twig/src/Source.php" description="Holds information about a non-compiled Twig template." xml="classes/Twig_Source.xml"/>
+  </namespace>
+  <namespace name="Highlight">
+    <class name="Terminators" src="vendor/scrivo/highlight.php/Highlight/Terminators.php" xml="classes/Highlight_Terminators.xml"/>
+    <class name="RegEx" src="vendor/scrivo/highlight.php/Highlight/RegEx.php" description="A PHP implementation to match JavaScript's RegExp class as closely as possible." xml="classes/Highlight_RegEx.xml"/>
+    <trait name="ModeDeprecations" src="vendor/scrivo/highlight.php/Highlight/ModeDeprecations.php" xml="traits/Highlight_ModeDeprecations.xml"/>
+    <class name="HighlightResult" src="vendor/scrivo/highlight.php/Highlight/HighlightResult.php" xml="classes/Highlight_HighlightResult.xml"/>
+    <class name="RegExUtils" src="vendor/scrivo/highlight.php/Highlight/RegExUtils.php" xml="classes/Highlight_RegExUtils.xml"/>
+    <class name="JsonRef" src="vendor/scrivo/highlight.php/Highlight/JsonRef.php" description="Class to decode JSON data that contains path-based references." xml="classes/Highlight_JsonRef.xml"/>
+    <class name="Autoloader" src="vendor/scrivo/highlight.php/Highlight/Autoloader.php" description="The autoloader class for Highlight classes for projects without Composer or autoloaders." xml="classes/Highlight_Autoloader.xml"/>
+  </namespace>
+  <namespace name="DebugBar">
+    <interface name="HttpDriverInterface" src="vendor/maximebf/debugbar/src/DebugBar/HttpDriverInterface.php" description="Provides an abstraction of PHP native features for easier integration in third party frameworks" xml="interfaces/DebugBar_HttpDriverInterface.xml"/>
+    <class name="PhpHttpDriver" src="vendor/maximebf/debugbar/src/DebugBar/PhpHttpDriver.php" description="HTTP driver for native php" xml="classes/DebugBar_PhpHttpDriver.xml"/>
+    <class name="OpenHandler" src="vendor/maximebf/debugbar/src/DebugBar/OpenHandler.php" description="Handler to list and open saved dataset" xml="classes/DebugBar_OpenHandler.xml"/>
+    <interface name="RequestIdGeneratorInterface" src="vendor/maximebf/debugbar/src/DebugBar/RequestIdGeneratorInterface.php" xml="interfaces/DebugBar_RequestIdGeneratorInterface.xml"/>
+    <class name="RequestIdGenerator" src="vendor/maximebf/debugbar/src/DebugBar/RequestIdGenerator.php" description="Basic request ID generator" xml="classes/DebugBar_RequestIdGenerator.xml"/>
+  </namespace>
+</index>

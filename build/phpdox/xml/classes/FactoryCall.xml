@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FactoryCall" namespace="" name="FactoryCall" abstract="false" final="false" start="7" end="41">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="FactoryCall.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/FactoryCall.php" size="611" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="0c49e8f3ec6c6c223a71ffc2b594f408498ef167" relative="vendor/hamcrest/hamcrest-php/generator/FactoryCall.php"/>
+  <constant type="string" name="INDENT" value="'    '">
+    <docblock>
+      <description compact="Hamcrest standard is two spaces for each level of indentation."/>
+      <var type="string"/>
+    </docblock>
+  </constant>
+  <member name="method" visibility="private" static="false" line="19">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="name" visibility="private" static="false" line="24">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="26" end="30" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="method" byreference="false" type="object">
+      <type full="FactoryMethod" namespace="" name="FactoryMethod"/>
+    </parameter>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getMethod" start="32" end="35" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getName" start="37" end="40" abstract="false" final="false" static="false" visibility="public"/>
+</class>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://picsum.photos/100">
+    <meta name="description" content="VuePress Docs for Cottontail">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.352bd0da.css" as="style"><link rel="preload" href="/docs/assets/js/app.04694eb7.js" as="script"><link rel="preload" href="/docs/assets/js/2.6a6c66cc.js" as="script"><link rel="preload" href="/docs/assets/js/8.0425e270.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.c5e051f4.js"><link rel="prefetch" href="/docs/assets/js/11.805a107b.js"><link rel="prefetch" href="/docs/assets/js/12.56250716.js"><link rel="prefetch" href="/docs/assets/js/3.29fd6203.js"><link rel="prefetch" href="/docs/assets/js/4.1d0d78e9.js"><link rel="prefetch" href="/docs/assets/js/5.5b327318.js"><link rel="prefetch" href="/docs/assets/js/6.e3b9fe86.js"><link rel="prefetch" href="/docs/assets/js/7.37f07050.js"><link rel="prefetch" href="/docs/assets/js/9.52b0913b.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.352bd0da.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/getstarted/" class="nav-link">
+  Getting Started
+</a></div><div class="nav-item"><a href="/docs/clientdemo/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Demo Notes
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/getstarted/" class="nav-link">
+  Getting Started
+</a></div><div class="nav-item"><a href="/docs/clientdemo/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Demo Notes
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/" aria-current="page" class="sidebar-link">Welcome to Docs</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Getting Started</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/getstarted/" class="sidebar-link">System Setup</a></li><li><a href="/docs/clientdemo/" aria-current="page" class="active sidebar-link">Demo Notes</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Technical Rundown</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="_1-review-notes-on-milanote-to-gain-background-and-an-overarching-review"><a href="#_1-review-notes-on-milanote-to-gain-background-and-an-overarching-review" class="header-anchor">#</a> 1. Review Notes on Milanote to gain background and an overarching review</h4> <h4 id="_2-review-work-process-flow-to-understand-how-we-arrived-at-our-current-conclusions"><a href="#_2-review-work-process-flow-to-understand-how-we-arrived-at-our-current-conclusions" class="header-anchor">#</a> 2. Review Work/Process flow to understand how we arrived at our current conclusions</h4> <h4 id="show-our-application-connected-to-the-keycloak-instance-as-a-client-not-a-provider"><a href="#show-our-application-connected-to-the-keycloak-instance-as-a-client-not-a-provider" class="header-anchor">#</a> Show our application connected to the Keycloak instance as a client, not a provider:</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k -X POST https://sit-login.geoplatform.info/auth/realms/geoplatform/protocol/openid-connect/token <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">grant_type</span><span class="token operator">=</span>client_credentials <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">client_id</span><span class="token operator">=</span>vanguard-sso <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">client_secret</span><span class="token operator">=</span>e69284c4-4f0a-4784-ab95-10e0dbb8651e <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">scope</span><span class="token operator">=</span>openid <span class="token operator">|</span> jq <span class="token string">'.'</span>
+</code></pre></div><h4 id="show-the-created-url-from-the-client-side-and-the-associated-misconfiguration-error"><a href="#show-the-created-url-from-the-client-side-and-the-associated-misconfiguration-error" class="header-anchor">#</a> Show the created URL from the client side, and the associated misconfiguration error:</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k -X POST https://idp.geoplatform.gov/simplesaml/module.php/core/login.php <span class="token punctuation">\</span> 
+-d <span class="token assign-left variable">grant_type</span><span class="token operator">=</span>password <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">as</span><span class="token operator">=</span>geosamloauth <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">username</span><span class="token operator">=</span>nyuszi <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">password</span><span class="token operator">=</span>DEMO 
+</code></pre></div><h4 id="as-a-single-liner"><a href="#as-a-single-liner" class="header-anchor">#</a> <em>As a single-liner</em></h4> <p><code>curl -u nyuszi https://idp.geoplatform.gov/simplesaml/module.php/core/authenticate.php -d as=geosamloauth</code></p> <h4 id="resulting-code"><a href="#resulting-code" class="header-anchor">#</a> Resulting Code</h4> <div class="language-sh extra-class"><pre class="language-sh"><code>https://idp.geoplatform.gov/simplesamlidp/module.php/core/loginuserpass.php
+?AuthState<span class="token operator">=</span>_e19a5fcac210955179bab59ca6f57fca3335a8b614
+:https://idp.geoplatform.gov/simplesamlidp/module.php/core/as_login.php
+?AuthId<span class="token operator">=</span>geosamloauth
+<span class="token operator">&amp;</span><span class="token assign-left variable">ReturnTo</span><span class="token operator">=</span>https://idp.geoplatform.gov/simplesamlidp/module.php/core/postredirect.php
+?RedirId<span class="token operator">=</span>_6d1dff8b0a3a7fca19888b59a337186d2010b396a2
+</code></pre></div><h4 id="show-how-the-cookie-is-formed"><a href="#show-how-the-cookie-is-formed" class="header-anchor">#</a> Show how the cookie is formed:</h4> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k -X POST https://idp.geoplatform.gov/simplesaml/module.php/core/authenticate.php <span class="token punctuation">\</span> 
+-d <span class="token assign-left variable">grant_type</span><span class="token operator">=</span>password <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">as</span><span class="token operator">=</span>geosamloauth <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">username</span><span class="token operator">=</span>nyuszi <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">password</span><span class="token operator">=</span>DEMO 
+</code></pre></div><p>Obviously not being appended to the URL, then grant_type</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">curl</span> -k -X POST https://idp.geoplatform.gov/simplesaml/module.php/core/authenticate.php <span class="token punctuation">\</span> 
+-d <span class="token assign-left variable">as</span><span class="token operator">=</span>geosamloauth <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">username</span><span class="token operator">=</span>nyuszi <span class="token punctuation">\</span>
+-d <span class="token assign-left variable">password</span><span class="token operator">=</span>DEMO 
+</code></pre></div><p>but this should actually work:
+This is the initial URL:
+https://idp.geoplatform.gov/simplesamlidp</p> <p>But this is what's returned:
+https://idp.geoplatform.gov/simplesamlidp/module.php/core/loginuserpass.php?AuthState=_dbe55dcbd4f0359247ce79e77e3b0eb6a5e6c32439%3Ahttps%3A%2F%2Fidp.geoplatform.gov%2Fsimplesamlidp%2Fmodule.php%2Fcore%2Fas_login.php%3FAuthId%3Dgeosamloauth%26ReturnTo%3Dhttps%253A%252F%252Fidp.geoplatform.gov%252Fsimplesamlidp%252Fmodule.php%252Fcore%252Fauthenticate.php%253Fas%253Dgeosamloauth</p> <p>Visit a decoder online to make this more readable:
+https://meyerweb.com/eric/tools/dencoder/
+and then hit decode a few extra times</p> <div class="language-sh extra-class"><pre class="language-sh"><code>https://idp.geoplatform.gov/simplesamlidp/module.php/core/loginuserpass.php
+?AuthState<span class="token operator">=</span>_dbe55dcbd4f0359247ce79e77e3b0eb6a5e6c32439
+:https://idp.geoplatform.gov/simplesamlidp/module.php/core/as_login.php
+?AuthId<span class="token operator">=</span>geosamloauth
+<span class="token operator">&amp;</span><span class="token assign-left variable">ReturnTo</span><span class="token operator">=</span>https://idp.geoplatform.gov/simplesamlidp/module.php/core/authenticate.php
+?as<span class="token operator">=</span>geosamloauth
+</code></pre></div><p>This output actually shows us what course this GeoPlatform.gov login takes from the beginning and it's &quot;ReturnTo&quot; is what should ideally be mapped over to the Keycloak instance under &quot;Redirect_URI&quot; (though we typically just use a URI)</p> <p>Note:</p> <ul><li>the &quot;?&quot; is indicating a parameter being queried from the resource pinged</li> <li>the &quot;:&quot; is the requested entity name</li> <li>the &quot;&amp;&quot; is used to delimit query parameters, meaning link multiples but let you know where the next one sits</li></ul> <h4 id="short-documentation-walk"><a href="#short-documentation-walk" class="header-anchor">#</a> Short documentation walk</h4> <ul><li>When we review the documentation here, regarding the methods to create &quot;authsources&quot; in SimpleSAML PHP:
+https://simplesamlphp.org/docs/stable/simplesamlphp-authsource</li></ul> <p>We see that there are two effected classes that create this &quot;authsource&quot; (the foundational requirement for a Keycloak <code>id_token</code> and this isn't unique to Keycloak, this is for any OpenID or OAuth2.0 <code>id_token</code> requirement.</p> <p>You can also see more about the authentication integration with the API built into SimpleSAML, as this authentication source must exist in <code>config/authsources.php</code></p> <p>and should be reflected as: <code>$auth = new \SimpleSAML\Auth\Simple('default-sp');</code></p> <p>So let's search our documentation created from the pear based <code>phpDocumenter phar</code> <em>(via <code>composer</code>)</em>
+where we search <code>authsources</code>, before we review the <code>config/authsources.php</code> file</p> <p><em>This is where we come to find out that the user credentials is the actual grant_type being used to generate the authentication command/pass, and this is directly highlighted in the <code>config/authsources.php</code> code</em></p> <p>Then as we review the <code>config/authmemcookie.php</code> we can see the circular dependencies here, that unify the entire <code>authsources.php</code> dependency which is the missing or mysterious <code>grant_type</code> declaration required for the very URL redirection into Keycloak, which will always be a mystery as we don't know, nor do we want to know the user credentials.</p> <p>Let's review the Keycloak information required on the client credentials side, and how we might see the differences between the clients and the identity providers <em>(the clients are supposed to be the service providers and the identity providers are what we just covered, whereby the assumption would have been that if everything is too convoluted to use the SimpleSAML PHP package as an identity provider, we could always fall back to using them as a client and merely giving the illusion of them as a provider, by utilizing two instances of Keycloak, serving as identity providers against each other, whereby one consumes the information from the SimpleSAML authorization source, and then passes that to the chief identity provision or identity broker at this point of the 1st Keycloak instance)</em></p> <p>Problems with this approach though, are just as troubling from the SimpleSAML PHP instance setup side/aspect.</p> <p>This is the actual return state sent:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>https://idp.geoplatform.gov/simplesamlidp/module.php/core/loginuserpass.php
+?AuthState<span class="token operator">=</span>_d6be85dad17de8c0964026af7f8238273ed3adec1c
+:https://idp.geoplatform.gov/simplesamlidp/module.php/core/as_login.php
+?AuthId<span class="token operator">=</span>admin
+<span class="token operator">&amp;</span><span class="token assign-left variable">ReturnTo</span><span class="token operator">=</span>https://idp.geoplatform.gov/simplesamlidp/module.php/core/frontpage_welcome.php
+</code></pre></div><p>https://nyulacska.github.io/showcase-local/auth/_phpdoc/build/index.html</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/getstarted/" class="prev">
+        System Setup
+      </a></span> <span class="next"><a href="/docs/providers/">
+        Service vs Identity Providers
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.04694eb7.js" defer></script><script src="/docs/assets/js/2.6a6c66cc.js" defer></script><script src="/docs/assets/js/8.0425e270.js" defer></script>
+  </body>
+</html>

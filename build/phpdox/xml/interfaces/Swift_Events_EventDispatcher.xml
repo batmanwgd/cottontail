@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Events_EventDispatcher" namespace="" name="Swift_Events_EventDispatcher" abstract="false" final="false" start="16" end="70">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events" file="EventDispatcher.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventDispatcher.php" size="2001" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="0725e36cebe414b2577599f528f9740633887384" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/EventDispatcher.php"/>
+  <docblock>
+    <description compact="Interface for the EventDispatcher which handles the event dispatching layer."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="createSendEvent" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new SendEvent for $source and $message."/>
+      <return type="object">
+        <type full="Swift_Events_SendEvent" namespace="" name="Swift_Events_SendEvent"/>
+      </return>
+    </docblock>
+    <parameter name="source" byreference="false" type="object">
+      <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+    </parameter>
+    <parameter name="message" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleMessage" namespace="" name="Swift_Mime_SimpleMessage"/>
+    </parameter>
+  </method>
+  <method name="createCommandEvent" start="33" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new CommandEvent for $source and $command."/>
+      <param description="That will be executed" type="string" variable="$command"/>
+      <param description="That are needed" type="array" variable="$successCodes"/>
+      <return type="object">
+        <type full="Swift_Events_CommandEvent" namespace="" name="Swift_Events_CommandEvent"/>
+      </return>
+    </docblock>
+    <parameter name="source" byreference="false" type="object">
+      <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+    </parameter>
+    <parameter name="command" byreference="false" type="{unknown}"/>
+    <parameter name="successCodes" byreference="false" type="array" default=""/>
+  </method>
+  <method name="createResponseEvent" start="43" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new ResponseEvent for $source and $response."/>
+      <param type="string" variable="$response"/>
+      <param description="If the response is valid" type="object" variable="$valid">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="Swift_Events_ResponseEvent" namespace="" name="Swift_Events_ResponseEvent"/>
+      </return>
+    </docblock>
+    <parameter name="source" byreference="false" type="object">
+      <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+    </parameter>
+    <parameter name="response" byreference="false" type="{unknown}"/>
+    <parameter name="valid" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="createTransportChangeEvent" start="50" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new TransportChangeEvent for $source."/>
+      <return type="object">
+        <type full="Swift_Events_TransportChangeEvent" namespace="" name="Swift_Events_TransportChangeEvent"/>
+      </return>
+    </docblock>
+    <parameter name="source" byreference="false" type="object">
+      <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+    </parameter>
+  </method>
+  <method name="createTransportExceptionEvent" start="57" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new TransportExceptionEvent for $source."/>
+      <return type="object">
+        <type full="Swift_Events_TransportExceptionEvent" namespace="" name="Swift_Events_TransportExceptionEvent"/>
+      </return>
+    </docblock>
+    <parameter name="source" byreference="false" type="object">
+      <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+    </parameter>
+    <parameter name="ex" byreference="false" type="object">
+      <type full="Swift_TransportException" namespace="" name="Swift_TransportException"/>
+    </parameter>
+  </method>
+  <method name="bindEventListener" start="62" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Bind an event listener to this dispatcher."/>
+    </docblock>
+    <parameter name="listener" byreference="false" type="object">
+      <type full="Swift_Events_EventListener" namespace="" name="Swift_Events_EventListener"/>
+    </parameter>
+  </method>
+  <method name="dispatchEvent" start="69" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Dispatch the given Event to all suitable listeners."/>
+      <param description="method" type="string" variable="$target"/>
+    </docblock>
+    <parameter name="evt" byreference="false" type="object">
+      <type full="Swift_Events_EventObject" namespace="" name="Swift_Events_EventObject"/>
+    </parameter>
+    <parameter name="target" byreference="false" type="{unknown}"/>
+  </method>
+</interface>

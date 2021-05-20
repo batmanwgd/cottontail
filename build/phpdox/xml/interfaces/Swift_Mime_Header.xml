@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Mime_Header" namespace="" name="Swift_Mime_Header" abstract="false" final="false" start="16" end="93">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="Header.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php" size="1997" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="fe2b831ad8111b7658ac9566b6c2006c01fbe895" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php"/>
+  <docblock>
+    <description compact="A MIME Header."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <constant type="{unknown}" name="TYPE_TEXT" value="2">
+    <docblock>
+      <description compact="Text headers"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_PARAMETERIZED" value="6">
+    <docblock>
+      <description compact="headers (text + params)"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_MAILBOX" value="8">
+    <docblock>
+      <description compact="Mailbox and address headers"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_DATE" value="16">
+    <docblock>
+      <description compact="Date and time headers"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_ID" value="32">
+    <docblock>
+      <description compact="Identification headers"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_PATH" value="64">
+    <docblock>
+      <description compact="Address path headers"/>
+    </docblock>
+  </constant>
+  <method name="getFieldType" start="44" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the type of Header that this instance represents."/>
+      <see value="TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX"/>
+      <see value="TYPE_DATE, TYPE_ID, TYPE_PATH"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="setFieldBodyModel" start="53" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the model for the field body.">The actual types needed will vary depending upon the type of Header.</description>
+      <param type="mixed" variable="$model"/>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setCharset" start="60" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the charset used when rendering the Header."/>
+      <param type="string" variable="$charset"/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFieldBodyModel" start="69" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the model for the field body.">The return type depends on the specifics of the Header.</description>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getFieldName" start="78" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the name of this header (e.g. Subject).">The name is an identifier and as such will be immutable.</description>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getFieldBody" start="85" end="85" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the field body, prepared for folding into a final header value."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="toString" start="92" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get this Header rendered as a compliant string, including trailing CRLF."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Swift_Mime_Headers_OpenDKIMHeader" namespace="" name="Swift_Mime_Headers_OpenDKIMHeader"/>
+  </implementors>
+</interface>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_EmbeddedFile" namespace="" name="Swift_Mime_EmbeddedFile" abstract="false" final="false" start="16" end="41">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime" file="EmbeddedFile.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EmbeddedFile.php" size="1054" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="42c67bb31aa4da875874eda736ad9e33d8288772" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/EmbeddedFile.php"/>
+  <docblock>
+    <description compact="An embedded file, in a multipart message."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Mime_Attachment" namespace="" name="Swift_Mime_Attachment" unresolved="true"/>
+  <constructor name="__construct" start="23" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a new Attachment with $headers and $encoder."/>
+      <param description="optional" type="array" variable="$mimeTypes"/>
+    </docblock>
+    <parameter name="headers" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleHeaderSet" namespace="" name="Swift_Mime_SimpleHeaderSet"/>
+    </parameter>
+    <parameter name="encoder" byreference="false" type="object">
+      <type full="Swift_Mime_ContentEncoder" namespace="" name="Swift_Mime_ContentEncoder"/>
+    </parameter>
+    <parameter name="cache" byreference="false" type="object">
+      <type full="Swift_KeyCache" namespace="" name="Swift_KeyCache"/>
+    </parameter>
+    <parameter name="idGenerator" byreference="false" type="object">
+      <type full="Swift_IdGenerator" namespace="" name="Swift_IdGenerator"/>
+    </parameter>
+    <parameter name="mimeTypes" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getNestingLevel" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the nesting level of this EmbeddedFile.">Returns <see xmlns="http://xml.phpdox.net/src" value="LEVEL_RELATED"/>.
+</description>
+      <return type="int"/>
+    </docblock>
+  </method>
+</class>

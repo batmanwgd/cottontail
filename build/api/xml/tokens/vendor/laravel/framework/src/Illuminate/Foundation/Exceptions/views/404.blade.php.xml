@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views" file="404.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php" size="125" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="e0f4b298747af9c337f8196de01c7c56c0be53dd" relative="vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/views/404.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('errors::minimal')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('title', __('Not Found'))</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@section('code', '404')</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@section('message', __('Not Found'))</token>
+  </line>
+  <line no="6"/>
+</source>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Plugins_Reporters_HtmlReporter" namespace="" name="Swift_Plugins_Reporters_HtmlReporter" abstract="false" final="false" start="16" end="38">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters" file="HtmlReporter.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php" size="1138" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="1d1a5346c949888cb9ebcac1c3699dc19617b033" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/Reporters/HtmlReporter.php"/>
+  <docblock>
+    <description compact="A HTML output reporter for the Reporter plugin."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_Plugins_Reporter" namespace="" name="Swift_Plugins_Reporter"/>
+  <method name="notify" start="24" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Notifies this ReportNotifier that $address failed or succeeded."/>
+      <param type="string" variable="$address"/>
+      <param description="from {@see RESULT_PASS, RESULT_FAIL}" type="int" variable="$result"/>
+    </docblock>
+    <parameter name="message" byreference="false" type="object">
+      <type full="Swift_Mime_SimpleMessage" namespace="" name="Swift_Mime_SimpleMessage"/>
+    </parameter>
+    <parameter name="address" byreference="false" type="{unknown}"/>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_Plugins_Reporter" namespace="" name="Swift_Plugins_Reporter">
+    <constant type="{unknown}" name="RESULT_PASS" value="0x01">
+      <docblock>
+        <description compact="The recipient was accepted for delivery"/>
+      </docblock>
+    </constant>
+    <constant type="{unknown}" name="RESULT_FAIL" value="0x10">
+      <docblock>
+        <description compact="The recipient could not be accepted"/>
+      </docblock>
+    </constant>
+    <method name="notify" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Notifies this ReportNotifier that $address failed or succeeded."/>
+        <param type="string" variable="$address"/>
+        <param description="from {@link RESULT_PASS, RESULT_FAIL}" type="int" variable="$result"/>
+      </docblock>
+      <parameter name="message" byreference="false" type="object">
+        <type full="Swift_Mime_SimpleMessage" namespace="" name="Swift_Mime_SimpleMessage"/>
+      </parameter>
+      <parameter name="address" byreference="false" type="{unknown}"/>
+      <parameter name="result" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

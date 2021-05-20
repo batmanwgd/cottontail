@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Highlight\Autoloader" namespace="Highlight" name="Autoloader" abstract="false" final="false" start="52" end="73">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="Autoloader.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/Autoloader.php" size="2626" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="0e2d4529b4b87243e3af9b0827ac3aa68d8227ae" relative="vendor/scrivo/highlight.php/Highlight/Autoloader.php"/>
+  <docblock>
+    <description compact="The autoloader class for Highlight classes for projects without Composer or autoloaders.">```php
+&lt;?php
+
+require_once("Highlight/Autoloader.php");
+spl_autoload_register("\\Highlight\\Autoloader::load");
+
+// Now use Highlight classes:
+$hl = new \Highlight\Highlighter(...);
+```</description>
+    <todo value="In v10.x, mark this class final for real"/>
+    <api/>
+    <final/>
+    <since value="7.5.0.0"/>
+  </docblock>
+  <method name="load" start="62" end="72" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="The method to include the source file for a given class to use in the PHP spl_autoload_register function."/>
+      <param description="a name of a Scrivo class" type="string" variable="$class"/>
+      <return description="true if the source file was successfully included" type="object">
+        <type full="Highlight\bool" namespace="Highlight" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+</class>

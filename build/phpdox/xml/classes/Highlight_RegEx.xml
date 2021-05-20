@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Highlight\RegEx" namespace="Highlight" name="RegEx" abstract="false" final="true" start="41" end="108">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="RegEx.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/RegEx.php" size="3340" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="1327424d7b9c3732446186d4c804fb88ce7cee69" relative="vendor/scrivo/highlight.php/Highlight/RegEx.php"/>
+  <docblock>
+    <description compact="A PHP implementation to match JavaScript's RegExp class as closely as possible.">A lot of behavior in this class is reversed engineered, so improvements are welcome!</description>
+    <internal/>
+    <since value="9.16.0"/>
+  </docblock>
+  <member name="source" visibility="public" static="false" line="46">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="lastIndex" default="0" type="integer" visibility="public" static="false" line="51">
+    <docblock>
+      <description/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="56" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$regex">
+        <type full="Highlight\RegEx|string" namespace="Highlight" name="RegEx|string"/>
+      </param>
+    </docblock>
+    <parameter name="regex" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="__toString" start="61" end="64" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="exec" start="75" end="107" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Run the regular expression against the given string."/>
+      <since value="9.16.0.0"/>
+      <param description="the string to run this regular expression against" type="string" variable="$str"/>
+      <return type="object">
+        <type full="Highlight\RegExMatch|null" namespace="Highlight" name="RegExMatch|null"/>
+      </return>
+    </docblock>
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+</class>

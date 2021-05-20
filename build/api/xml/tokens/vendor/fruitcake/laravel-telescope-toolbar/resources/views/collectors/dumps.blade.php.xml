@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="dumps.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/dumps.blade.php" size="647" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="2faea7ac6e3989c8d442eda3e4522ebf3f865723" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/dumps.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * @var \Illuminate\Support\Collection|\Laravel\Telescope\EntryResult[] $entries</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="5"/>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'dump', 'link' =&gt; route('telescope') . '/dumps', 'status' =&gt; 'yellow'])</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        @ttIcon('dumps')</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value"&gt;{{ $entries-&gt;count() }}&lt;/span&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @slot("text")</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">        @foreach ($entries as $entry)</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;div class="sf-toolbar-dump"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    {!! $entry-&gt;content['dump']  !!}</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">        @endforeach</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+</source>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FactoryGenerator" namespace="" name="FactoryGenerator" abstract="false" final="false" start="13" end="124">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="FactoryGenerator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/FactoryGenerator.php" size="2996" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="24e31b50af0ae4f0641711a69b888f0c88eade72" relative="vendor/hamcrest/hamcrest-php/generator/FactoryGenerator.php"/>
+  <docblock>
+    <description compact="Controls the process of extracting @factory doctags and generating factory method files.">Uses File_Iterator to scan for PHP files.</description>
+  </docblock>
+  <member name="path" visibility="private" static="false" line="20">
+    <docblock>
+      <description compact="Path to the Hamcrest PHP files to process."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="factoryFiles" visibility="private" static="false" line="25">
+    <docblock>
+      <description/>
+      <var description="of FactoryFile" type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="31" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="path" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="addFactoryFile" start="33" end="36" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="factoryFile" byreference="false" type="object">
+      <type full="FactoryFile" namespace="" name="FactoryFile"/>
+    </parameter>
+  </method>
+  <method name="generate" start="38" end="50" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="write" start="52" end="58" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getClassesWithFactoryMethods" start="60" end="72" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getSortedFiles" start="74" end="84" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getFileIterator" start="86" end="93" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="getFactoryClass" start="95" end="110" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFactoryClassName" start="112" end="123" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="{unknown}"/>
+  </method>
+</class>

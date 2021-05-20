@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/GlobalFiles" file="empty_with_html.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/GlobalFiles/empty_with_html.php" size="378" time="2020-06-19T18:26:14+00:00" unixtime="1592591174" sha1="5f1a71ba5941a49d7bd10120498498922ede8be8" relative="vendor/phpdocumentor/reflection/tests/integration/data/GlobalFiles/empty_with_html.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Test&lt;/h1&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * This file is part of phpDocumentor.</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * For the full copyright and license information, please view the LICENSE</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * file that was distributed with this source code.</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @copyright 2015-2018 Mike van Riel&lt;mike@phpdoc.org&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * @license   http://www.opensource.org/licenses/mit-license.php MIT</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @link      http://phpdoc.org</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_REQUIRE">require</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Pizza.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="15"/>
+</source>

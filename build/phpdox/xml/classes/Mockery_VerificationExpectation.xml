@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\VerificationExpectation" namespace="Mockery" name="VerificationExpectation" abstract="false" final="false" start="23" end="35">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="VerificationExpectation.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php" size="958" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="503467277c995bc4601ea7f0d3fe3f91fcfc3014" relative="vendor/mockery/mockery/library/Mockery/VerificationExpectation.php"/>
+  <extends full="Mockery\Expectation" namespace="Mockery" name="Expectation" unresolved="true"/>
+  <method name="clearCountValidators" start="25" end="28" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="__clone" start="30" end="34" abstract="false" final="false" static="false" visibility="public"/>
+</class>

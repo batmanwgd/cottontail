@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FactoryClass" namespace="" name="FactoryClass" abstract="false" final="false" start="7" end="71">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator" file="FactoryClass.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/hamcrest/hamcrest-php/generator/FactoryClass.php" size="1386" time="2020-07-09T08:09:16+00:00" unixtime="1594282156" sha1="c77d139d7ad35191b269f524d606d1707a9c4731" relative="vendor/hamcrest/hamcrest-php/generator/FactoryClass.php"/>
+  <member name="file" visibility="private" static="false" line="12">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="reflector" visibility="private" static="false" line="17">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="ReflectionClass" namespace="" name="ReflectionClass"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="methods" visibility="private" static="false" line="22">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="24" end="29" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="{unknown}"/>
+    <parameter name="class" byreference="false" type="object">
+      <type full="ReflectionClass" namespace="" name="ReflectionClass"/>
+    </parameter>
+  </constructor>
+  <method name="extractFactoryMethods" start="31" end="39" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getPublicStaticMethods" start="41" end="50" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getFile" start="52" end="55" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getName" start="57" end="60" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="isFactory" start="62" end="65" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getMethods" start="67" end="70" abstract="false" final="false" static="false" visibility="public"/>
+</class>

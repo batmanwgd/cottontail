@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Packing" namespace="" name="Packing" abstract="false" final="false" start="13" end="16">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data" file="Packing.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/reflection/tests/integration/data/Packing.php" size="404" time="2020-06-19T18:26:14+00:00" unixtime="1592591174" sha1="a0d09bc118ec8db99e6d1777b1dc5c5be28aee6e" relative="vendor/phpdocumentor/reflection/tests/integration/data/Packing.php"/>
+  <docblock>
+    <description compact="This file is part of phpDocumentor.">For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.</description>
+    <copyright value="2015-2018 Mike van Riel&lt;mike@phpdoc.org&gt;"/>
+    <license name="http://www.opensource.org/licenses/mit-license.php MIT"/>
+    <link value="http://phpdoc.org"/>
+  </docblock>
+  <method name="getName" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+  </method>
+</interface>

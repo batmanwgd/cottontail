@@ -1,0 +1,11 @@
+{
+    "fruitcake/laravel-telescope-toolbar": {
+        "version": "v1.3.1"
+    },
+    "laravel/telescope": {
+        "version": "v4.4.9"
+    },
+    "nelson6e65/phpdoc-vuepress": {
+        "version": "v1.0.1"
+    }
+}

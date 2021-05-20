@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Cron\MonthField" namespace="Cron" name="MonthField" abstract="false" final="false" start="12" end="59">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron" file="MonthField.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron/MonthField.php" size="1265" time="2020-11-24T19:55:57+00:00" unixtime="1606247757" sha1="cfeb955c127c7ea923f5dac0cfa34fa6d5267266" relative="vendor/dragonmantank/cron-expression/src/Cron/MonthField.php"/>
+  <docblock>
+    <description compact="Month field.  Allows: * , / -."/>
+  </docblock>
+  <extends full="Cron\AbstractField" namespace="Cron" name="AbstractField" unresolved="true"/>
+  <member name="rangeStart" default="1" type="integer" visibility="protected" static="false" line="17">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <member name="rangeEnd" default="12" type="integer" visibility="protected" static="false" line="22">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <member name="literals" default="" type="array" visibility="protected" static="false" line="27">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+  </member>
+  <method name="isSatisfiedBy" start="33" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="{@inheritdoc}"/>
+    </docblock>
+    <return type="bool" nullable="false"/>
+    <parameter name="date" byreference="false" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="increment" start="49" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <inheritdoc/>
+      <param type="object" variable="$date">
+        <type full="\DateTime|\DateTimeImmutable" namespace="\DateTime|" name="DateTimeImmutable"/>
+      </param>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+    </return>
+    <parameter name="date" byreference="true" type="object">
+      <type full="DateTimeInterface" namespace="" name="DateTimeInterface"/>
+    </parameter>
+    <parameter name="invert" byreference="false" type="boolean" default="false"/>
+    <parameter name="parts" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

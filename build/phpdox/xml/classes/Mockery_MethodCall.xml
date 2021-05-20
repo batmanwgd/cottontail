@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\MethodCall" namespace="Mockery" name="MethodCall" abstract="false" final="false" start="23" end="43">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="MethodCall.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/MethodCall.php" size="1033" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="d0528248da3b1b20e2190bb70e87963d38382048" relative="vendor/mockery/mockery/library/Mockery/MethodCall.php"/>
+  <member name="method" visibility="private" static="false" line="25"/>
+  <member name="args" visibility="private" static="false" line="26"/>
+  <constructor name="__construct" start="28" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getMethod" start="34" end="37" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getArgs" start="39" end="42" abstract="false" final="false" static="false" visibility="public"/>
+</class>

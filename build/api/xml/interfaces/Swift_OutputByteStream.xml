@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_OutputByteStream" namespace="" name="Swift_OutputByteStream" abstract="false" final="false" start="19" end="46">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift" file="OutputByteStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/OutputByteStream.php" size="1128" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="2a433e3dc854c1a0215ecbaab72a8714428ed9ad" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/OutputByteStream.php"/>
+  <docblock>
+    <description compact="An abstract means of reading data.">Classes implementing this interface may use a subsystem which requires less
+memory than working with large strings of data.</description>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="read" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Reads $length bytes from the stream into a string and moves the pointer through the stream by $length.">If less bytes exist than are requested the remaining bytes are given instead.
+If no bytes are remaining at all, boolean false is returned.</description>
+      <param type="int" variable="$length"/>
+      <throws type="object">
+        <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+      </throws>
+      <return type="object">
+        <type full="string|bool" namespace="" name="string|bool"/>
+      </return>
+    </docblock>
+    <parameter name="length" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setReadPointer" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Move the internal read pointer to $byteOffset in the stream."/>
+      <param type="int" variable="$byteOffset"/>
+      <throws type="object">
+        <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+      </throws>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="byteOffset" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Swift_Transport_IoBuffer" namespace="" name="Swift_Transport_IoBuffer"/>
+    <extender full="Swift_FileStream" namespace="" name="Swift_FileStream"/>
+  </extenders>
+</interface>

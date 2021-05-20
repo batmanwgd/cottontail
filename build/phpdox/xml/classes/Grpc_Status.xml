@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Grpc\Status" namespace="Grpc" name="Status" abstract="false" final="false" start="33" end="55">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib" file="Status.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib/Status.php" size="1422" time="2021-03-01T21:52:11+00:00" unixtime="1614635531" sha1="728a42f225b2e2b8a5c75f016acb559bdefe85eb" relative="vendor/grpc/grpc/src/lib/Status.php"/>
+  <docblock>
+    <description compact="Class Status"/>
+    <package value="Grpc"/>
+  </docblock>
+  <method name="status" start="35" end="45" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="code" byreference="false" type="int"/>
+    <parameter name="details" byreference="false" type="string"/>
+    <parameter name="metadata" byreference="false" type="array" default="NULL"/>
+  </method>
+  <method name="ok" start="47" end="50" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+    <parameter name="metadata" byreference="false" type="array" default="NULL"/>
+  </method>
+  <method name="unimplemented" start="51" end="54" abstract="false" final="false" static="true" visibility="public">
+    <return type="array" nullable="false"/>
+  </method>
+</class>

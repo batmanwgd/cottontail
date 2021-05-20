@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors" file="ajax.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/ajax.blade.php" size="1283" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="f3e153200c88ce849501b19fd263a9140d3c82bc" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/collectors/ajax.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@component('telescope-toolbar::item', ['name' =&gt; 'ajax'])</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">    @slot('icon')</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">        @ttIcon('ajax')</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;span class="sf-toolbar-value sf-toolbar-ajax-request-counter"&gt;0&lt;/span&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_INLINE_HTML">    @slot("text")</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                &lt;span class="sf-toolbar-header"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                    &lt;b class="sf-toolbar-ajax-info"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    &lt;b class="sf-toolbar-action"&gt;(&lt;a class="sf-toolbar-ajax-clear" href="javascript:void(0);"&gt;Clear&lt;/a&gt;)&lt;/b&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;b class="sf-toolbar-action"&gt;&lt;span class="sf-toolbar-ajax-replace-state"&gt;Auto&lt;/span&gt; (&lt;a class="sf-toolbar-ajax-replace-toggle" href="javascript:void(0);"&gt;Toggle&lt;/a&gt;)&lt;/b&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-info-piece"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;table class="sf-toolbar-ajax-requests"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;thead&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                &lt;tr&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;#&lt;/th&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Profile&lt;/th&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Method&lt;/th&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Type&lt;/th&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Status&lt;/th&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;URL&lt;/th&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Time&lt;/th&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                &lt;/tr&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                &lt;/thead&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;tbody class="sf-toolbar-ajax-request-list"&gt;&lt;/tbody&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">    @endslot</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">@endcomponent</token>
+  </line>
+</source>

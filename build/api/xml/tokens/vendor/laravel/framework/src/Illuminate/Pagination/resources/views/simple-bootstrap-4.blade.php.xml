@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views" file="simple-bootstrap-4.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Pagination/resources/views/simple-bootstrap-4.blade.php" size="1053" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="aeedaf9b9ade76b613d2b5f10c976383649763a6" relative="vendor/laravel/framework/src/Illuminate/Pagination/resources/views/simple-bootstrap-4.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if ($paginator-&gt;hasPages())</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;nav&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        &lt;ul class="pagination"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">            {{-- Previous Page Link --}}</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            @if ($paginator-&gt;onFirstPage())</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                &lt;li class="page-item disabled" aria-disabled="true"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                    &lt;span class="page-link"&gt;@lang('pagination.previous')&lt;/span&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;li class="page-item"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                    &lt;a class="page-link" href="{{ $paginator-&gt;previousPageUrl() }}" rel="prev"&gt;@lang('pagination.previous')&lt;/a&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">            {{-- Next Page Link --}}</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            @if ($paginator-&gt;hasMorePages())</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;li class="page-item"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                    &lt;a class="page-link" href="{{ $paginator-&gt;nextPageUrl() }}" rel="next"&gt;@lang('pagination.next')&lt;/a&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            @else</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;li class="page-item disabled" aria-disabled="true"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;span class="page-link"&gt;@lang('pagination.next')&lt;/span&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">        &lt;/ul&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;/nav&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="28"/>
+</source>

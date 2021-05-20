@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface" abstract="false" final="false" start="24" end="46">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="ExpectationInterface.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/ExpectationInterface.php" size="1084" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="2e56789711f1e8086c2fb2ee756043e5a4023ab2" relative="vendor/mockery/mockery/library/Mockery/ExpectationInterface.php"/>
+  <method name="getOrderNumber" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="getMock" start="34" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="Mockery\LegacyMockInterface|MockInterface" namespace="Mockery" name="LegacyMockInterface|MockInterface"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="andReturn" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="mixed" variable="$args"/>
+      <return resolution="self" type="object">
+        <type full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface"/>
+      </return>
+    </docblock>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="andReturns" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return resolution="self" type="object">
+        <type full="Mockery\ExpectationInterface" namespace="Mockery" name="ExpectationInterface"/>
+      </return>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="Mockery\CompositeExpectation" namespace="Mockery" name="CompositeExpectation"/>
+  </implementors>
+</interface>

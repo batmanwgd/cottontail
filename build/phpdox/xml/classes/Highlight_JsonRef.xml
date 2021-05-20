@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Highlight\JsonRef" namespace="Highlight" name="JsonRef" abstract="false" final="false" start="77" end="177">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="JsonRef.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/JsonRef.php" size="5643" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="66000f6ef59b8b6e7ef199192ea7d5c26444dbaa" relative="vendor/scrivo/highlight.php/Highlight/JsonRef.php"/>
+  <docblock>
+    <description compact="Class to decode JSON data that contains path-based references.">The language data file for highlight.js are written as JavaScript classes
+and therefore may contain variables. This allows for inner references in
+the language data. This kind of data can be converterd to JSON using the
+path based references. This class can be used to decode such JSON
+structures. It follows the conventions for path based referencing as
+used in dojox.json.ref form the Dojo toolkit (Javascript). A typical
+example of such a structure is as follows:
+
+```json
+{
+  "name":"Kris Zyp",
+  "children":[{"name":"Jennika Zyp"},{"name":"Korban Zyp"}],
+  "spouse":{
+    "name":"Nicole Zyp",
+    "spouse":{"$ref":"#"},
+    "children":{"$ref":"#children"}
+  },
+  "oldestChild":{"$ref":"#children.0"}
+}
+```
+
+Usage example:
+
+```php
+$jr = new JsonRef();
+$data = $jr-&gt;decode(file_get_contents("data.json"));
+echo $data-&gt;spouse-&gt;spouse-&gt;name; // echos 'Kris Zyp'
+echo $data-&gt;oldestChild-&gt;name; // echos 'Jennika Zyp'
+```</description>
+    <todo value="In Highlight.php 10.x, mark this class final with a keyword."/>
+    <since value="9.16.0.0 Class has been marked as final"/>
+    <final/>
+    <internal/>
+  </docblock>
+  <member name="paths" default="NULL" visibility="private" static="false" line="84">
+    <docblock>
+      <description compact="Array to hold all data paths in the given JSON data."/>
+      <var description="mixed&gt;" type="object">
+        <type full="Highlight\array&lt;string" namespace="Highlight" name="array&lt;string"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="getPaths" start="95" end="106" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Recurse through the data tree and fill an array of paths that reference the nodes in the decoded JSON data structure."/>
+      <param description="Decoded JSON data (decoded with json_decode)" type="mixed" variable="$s"/>
+      <param description="The current path key (for example: '#children.0')." type="string" variable="$r"/>
+      <return type="object">
+        <type full="Highlight\void" namespace="Highlight" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="s" byreference="true" type="{unknown}"/>
+    <parameter name="r" byreference="false" type="string" default="&quot;#&quot;"/>
+  </method>
+  <method name="resolvePathReferences" start="117" end="134" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Recurse through the data tree and resolve all path references."/>
+      <param description="Decoded JSON data (decoded with json_decode)" type="mixed" variable="$s"/>
+      <param type="int" variable="$limit"/>
+      <param type="int" variable="$depth"/>
+      <return type="object">
+        <type full="Highlight\void" namespace="Highlight" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="s" byreference="true" type="{unknown}"/>
+    <parameter name="limit" byreference="false" type="integer" default="20"/>
+    <parameter name="depth" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="decode" start="145" end="157" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Decode JSON data that may contain path based references."/>
+      <deprecated value="9.16.0.0 This method will be removed in Highlight.php. Make use of `decodeRef` instead."/>
+      <param description="JSON data string or JSON data object" type="object" variable="$json">
+        <type full="Highlight\string|object" namespace="Highlight" name="string|object"/>
+      </param>
+      <return description="The decoded JSON data" type="mixed"/>
+    </docblock>
+    <parameter name="json" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Clear the path array." line="147"/>
+      <comment value="Decode the given JSON data if necessary." line="149"/>
+      <comment value="Get all data paths." line="151"/>
+      <comment value="Resolve all path references." line="153"/>
+      <comment value="Return the data." line="155"/>
+    </inline>
+  </method>
+  <method name="decodeRef" start="166" end="176" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Decode JSON data that may contain path based references."/>
+      <param description="JSON data string or JSON data object" type="object" variable="$json"/>
+      <return type="object">
+        <type full="Highlight\void" namespace="Highlight" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="json" byreference="true" type="{unknown}"/>
+    <inline>
+      <comment value="Clear the path array." line="168"/>
+      <comment value="Get all data paths." line="171"/>
+      <comment value="Resolve all path references." line="174"/>
+    </inline>
+  </method>
+</class>

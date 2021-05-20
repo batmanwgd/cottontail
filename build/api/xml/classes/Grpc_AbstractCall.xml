@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Grpc\AbstractCall" namespace="Grpc" name="AbstractCall" abstract="true" final="false" start="26" end="147">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib" file="AbstractCall.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/grpc/grpc/src/lib/AbstractCall.php" size="4002" time="2021-03-01T21:52:11+00:00" unixtime="1614635531" sha1="2bec5ee44fa8e81a809123a6395e6877195406c9" relative="vendor/grpc/grpc/src/lib/AbstractCall.php"/>
+  <docblock>
+    <description compact="Class AbstractCall."/>
+    <package value="Grpc"/>
+  </docblock>
+  <member name="call" visibility="protected" static="false" line="31">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="Grpc\Call" namespace="Grpc" name="Call"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="deserialize" visibility="protected" static="false" line="32"/>
+  <member name="metadata" visibility="protected" static="false" line="33"/>
+  <member name="trailing_metadata" visibility="protected" static="false" line="34"/>
+  <constructor name="__construct" start="46" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new Call wrapper object."/>
+      <param description="The channel to communicate on" type="object" variable="$channel">
+        <type full="Grpc\Channel" namespace="Grpc" name="Channel"/>
+      </param>
+      <param description="The method to call on the" type="string" variable="$method">remote server</param>
+      <param description="A callback function to deserialize" type="object" variable="$deserialize">the response<type full="Grpc\callback" namespace="Grpc" name="callback"/></param>
+      <param description="Call options (optional)" type="array" variable="$options"/>
+    </docblock>
+    <parameter name="channel" byreference="false" type="object">
+      <type full="Grpc\Channel" namespace="Grpc" name="Channel"/>
+    </parameter>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="deserialize" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getMetadata" start="78" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return description="The metadata sent by the server" type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getTrailingMetadata" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return description="The trailing metadata sent by the server" type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getPeer" start="94" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return description="The URI of the endpoint" type="string"/>
+    </docblock>
+  </method>
+  <method name="cancel" start="102" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Cancels the call."/>
+    </docblock>
+  </method>
+  <method name="_serializeMessage" start="114" end="118" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Serialize a message to the protobuf binary format."/>
+      <param description="The Protobuf message" type="mixed" variable="$data"/>
+      <return description="The protobuf binary format" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Proto3 implementation" line="116"/>
+    </inline>
+  </method>
+  <method name="_deserializeResponse" start="127" end="136" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Deserialize a response value to an object."/>
+      <param description="The binary value to deserialize" type="string" variable="$value"/>
+      <return description="The deserialized value" type="mixed"/>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setCallCredentials" start="143" end="146" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the CallCredentials for the underlying Call."/>
+      <param description="The CallCredentials object" type="object" variable="$call_credentials">
+        <type full="Grpc\CallCredentials" namespace="Grpc" name="CallCredentials"/>
+      </param>
+    </docblock>
+    <parameter name="call_credentials" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Grpc\UnaryCall" namespace="Grpc" name="UnaryCall"/>
+    <extender full="Grpc\ServerStreamingCall" namespace="Grpc" name="ServerStreamingCall"/>
+    <extender full="Grpc\BidiStreamingCall" namespace="Grpc" name="BidiStreamingCall"/>
+    <extender full="Grpc\ClientStreamingCall" namespace="Grpc" name="ClientStreamingCall"/>
+  </extenders>
+</class>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html" file="header.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/header.blade.php" size="242" time="2021-05-19T13:03:18+00:00" unixtime="1621429398" sha1="4c985ee83572394b70da602e4d0a6f04bacbb0a0" relative="vendor/laravel/framework/src/Illuminate/Mail/resources/views/html/header.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;td class="header"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;a href="{{ $url }}" style="display: inline-block;"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@if (trim($slot) === 'Laravel')</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;img src="https://laravel.com/img/notification-logo.png" class="logo" alt="Laravel Logo"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">{{ $slot }}</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">&lt;/a&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="12"/>
+</source>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="PackageVersions\FallbackVersions" namespace="PackageVersions" name="FallbackVersions" abstract="false" final="true" start="29" end="128">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/composer/package-versions-deprecated/src/PackageVersions" file="FallbackVersions.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/composer/package-versions-deprecated/src/PackageVersions/FallbackVersions.php" size="4145" time="2020-11-11T10:22:58+00:00" unixtime="1605090178" sha1="91a285322547a11064bffed45f9f706e16961688" relative="vendor/composer/package-versions-deprecated/src/PackageVersions/FallbackVersions.php"/>
+  <docblock>
+    <description/>
+    <internal/>
+  </docblock>
+  <constant type="string" name="ROOT_PACKAGE_NAME" value="'unknown/root-package@UNKNOWN'"/>
+  <constructor name="__construct" start="33" end="35" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="getVersion" start="41" end="52" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <throws description="If a version cannot be located." type="object">
+        <type full="OutOfBoundsException" namespace="" name="OutOfBoundsException"/>
+      </throws>
+      <throws description="If the composer.lock file could not be located." type="object">
+        <type full="UnexpectedValueException" namespace="" name="UnexpectedValueException"/>
+      </throws>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="packageName" byreference="false" type="string"/>
+  </method>
+  <method name="getPackageData" start="59" end="109" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description/>
+      <return type="array" of="object">
+        <type full="PackageVersions\mixed" namespace="PackageVersions" name="mixed"/>
+      </return>
+      <throws type="object">
+        <type full="UnexpectedValueException" namespace="" name="UnexpectedValueException"/>
+      </throws>
+    </docblock>
+    <return type="array" nullable="false"/>
+  </method>
+  <method name="getVersions" start="118" end="127" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description/>
+      <param type="array" variable="$packageData" of="object">
+        <type full="PackageVersions\mixed" namespace="PackageVersions" name="mixed"/>
+      </param>
+      <return type="array" of="object">
+        <type full="PackageVersions\Generator&amp;string" namespace="PackageVersions" name="Generator&amp;string"/>
+      </return>
+      <psalm value="-return Generator&lt;string, string&gt;"/>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Generator" namespace="" name="Generator"/>
+    </return>
+    <parameter name="packageData" byreference="false" type="array"/>
+  </method>
+</class>

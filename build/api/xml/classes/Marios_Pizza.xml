@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Marios\Pizza" namespace="Marios" name="Pizza" abstract="false" final="true" start="10" end="54">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src" file="Pizza.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Pizza.php" size="1071" time="2020-10-27T20:24:27+00:00" unixtime="1603830267" sha1="5491cbb603fd3c4a07d4c87eebfeecac94ffee2f" relative="vendor/phpdocumentor/phpdocumentor/data/examples/MariosPizzeria/src/Pizza.php"/>
+  <docblock>
+    <description/>
+    <package value="Domain"/>
+  </docblock>
+  <uses full="Marios\SharedTrait" namespace="Marios" name="SharedTrait" start="12" end="12" unresolved="true">
+    <alias method="sayHello" as="myPrivateHello" modifier="private"/>
+  </uses>
+  <constant type="string" name="TYPE_ITALIAN" value="'italian'"/>
+  <constant type="string" name="TYPE_AMERICAN" value="'american'">
+    <docblock>
+      <description compact="Not a real pizza.">Does not need much more of an explanation, does it? ;)</description>
+      <deprecated/>
+      <var type="string"/>
+    </docblock>
+  </constant>
+  <constant type="array" name="TYPE_HYBRID" value=""/>
+  <member name="name" default="''" type="string" visibility="public" static="false" line="34">
+    <docblock>
+      <description compact="Name of your own custom Pizza.">Want to show to your friends how cool your pizza baking skills are? Now you can! Name your Pizza anything you
+want and stun them with your awesome creativity!</description>
+    </docblock>
+  </member>
+  <member name="description" default="''" type="string" visibility="public" static="true" line="36"/>
+  <member name="extra" visibility="public" static="false" line="42">
+    <docblock>
+      <description compact="I don't know what this does; can we delete this?"/>
+      <deprecated/>
+    </docblock>
+  </member>
+  <method name="eatIt" start="51" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Om nom nom.">What else do you do with a pizza? Put it in your freezer?</description>
+      <return type="object">
+        <type full="Marios\void" namespace="Marios" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

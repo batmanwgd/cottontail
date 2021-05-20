@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Highlight\Terminators" namespace="Highlight" name="Terminators" abstract="false" final="true" start="10" end="245">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="Terminators.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/Terminators.php" size="6190" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="836178a00c6fc3d78f3fa8ced933dd46fc3816bd" relative="vendor/scrivo/highlight.php/Highlight/Terminators.php"/>
+  <docblock>
+    <description/>
+    <internal/>
+    <since value="9.16.0.0"/>
+  </docblock>
+  <member name="caseInsensitive" visibility="private" static="false" line="13">
+    <docblock>
+      <var type="object">
+        <type full="Highlight\bool" namespace="Highlight" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="matchIndexes" default="" type="array" visibility="private" static="false" line="16">
+    <docblock>
+      <var description="Mode|string&gt;" type="object">
+        <type full="Highlight\array&lt;int" namespace="Highlight" name="array&lt;int"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="matcherRe" default="NULL" visibility="private" static="false" line="19">
+    <docblock>
+      <var type="object">
+        <type full="Highlight\RegEx|null" namespace="Highlight" name="RegEx|null"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="regexes" default="" type="array" visibility="private" static="false" line="22">
+    <docblock>
+      <var description="array&lt;int, Mode|string&gt;&gt;" type="object">
+        <type full="Highlight\array&lt;int" namespace="Highlight" name="array&lt;int"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="matchAt" default="1" type="integer" visibility="private" static="false" line="25">
+    <docblock>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="mode" visibility="private" static="false" line="28">
+    <docblock>
+      <var type="object">
+        <type full="Highlight\Mode" namespace="Highlight" name="Mode"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="lastIndex" default="0" type="integer" visibility="public" static="false" line="31">
+    <docblock>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="36" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$caseInsensitive">
+        <type full="Highlight\bool" namespace="Highlight" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="caseInsensitive" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="_buildModeRegex" start="48" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <internal/>
+      <param type="object" variable="$mode">
+        <type full="Highlight\Mode" namespace="Highlight" name="Mode"/>
+      </param>
+      <return resolution="self" type="object">
+        <type full="Highlight\Terminators" namespace="Highlight" name="Terminators"/>
+      </return>
+    </docblock>
+    <parameter name="mode" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="exec" start="91" end="121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$s"/>
+      <return type="object">
+        <type full="Highlight\RegExMatch|null" namespace="Highlight" name="RegExMatch|null"/>
+      </return>
+    </docblock>
+    <parameter name="s" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="langRe" start="129" end="132" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="string" variable="$value"/>
+      <param type="object" variable="$global">
+        <type full="Highlight\bool" namespace="Highlight" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="Highlight\RegEx" namespace="Highlight" name="RegEx"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="global" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="addRule" start="140" end="145" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$rule">
+        <type full="Highlight\Mode|string" namespace="Highlight" name="Mode|string"/>
+      </param>
+      <param type="string" variable="$regex"/>
+      <return type="object">
+        <type full="Highlight\void" namespace="Highlight" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="rule" byreference="false" type="{unknown}"/>
+    <parameter name="regex" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="joinRe" start="160" end="216" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="joinRe logically computes regexps.join(separator), but fixes the backreferences so they continue to match.">it also places each individual regular expression into it's own
+match group, keeping track of the sequencing of those match groups
+is currently an exercise for the caller. :-)</description>
+      <param description="string&gt; $regexps" type="object">
+        <type full="Highlight\array&lt;int" namespace="Highlight" name="array&lt;int"/>
+      </param>
+      <param type="string" variable="$separator"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="regexps" byreference="false" type="{unknown}"/>
+    <parameter name="separator" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="backreferenceRe matches an open parenthesis or backreference. To avoid" line="162"/>
+      <comment value="an incorrect parse, it additionally matches the following:" line="163"/>
+      <comment value="- [...] elements, where the meaning of parentheses and escapes change" line="164"/>
+      <comment value="- other escape sequences, so we do not misparse escape sequences as" line="165"/>
+      <comment value="interesting elements" line="166"/>
+      <comment value="- non-matching or lookahead parentheses, which do not capture. These" line="167"/>
+      <comment value="follow the '(' with a '?'." line="168"/>
+    </inline>
+  </method>
+  <method name="reStr" start="223" end="230" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$re">
+        <type full="Highlight\RegEx|string" namespace="Highlight" name="RegEx|string"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="re" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="reCountMatchGroups" start="237" end="244" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$re">
+        <type full="Highlight\RegEx|string" namespace="Highlight" name="RegEx|string"/>
+      </param>
+      <return type="int"/>
+    </docblock>
+    <parameter name="re" byreference="false" type="{unknown}"/>
+  </method>
+</class>

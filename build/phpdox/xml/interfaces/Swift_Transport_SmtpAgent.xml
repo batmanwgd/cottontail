@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="Swift_Transport_SmtpAgent" namespace="" name="Swift_Transport_SmtpAgent" abstract="false" final="false" start="16" end="36">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport" file="SmtpAgent.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SmtpAgent.php" size="971" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="1b59ece1d82cd878b87aebd0842af5e124964944" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/SmtpAgent.php"/>
+  <docblock>
+    <description compact="Wraps an IoBuffer to send/receive SMTP commands/responses."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <method name="getBuffer" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the IoBuffer where read/writes are occurring."/>
+      <return type="object">
+        <type full="Swift_Transport_IoBuffer" namespace="" name="Swift_Transport_IoBuffer"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="executeCommand" start="35" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Run a command against the buffer, expecting the given response codes.">If no response codes are given, the response will not be validated.
+If codes are given, an exception will be thrown on an invalid response.</description>
+      <param type="string" variable="$command"/>
+      <param type="array" variable="$codes" of="int"/>
+      <param description="An array of failures by-reference" type="array" variable="$failures" of="string"/>
+    </docblock>
+    <parameter name="command" byreference="false" type="{unknown}"/>
+    <parameter name="codes" byreference="false" type="array" default=""/>
+    <parameter name="failures" byreference="true" type="{unknown}" default="NULL"/>
+  </method>
+</interface>

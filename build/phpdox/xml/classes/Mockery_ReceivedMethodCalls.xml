@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mockery\ReceivedMethodCalls" namespace="Mockery" name="ReceivedMethodCalls" abstract="false" final="false" start="23" end="48">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery" file="ReceivedMethodCalls.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/mockery/mockery/library/Mockery/ReceivedMethodCalls.php" size="1322" time="2021-02-24T09:51:49+00:00" unixtime="1614160309" sha1="f870adfe6cb131c674c62bf221f1ad16f71d4e72" relative="vendor/mockery/mockery/library/Mockery/ReceivedMethodCalls.php"/>
+  <member name="methodCalls" default="" type="array" visibility="private" static="false" line="25"/>
+  <method name="push" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="methodCall" byreference="false" type="object">
+      <type full="Mockery\MethodCall" namespace="Mockery" name="MethodCall"/>
+    </parameter>
+  </method>
+  <method name="verify" start="32" end="47" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="expectation" byreference="false" type="object">
+      <type full="Mockery\Expectation" namespace="Mockery" name="Expectation"/>
+    </parameter>
+  </method>
+</class>

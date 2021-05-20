@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views" file="item.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/item.blade.php" size="503" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="81c18cb0b7e488df4909a860dafda27427d931c1" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/item.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;div class="sf-toolbar-block sf-toolbar-block-{{ $name }} sf-toolbar-status-{{ $status ?? 'normal' }} {{ $additional_classes ?? ''}}" {!! $block_attrs ?? '' !!}&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    @if(isset($link) &amp;&amp; $link) &lt;a href="{{  is_string($link) ? $link : route('telescope-toolbar.show', ['token' =&gt; $token, 'tab' =&gt; $name]) }}"  target="_telescope"&gt;@endif</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        &lt;div class="sf-toolbar-icon"&gt;{{ $icon ?? '' }}&lt;/div&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        @if(isset($link) &amp;&amp; $link)&lt;/a&gt;@endif</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;div class="sf-toolbar-info"&gt;{{ $text ?? '' }}&lt;/div&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+</source>

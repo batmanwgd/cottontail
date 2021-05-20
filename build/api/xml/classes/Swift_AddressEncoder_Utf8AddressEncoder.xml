@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_AddressEncoder_Utf8AddressEncoder" namespace="" name="Swift_AddressEncoder_Utf8AddressEncoder" abstract="false" final="false" start="27" end="36">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder" file="Utf8AddressEncoder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/Utf8AddressEncoder.php" size="1112" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="ea6bea36af69df9c90e872b1d88ac69bef1a5232" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/AddressEncoder/Utf8AddressEncoder.php"/>
+  <docblock>
+    <description compact="A UTF-8 email address encoder.">Returns the email address verbatimly in UTF-8 as permitted by RFC 6531 and
+RFC 6532. It supports addresses containing non-ASCII characters in both
+local-part and domain (i.e. on both sides of @).
+
+This encoder must be used together with Swift_Transport_Esmtp_SmtpUtf8Handler
+and requires that the outbound SMTP server supports the SMTPUTF8 extension.
+
+If your outbound SMTP server does not support SMTPUTF8, use
+Swift_AddressEncoder_IdnAddressEncoder instead. This allows sending to email
+addresses with non-ASCII characters in the domain, but not in local-part.</description>
+    <author value="Christian Schmidt"/>
+  </docblock>
+  <implements full="Swift_AddressEncoder" namespace="" name="Swift_AddressEncoder"/>
+  <method name="encodeString" start="32" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the address verbatimly."/>
+    </docblock>
+    <return type="string" nullable="false"/>
+    <parameter name="address" byreference="false" type="string"/>
+  </method>
+  <interface full="Swift_AddressEncoder" namespace="" name="Swift_AddressEncoder">
+    <method name="encodeString" start="24" end="24" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encodes an email address."/>
+        <throws description="if the email cannot be represented in" type="object">the encoding implemented by this class<type full="Swift_AddressEncoderException" namespace="" name="Swift_AddressEncoderException"/></throws>
+      </docblock>
+      <return type="string" nullable="false"/>
+      <parameter name="address" byreference="false" type="string"/>
+    </method>
+  </interface>
+</class>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Events_TransportChangeEvent" namespace="" name="Swift_Events_TransportChangeEvent" abstract="false" final="false" start="16" end="27">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events" file="TransportChangeEvent.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeEvent.php" size="564" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="2315786b401a88c0883d33e32dbbf1c437c65100" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Events/TransportChangeEvent.php"/>
+  <docblock>
+    <description compact="Generated when the state of a Transport is changed (i.e. stopped/started)."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Events_EventObject" namespace="" name="Swift_Events_EventObject"/>
+  <method name="getTransport" start="23" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the Transport."/>
+      <return type="object">
+        <type full="Swift_Transport" namespace="" name="Swift_Transport"/>
+      </return>
+    </docblock>
+  </method>
+  <parent full="Swift_Events_EventObject" namespace="" name="Swift_Events_EventObject">
+    <implements full="Swift_Events_Event" namespace="" name="Swift_Events_Event"/>
+    <constructor name="__construct" start="29" end="32" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Create a new EventObject originating at $source."/>
+        <param type="object" variable="$source"/>
+      </docblock>
+      <parameter name="source" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="getSource" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the source object of this event."/>
+        <return type="object"/>
+      </docblock>
+    </method>
+    <method name="cancelBubble" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Prevent this Event from bubbling any further up the stack."/>
+      </docblock>
+      <parameter name="cancel" byreference="false" type="boolean" default="true"/>
+    </method>
+    <method name="bubbleCancelled" start="57" end="60" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns true if this Event will not bubble any further up the stack."/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+  </parent>
+  <interface full="Swift_Events_Event" namespace="" name="Swift_Events_Event">
+    <method name="getSource" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get the source object of this event."/>
+        <return type="object"/>
+      </docblock>
+    </method>
+    <method name="cancelBubble" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Prevent this Event from bubbling any further up the stack."/>
+        <param description="optional" type="object" variable="$cancel">
+          <type full="bool" namespace="" name="bool"/>
+        </param>
+      </docblock>
+      <parameter name="cancel" byreference="false" type="boolean" default="true"/>
+    </method>
+    <method name="bubbleCancelled" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns true if this Event will not bubble any further up the stack."/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+</class>

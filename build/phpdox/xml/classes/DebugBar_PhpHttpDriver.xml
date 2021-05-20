@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="DebugBar\PhpHttpDriver" namespace="DebugBar" name="PhpHttpDriver" abstract="false" final="false" start="16" end="70">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/maximebf/debugbar/src/DebugBar" file="PhpHttpDriver.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/maximebf/debugbar/src/DebugBar/PhpHttpDriver.php" size="1250" time="2020-12-07T11:07:24+00:00" unixtime="1607339244" sha1="17b8ffb19283f3f74522930eaefaacc51efc97ce" relative="vendor/maximebf/debugbar/src/DebugBar/PhpHttpDriver.php"/>
+  <docblock>
+    <description compact="HTTP driver for native php"/>
+  </docblock>
+  <implements full="DebugBar\HttpDriverInterface" namespace="DebugBar" name="HttpDriverInterface"/>
+  <method name="setHeaders" start="21" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="array" variable="$headers"/>
+    </docblock>
+    <parameter name="headers" byreference="false" type="array"/>
+  </method>
+  <method name="isSessionStarted" start="31" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="DebugBar\bool" namespace="DebugBar" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setSessionValue" start="40" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <param type="string" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="hasSessionValue" start="49" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <return type="object">
+        <type full="DebugBar\bool" namespace="DebugBar" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getSessionValue" start="58" end="61" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="deleteSessionValue" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$name"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="DebugBar\HttpDriverInterface" namespace="DebugBar" name="HttpDriverInterface">
+    <method name="setHeaders" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets HTTP headers"/>
+        <param type="array" variable="$headers"/>
+        <return/>
+      </docblock>
+      <parameter name="headers" byreference="false" type="array"/>
+    </method>
+    <method name="isSessionStarted" start="32" end="32" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Checks if the session is started"/>
+        <return type="boolean"/>
+      </docblock>
+    </method>
+    <method name="setSessionValue" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets a value in the session"/>
+        <param type="string" variable="$name"/>
+        <param type="string" variable="$value"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="value" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="hasSessionValue" start="48" end="48" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Checks if a value is in the session"/>
+        <param type="string" variable="$name"/>
+        <return type="boolean"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="getSessionValue" start="56" end="56" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns a value from the session"/>
+        <param type="string" variable="$name"/>
+        <return type="mixed"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="deleteSessionValue" start="63" end="63" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Deletes a value from the session"/>
+        <param type="string" variable="$name"/>
+      </docblock>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_Mime_Headers_UnstructuredHeader" namespace="" name="Swift_Mime_Headers_UnstructuredHeader" abstract="false" final="false" start="16" end="109">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers" file="UnstructuredHeader.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php" size="2225" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="b8c84c24f16fa23d3786a4c6b18ead93d8c7de67" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/UnstructuredHeader.php"/>
+  <docblock>
+    <description compact="A Simple MIME Header."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <extends full="Swift_Mime_Headers_AbstractHeader" namespace="" name="Swift_Mime_Headers_AbstractHeader" unresolved="true"/>
+  <member name="value" visibility="private" static="false" line="23">
+    <docblock>
+      <description compact="The value of this Header."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a new SimpleHeader with $name."/>
+      <param type="string" variable="$name"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="encoder" byreference="false" type="object">
+      <type full="Swift_Mime_HeaderEncoder" namespace="" name="Swift_Mime_HeaderEncoder"/>
+    </parameter>
+  </constructor>
+  <method name="getFieldType" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the type of Header that this instance represents."/>
+      <see value="TYPE_TEXT, TYPE_PARAMETERIZED, TYPE_MAILBOX"/>
+      <see value="TYPE_DATE, TYPE_ID, TYPE_PATH"/>
+      <return type="int"/>
+    </docblock>
+  </method>
+  <method name="setFieldBodyModel" start="56" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the model for the field body.">This method takes a string for the field value.</description>
+      <param type="string" variable="$model"/>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFieldBodyModel" start="68" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the model for the field body.">This method returns a string.</description>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getValue" start="78" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the (unencoded) value of this header."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="setValue" start="88" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the (unencoded) value of this header."/>
+      <param type="string" variable="$value"/>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getFieldBody" start="99" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the value of this header prepared for rendering."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

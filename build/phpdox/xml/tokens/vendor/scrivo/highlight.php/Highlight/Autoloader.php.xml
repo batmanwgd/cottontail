@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight" file="Autoloader.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/scrivo/highlight.php/Highlight/Autoloader.php" size="2626" time="2020-12-22T19:20:29+00:00" unixtime="1608664829" sha1="0e2d4529b4b87243e3af9b0827ac3aa68d8227ae" relative="vendor/scrivo/highlight.php/Highlight/Autoloader.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">/* Copyright (c) 2013-2019 Geert Bergman (geert@scrivo.nl), highlight.php</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> * Redistribution and use in source and binary forms, with or without</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> * modification, are permitted provided that the following conditions are met:</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT"> * 1. Redistributions of source code must retain the above copyright notice,</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT"> *    this list of conditions and the following disclaimer.</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT"> * 2. Redistributions in binary form must reproduce the above copyright notice,</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT"> *    this list of conditions and the following disclaimer in the documentation</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT"> *    and/or other materials provided with the distribution.</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT"> * 3. Neither the name of "highlight.js", "highlight.php", nor the names of its</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT"> *    contributors may be used to endorse or promote products derived from this</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT"> *    software without specific prior written permission.</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT"> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT"> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT"> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT"> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT"> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT"> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT"> * POSSIBILITY OF SUCH DAMAGE.</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Highlight</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> * The autoloader class for Highlight classes for projects without Composer or autoloaders.</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * ```php</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> * &lt;?php</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> * require_once("Highlight/Autoloader.php");</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> * spl_autoload_register("\\Highlight\\Autoloader::load");</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * // Now use Highlight classes:</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> * $hl = new \Highlight\Highlighter(...);</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> * ```</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> * @TODO In v10.x, mark this class final for real</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> * @api</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> * @final</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> * @since 7.5.0.0</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="52">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Autoloader</token>
+  </line>
+  <line no="53">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="54">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">     * The method to include the source file for a given class to use in</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">     * the PHP spl_autoload_register function.</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">     * @param string $class a name of a Scrivo class</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT">     * @return bool true if the source file was successfully included</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="62">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">load</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="63">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="64">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">substr</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">10</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_NOT_IDENTICAL">!==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Highlight\\"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="65">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="66">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$c</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">str_replace</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"\\"</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"/"</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">substr</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$class</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">10</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">".php"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="69">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$res</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_INCLUDE">include</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_ENCAPSED_AND_WHITESPACE">/</token>
+    <token name="T_VARIABLE">$c</token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$res</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_QUESTION_MARK">?</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="72">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="73">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="74"/>
+</source>

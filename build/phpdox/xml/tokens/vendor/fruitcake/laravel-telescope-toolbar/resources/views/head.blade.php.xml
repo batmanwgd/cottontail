@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views" file="head.blade.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fruitcake/laravel-telescope-toolbar/resources/views/head.blade.php" size="566" time="2020-12-19T11:43:09+00:00" unixtime="1608378189" sha1="52f68efb9c21d313ca28e06edcc8e1a4f886e8dd" relative="vendor/fruitcake/laravel-telescope-toolbar/resources/views/head.blade.php"/>
+  <line no="1"/>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;!-- Start of Telescope Toolbar assets !--&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;script src="{{ route('telescope-toolbar.baseJs') }}?{{ $assetVersion }}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;link href="{{ route('telescope-toolbar.styling') }}?{{ $assetVersion }}&amp;lightMode={{ $lightMode }}" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;script @if(isset($csp_script_nonce) &amp;&amp; $csp_script_nonce) nonce="{{ $csp_script_nonce }}" @endif&gt;/*&lt;![CDATA[*/</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    (function () {</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        @foreach ($requestStack as $request)</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        Sfjs.requestStack.push(@json($request));</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        @endforeach</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    })();</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    /*]]&gt;*/&lt;/script&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">&lt;!-- End of Telescope Toolbar assets !--&gt;</token>
+  </line>
+  <line no="13"/>
+</source>

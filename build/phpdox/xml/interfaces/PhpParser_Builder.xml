@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="PhpParser\Builder" namespace="PhpParser" name="Builder" abstract="false" final="false" start="5" end="13">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser" file="Builder.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/nikic/php-parser/lib/PhpParser/Builder.php" size="203" time="2021-05-03T19:11:20+00:00" unixtime="1620069080" sha1="7316f6dce820f311746182421e76a14210d177e9" relative="vendor/nikic/php-parser/lib/PhpParser/Builder.php"/>
+  <method name="getNode" start="12" end="12" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the built node."/>
+      <return description="The built node" type="object">
+        <type full="PhpParser\Node" namespace="PhpParser" name="Node"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="PhpParser\Node" namespace="PhpParser" name="Node"/>
+    </return>
+  </method>
+</interface>

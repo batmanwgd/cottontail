@@ -1,0 +1,1072 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/guzzlehttp/guzzle/src" file="RequestOptions.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/guzzlehttp/guzzle/src/RequestOptions.php" size="10568" time="2021-03-23T11:33:13+00:00" unixtime="1616499193" sha1="a439524e94d32a3f5c4f70d74d39e4fac896861b" relative="vendor/guzzlehttp/guzzle/src/RequestOptions.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">GuzzleHttp</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * This class contains a list of built-in Guzzle request options.</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * More documentation for each option can be found at http://guzzlephp.org/.</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * @link http://docs.guzzlephp.org/en/v6/request-options.html</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="12">
+    <token name="T_FINAL">final</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">RequestOptions</token>
+  </line>
+  <line no="13">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT">     * allow_redirects: (bool|array) Controls redirect behavior. Pass false</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">     * to disable redirects, pass true to enable redirects, pass an</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">     * associative to provide custom redirect settings. Defaults to "false".</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT">     * This option only works if your handler has the RedirectMiddleware. When</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">     * passing an associative array, you can provide the following key value</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">     * pairs:</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">     * - max: (int, default=5) maximum number of allowed redirects.</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">     * - strict: (bool, default=false) Set to true to use strict redirects</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">     *   meaning redirect POST requests with POST requests vs. doing what most</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     *   browsers do which is redirect POST requests with GET requests</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     * - referer: (bool, default=false) Set to true to enable the Referer</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">     *   header.</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     * - protocols: (array, default=['http', 'https']) Allowed redirect</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     *   protocols.</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     * - on_redirect: (callable) PHP callable that is invoked when a redirect</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     *   is encountered. The callable is invoked with the request, the redirect</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     *   response that was received, and the effective URI. Any return value</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     *   from the on_redirect function is ignored.</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">ALLOW_REDIRECTS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'allow_redirects'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">     * auth: (array) Pass an array of HTTP authentication parameters to use</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">     * with the request. The array must contain the username in index [0],</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">     * the password in index [1], and you can optionally provide a built-in</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">     * authentication type in index [2]. Pass null to disable authentication</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">     * for a request.</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">AUTH</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'auth'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">     * body: (resource|string|null|int|float|StreamInterface|callable|\Iterator)</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">     * Body to send in the request.</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="50">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">BODY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'body'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="51"/>
+  <line no="52">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT">     * cert: (string|array) Set to a string to specify the path to a file</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT">     * containing a PEM formatted SSL client side certificate. If a password</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">     * is required, then set cert to an array containing the path to the PEM</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">     * file in the first array element followed by the certificate password</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     * in the second array element.</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="59">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CERT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cert'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT">     * cookies: (bool|GuzzleHttp\Cookie\CookieJarInterface, default=false)</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT">     * Specifies whether or not cookies are used in a request or what cookie</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT">     * jar to use or what cookies to send. This option only works if your</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT">     * handler has the `cookie` middleware. Valid values are `false` and</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT">     * an instance of {@see \GuzzleHttp\Cookie\CookieJarInterface}.</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="68">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">COOKIES</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookies'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT">     * connect_timeout: (float, default=0) Float describing the number of</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT">     * seconds to wait while trying to connect to a server. Use 0 to wait</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT">     * indefinitely (the default behavior).</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="75">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CONNECT_TIMEOUT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'connect_timeout'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT">     * debug: (bool|resource) Set to true or set to a PHP stream returned by</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT">     * fopen()  enable debug output with the HTTP handler used to send a</token>
+  </line>
+  <line no="80">
+    <token name="T_DOC_COMMENT">     * request.</token>
+  </line>
+  <line no="81">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="82">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DEBUG</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'debug'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="85">
+    <token name="T_DOC_COMMENT">     * decode_content: (bool, default=true) Specify whether or not</token>
+  </line>
+  <line no="86">
+    <token name="T_DOC_COMMENT">     * Content-Encoding responses (gzip, deflate, etc.) are automatically</token>
+  </line>
+  <line no="87">
+    <token name="T_DOC_COMMENT">     * decoded.</token>
+  </line>
+  <line no="88">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="89">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DECODE_CONTENT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'decode_content'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="90"/>
+  <line no="91">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="92">
+    <token name="T_DOC_COMMENT">     * delay: (int) The amount of time to delay before sending in milliseconds.</token>
+  </line>
+  <line no="93">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="94">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">DELAY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'delay'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="97">
+    <token name="T_DOC_COMMENT">     * expect: (bool|integer) Controls the behavior of the</token>
+  </line>
+  <line no="98">
+    <token name="T_DOC_COMMENT">     * "Expect: 100-Continue" header.</token>
+  </line>
+  <line no="99">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="100">
+    <token name="T_DOC_COMMENT">     * Set to `true` to enable the "Expect: 100-Continue" header for all</token>
+  </line>
+  <line no="101">
+    <token name="T_DOC_COMMENT">     * requests that sends a body. Set to `false` to disable the</token>
+  </line>
+  <line no="102">
+    <token name="T_DOC_COMMENT">     * "Expect: 100-Continue" header for all requests. Set to a number so that</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT">     * the size of the payload must be greater than the number in order to send</token>
+  </line>
+  <line no="104">
+    <token name="T_DOC_COMMENT">     * the Expect header. Setting to a number will send the Expect header for</token>
+  </line>
+  <line no="105">
+    <token name="T_DOC_COMMENT">     * all requests in which the size of the payload cannot be determined or</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT">     * where the body is not rewindable.</token>
+  </line>
+  <line no="107">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="108">
+    <token name="T_DOC_COMMENT">     * By default, Guzzle will add the "Expect: 100-Continue" header when the</token>
+  </line>
+  <line no="109">
+    <token name="T_DOC_COMMENT">     * size of the body of a request is greater than 1 MB and a request is</token>
+  </line>
+  <line no="110">
+    <token name="T_DOC_COMMENT">     * using HTTP/1.1.</token>
+  </line>
+  <line no="111">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="112">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">EXPECT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'expect'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT">     * form_params: (array) Associative array of form field names to values</token>
+  </line>
+  <line no="116">
+    <token name="T_DOC_COMMENT">     * where each value is a string or array of strings. Sets the Content-Type</token>
+  </line>
+  <line no="117">
+    <token name="T_DOC_COMMENT">     * header to application/x-www-form-urlencoded when no Content-Type header</token>
+  </line>
+  <line no="118">
+    <token name="T_DOC_COMMENT">     * is already present.</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="120">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FORM_PARAMS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'form_params'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="123">
+    <token name="T_DOC_COMMENT">     * headers: (array) Associative array of HTTP headers. Each value MUST be</token>
+  </line>
+  <line no="124">
+    <token name="T_DOC_COMMENT">     * a string or array of strings.</token>
+  </line>
+  <line no="125">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="126">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">HEADERS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'headers'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="129">
+    <token name="T_DOC_COMMENT">     * http_errors: (bool, default=true) Set to false to disable exceptions</token>
+  </line>
+  <line no="130">
+    <token name="T_DOC_COMMENT">     * when a non- successful HTTP response is received. By default,</token>
+  </line>
+  <line no="131">
+    <token name="T_DOC_COMMENT">     * exceptions will be thrown for 4xx and 5xx responses. This option only</token>
+  </line>
+  <line no="132">
+    <token name="T_DOC_COMMENT">     * works if your handler has the `httpErrors` middleware.</token>
+  </line>
+  <line no="133">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">HTTP_ERRORS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'http_errors'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="137">
+    <token name="T_DOC_COMMENT">     * idn: (bool|int, default=true) A combination of IDNA_* constants for</token>
+  </line>
+  <line no="138">
+    <token name="T_DOC_COMMENT">     * idn_to_ascii() PHP's function (see "options" parameter). Set to false to</token>
+  </line>
+  <line no="139">
+    <token name="T_DOC_COMMENT">     * disable IDN support completely, or to true to use the default</token>
+  </line>
+  <line no="140">
+    <token name="T_DOC_COMMENT">     * configuration (IDNA_DEFAULT constant).</token>
+  </line>
+  <line no="141">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="142">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">IDN_CONVERSION</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'idn_conversion'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="143"/>
+  <line no="144">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="145">
+    <token name="T_DOC_COMMENT">     * json: (mixed) Adds JSON data to a request. The provided value is JSON</token>
+  </line>
+  <line no="146">
+    <token name="T_DOC_COMMENT">     * encoded and a Content-Type header of application/json will be added to</token>
+  </line>
+  <line no="147">
+    <token name="T_DOC_COMMENT">     * the request if no Content-Type header is already present.</token>
+  </line>
+  <line no="148">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="149">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">JSON</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'json'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="152">
+    <token name="T_DOC_COMMENT">     * multipart: (array) Array of associative arrays, each containing a</token>
+  </line>
+  <line no="153">
+    <token name="T_DOC_COMMENT">     * required "name" key mapping to the form field, name, a required</token>
+  </line>
+  <line no="154">
+    <token name="T_DOC_COMMENT">     * "contents" key mapping to a StreamInterface|resource|string, an</token>
+  </line>
+  <line no="155">
+    <token name="T_DOC_COMMENT">     * optional "headers" associative array of custom headers, and an</token>
+  </line>
+  <line no="156">
+    <token name="T_DOC_COMMENT">     * optional "filename" key mapping to a string to send as the filename in</token>
+  </line>
+  <line no="157">
+    <token name="T_DOC_COMMENT">     * the part. If no "filename" key is present, then no "filename" attribute</token>
+  </line>
+  <line no="158">
+    <token name="T_DOC_COMMENT">     * will be added to the part.</token>
+  </line>
+  <line no="159">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="160">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">MULTIPART</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'multipart'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="163">
+    <token name="T_DOC_COMMENT">     * on_headers: (callable) A callable that is invoked when the HTTP headers</token>
+  </line>
+  <line no="164">
+    <token name="T_DOC_COMMENT">     * of the response have been received but the body has not yet begun to</token>
+  </line>
+  <line no="165">
+    <token name="T_DOC_COMMENT">     * download.</token>
+  </line>
+  <line no="166">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="167">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">ON_HEADERS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'on_headers'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="168"/>
+  <line no="169">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="170">
+    <token name="T_DOC_COMMENT">     * on_stats: (callable) allows you to get access to transfer statistics of</token>
+  </line>
+  <line no="171">
+    <token name="T_DOC_COMMENT">     * a request and access the lower level transfer details of the handler</token>
+  </line>
+  <line no="172">
+    <token name="T_DOC_COMMENT">     * associated with your client. ``on_stats`` is a callable that is invoked</token>
+  </line>
+  <line no="173">
+    <token name="T_DOC_COMMENT">     * when a handler has finished sending a request. The callback is invoked</token>
+  </line>
+  <line no="174">
+    <token name="T_DOC_COMMENT">     * with transfer statistics about the request, the response received, or</token>
+  </line>
+  <line no="175">
+    <token name="T_DOC_COMMENT">     * the error encountered. Included in the data is the total amount of time</token>
+  </line>
+  <line no="176">
+    <token name="T_DOC_COMMENT">     * taken to send the request.</token>
+  </line>
+  <line no="177">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="178">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">ON_STATS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'on_stats'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="181">
+    <token name="T_DOC_COMMENT">     * progress: (callable) Defines a function to invoke when transfer</token>
+  </line>
+  <line no="182">
+    <token name="T_DOC_COMMENT">     * progress is made. The function accepts the following positional</token>
+  </line>
+  <line no="183">
+    <token name="T_DOC_COMMENT">     * arguments: the total number of bytes expected to be downloaded, the</token>
+  </line>
+  <line no="184">
+    <token name="T_DOC_COMMENT">     * number of bytes downloaded so far, the number of bytes expected to be</token>
+  </line>
+  <line no="185">
+    <token name="T_DOC_COMMENT">     * uploaded, the number of bytes uploaded so far.</token>
+  </line>
+  <line no="186">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="187">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PROGRESS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'progress'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="188"/>
+  <line no="189">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="190">
+    <token name="T_DOC_COMMENT">     * proxy: (string|array) Pass a string to specify an HTTP proxy, or an</token>
+  </line>
+  <line no="191">
+    <token name="T_DOC_COMMENT">     * array to specify different proxies for different protocols (where the</token>
+  </line>
+  <line no="192">
+    <token name="T_DOC_COMMENT">     * key is the protocol and the value is a proxy string).</token>
+  </line>
+  <line no="193">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="194">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PROXY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'proxy'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="195"/>
+  <line no="196">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="197">
+    <token name="T_DOC_COMMENT">     * query: (array|string) Associative array of query string values to add</token>
+  </line>
+  <line no="198">
+    <token name="T_DOC_COMMENT">     * to the request. This option uses PHP's http_build_query() to create</token>
+  </line>
+  <line no="199">
+    <token name="T_DOC_COMMENT">     * the string representation. Pass a string value if you need more</token>
+  </line>
+  <line no="200">
+    <token name="T_DOC_COMMENT">     * control than what this method provides</token>
+  </line>
+  <line no="201">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="202">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">QUERY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'query'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="203"/>
+  <line no="204">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="205">
+    <token name="T_DOC_COMMENT">     * sink: (resource|string|StreamInterface) Where the data of the</token>
+  </line>
+  <line no="206">
+    <token name="T_DOC_COMMENT">     * response is written to. Defaults to a PHP temp stream. Providing a</token>
+  </line>
+  <line no="207">
+    <token name="T_DOC_COMMENT">     * string will write data to a file by the given name.</token>
+  </line>
+  <line no="208">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="209">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SINK</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sink'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="210"/>
+  <line no="211">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="212">
+    <token name="T_DOC_COMMENT">     * synchronous: (bool) Set to true to inform HTTP handlers that you intend</token>
+  </line>
+  <line no="213">
+    <token name="T_DOC_COMMENT">     * on waiting on the response. This can be useful for optimizations. Note</token>
+  </line>
+  <line no="214">
+    <token name="T_DOC_COMMENT">     * that a promise is still returned if you are using one of the async</token>
+  </line>
+  <line no="215">
+    <token name="T_DOC_COMMENT">     * client methods.</token>
+  </line>
+  <line no="216">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="217">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SYNCHRONOUS</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'synchronous'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="218"/>
+  <line no="219">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="220">
+    <token name="T_DOC_COMMENT">     * ssl_key: (array|string) Specify the path to a file containing a private</token>
+  </line>
+  <line no="221">
+    <token name="T_DOC_COMMENT">     * SSL key in PEM format. If a password is required, then set to an array</token>
+  </line>
+  <line no="222">
+    <token name="T_DOC_COMMENT">     * containing the path to the SSL key in the first array element followed</token>
+  </line>
+  <line no="223">
+    <token name="T_DOC_COMMENT">     * by the password required for the certificate in the second element.</token>
+  </line>
+  <line no="224">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="225">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SSL_KEY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'ssl_key'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="226"/>
+  <line no="227">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="228">
+    <token name="T_DOC_COMMENT">     * stream: Set to true to attempt to stream a response rather than</token>
+  </line>
+  <line no="229">
+    <token name="T_DOC_COMMENT">     * download it all up-front.</token>
+  </line>
+  <line no="230">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="231">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">STREAM</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'stream'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="232"/>
+  <line no="233">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="234">
+    <token name="T_DOC_COMMENT">     * verify: (bool|string, default=true) Describes the SSL certificate</token>
+  </line>
+  <line no="235">
+    <token name="T_DOC_COMMENT">     * verification behavior of a request. Set to true to enable SSL</token>
+  </line>
+  <line no="236">
+    <token name="T_DOC_COMMENT">     * certificate verification using the system CA bundle when available</token>
+  </line>
+  <line no="237">
+    <token name="T_DOC_COMMENT">     * (the default). Set to false to disable certificate verification (this</token>
+  </line>
+  <line no="238">
+    <token name="T_DOC_COMMENT">     * is insecure!). Set to a string to provide the path to a CA bundle on</token>
+  </line>
+  <line no="239">
+    <token name="T_DOC_COMMENT">     * disk to enable verification using a custom certificate.</token>
+  </line>
+  <line no="240">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="241">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">VERIFY</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'verify'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="242"/>
+  <line no="243">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="244">
+    <token name="T_DOC_COMMENT">     * timeout: (float, default=0) Float describing the timeout of the</token>
+  </line>
+  <line no="245">
+    <token name="T_DOC_COMMENT">     * request in seconds. Use 0 to wait indefinitely (the default behavior).</token>
+  </line>
+  <line no="246">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="247">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TIMEOUT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'timeout'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="248"/>
+  <line no="249">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="250">
+    <token name="T_DOC_COMMENT">     * read_timeout: (float, default=default_socket_timeout ini setting) Float describing</token>
+  </line>
+  <line no="251">
+    <token name="T_DOC_COMMENT">     * the body read timeout, for stream requests.</token>
+  </line>
+  <line no="252">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="253">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">READ_TIMEOUT</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'read_timeout'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="254"/>
+  <line no="255">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="256">
+    <token name="T_DOC_COMMENT">     * version: (float) Specifies the HTTP protocol version to attempt to use.</token>
+  </line>
+  <line no="257">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="258">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">VERSION</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'version'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="259"/>
+  <line no="260">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="261">
+    <token name="T_DOC_COMMENT">     * force_ip_resolve: (bool) Force client to use only ipv4 or ipv6 protocol</token>
+  </line>
+  <line no="262">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="263">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONST">const</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FORCE_IP_RESOLVE</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'force_ip_resolve'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="264">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="265"/>
+</source>

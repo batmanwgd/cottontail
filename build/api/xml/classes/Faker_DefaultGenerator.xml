@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Faker\DefaultGenerator" namespace="Faker" name="DefaultGenerator" abstract="false" final="false" start="9" end="38">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fakerphp/faker/src/Faker" file="DefaultGenerator.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/fakerphp/faker/src/Faker/DefaultGenerator.php" size="804" time="2021-03-30T06:27:33+00:00" unixtime="1617085653" sha1="68e4c41338e35ce016f4a3b1d2a11ab96cb3fe9e" relative="vendor/fakerphp/faker/src/Faker/DefaultGenerator.php"/>
+  <docblock>
+    <description compact="This generator returns a default value for all called properties and methods. It works with Faker\Generator\Base-&gt;optional()."/>
+  </docblock>
+  <member name="default" visibility="protected" static="false" line="11"/>
+  <constructor name="__construct" start="13" end="16" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="default" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__get" start="23" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$attribute"/>
+      <deprecated value="Use a method instead."/>
+    </docblock>
+    <parameter name="attribute" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__call" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$method"/>
+      <param type="array" variable="$attributes"/>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="attributes" byreference="false" type="{unknown}"/>
+  </method>
+</class>

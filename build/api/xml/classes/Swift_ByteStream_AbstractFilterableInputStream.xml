@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Swift_ByteStream_AbstractFilterableInputStream" namespace="" name="Swift_ByteStream_AbstractFilterableInputStream" abstract="true" final="false" start="16" end="176">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream" file="AbstractFilterableInputStream.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php" size="4023" time="2021-03-09T12:30:35+00:00" unixtime="1615293035" sha1="cc32fa69c232eb5d4723b1b25378ee9c4b4a2024" relative="vendor/swiftmailer/swiftmailer/lib/classes/Swift/ByteStream/AbstractFilterableInputStream.php"/>
+  <docblock>
+    <description compact="Provides the base functionality for an InputStream supporting filters."/>
+    <author value="Chris Corbyn"/>
+  </docblock>
+  <implements full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+  <implements full="Swift_Filterable" namespace="" name="Swift_Filterable"/>
+  <member name="sequence" default="0" type="integer" visibility="protected" static="false" line="21">
+    <docblock>
+      <description compact="Write sequence."/>
+    </docblock>
+  </member>
+  <member name="filters" default="" type="array" visibility="private" static="false" line="28">
+    <docblock>
+      <description compact="StreamFilters."/>
+      <var type="array" of="object">
+        <type full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="writeBuffer" default="''" type="string" visibility="private" static="false" line="33">
+    <docblock>
+      <description compact="A buffer for writing."/>
+    </docblock>
+  </member>
+  <member name="mirrors" default="" type="array" visibility="private" static="false" line="40">
+    <docblock>
+      <description compact="Bound streams."/>
+      <var type="array" of="object">
+        <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="doCommit" start="47" end="47" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Commit the given bytes to the storage medium immediately."/>
+      <param type="string" variable="$bytes"/>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="flush" start="52" end="52" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Flush any buffers/content with immediate effect."/>
+    </docblock>
+  </method>
+  <method name="addFilter" start="59" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add a StreamFilter to this InputByteStream."/>
+      <param type="string" variable="$key"/>
+    </docblock>
+    <parameter name="filter" byreference="false" type="object">
+      <type full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+    </parameter>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="removeFilter" start="69" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove an already present StreamFilter based on its $key."/>
+      <param type="string" variable="$key"/>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="write" start="83" end="94" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Writes $bytes to the end of the stream."/>
+      <param type="string" variable="$bytes"/>
+      <throws type="object">
+        <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+      </throws>
+      <return type="int"/>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="commit" start="102" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="For any bytes that are currently buffered inside the stream, force them off the buffer."/>
+      <throws type="object">
+        <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+      </throws>
+    </docblock>
+  </method>
+  <method name="bind" start="113" end="116" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Attach $is to this stream.">The stream acts as an observer, receiving all data that is written.
+All <link xmlns="http://xml.phpdox.net/src" value="write()"/> and <link xmlns="http://xml.phpdox.net/src" value="flushBuffers()"/> operations will be mirrored.
+</description>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="unbind" start="125" end="135" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove an already bound stream.">If $is is not bound, no errors will be raised.
+If the stream currently has any buffered data it will be written to $is
+before unbinding occurs.</description>
+    </docblock>
+    <parameter name="is" byreference="false" type="object">
+      <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+    </parameter>
+  </method>
+  <method name="flushBuffers" start="143" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+      <throws type="object">
+        <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+      </throws>
+    </docblock>
+  </method>
+  <method name="filter" start="156" end="163" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Run $bytes through all filters"/>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="doWrite" start="166" end="175" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Just write the bytes to the stream"/>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream">
+    <method name="write" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Writes $bytes to the end of the stream.">Writing may not happen immediately if the stream chooses to buffer.  If
+you want to write these bytes with immediate effect, call <link xmlns="http://xml.phpdox.net/src" value="commit()"/>after calling write().
+This method returns the sequence ID of the write (i.e. 1 for first, 2 for
+second, etc etc).
+</description>
+        <param type="string" variable="$bytes"/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+        <return type="int"/>
+      </docblock>
+      <parameter name="bytes" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="commit" start="45" end="45" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="For any bytes that are currently buffered inside the stream, force them off the buffer."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+    <method name="bind" start="55" end="55" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Attach $is to this stream.">The stream acts as an observer, receiving all data that is written.
+All <link xmlns="http://xml.phpdox.net/src" value="write()"/> and <link xmlns="http://xml.phpdox.net/src" value="flushBuffers()"/> operations will be mirrored.
+</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="unbind" start="66" end="66" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove an already bound stream.">If $is is not bound, no errors will be raised.
+If the stream currently has any buffered data it will be written to $is
+before unbinding occurs.</description>
+        <param type="object" variable="$is">
+          <type full="Swift_InputByteStream" namespace="" name="Swift_InputByteStream"/>
+        </param>
+      </docblock>
+      <parameter name="is" byreference="false" type="object">
+        <type full="\\self" namespace="\" name="self"/>
+      </parameter>
+    </method>
+    <method name="flushBuffers" start="74" end="74" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Flush the contents of the stream (empty it) and set the internal pointer to the beginning."/>
+        <throws type="object">
+          <type full="Swift_IoException" namespace="" name="Swift_IoException"/>
+        </throws>
+      </docblock>
+    </method>
+  </interface>
+  <interface full="Swift_Filterable" namespace="" name="Swift_Filterable">
+    <method name="addFilter" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Add a new StreamFilter, referenced by $key."/>
+        <param type="string" variable="$key"/>
+      </docblock>
+      <parameter name="filter" byreference="false" type="object">
+        <type full="Swift_StreamFilter" namespace="" name="Swift_StreamFilter"/>
+      </parameter>
+      <parameter name="key" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="removeFilter" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove an existing filter using $key."/>
+        <param type="string" variable="$key"/>
+      </docblock>
+      <parameter name="key" byreference="false" type="{unknown}"/>
+    </method>
+  </interface>
+</class>

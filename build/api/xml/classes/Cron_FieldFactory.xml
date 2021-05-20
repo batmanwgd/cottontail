@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Cron\FieldFactory" namespace="Cron" name="FieldFactory" abstract="false" final="false" start="14" end="52">
+  <file path="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron" file="FieldFactory.php" realpath="/Users/nyuszi/_Development/_Keycloak/_Showcase/_roboto/cottontail/vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php" size="1405" time="2020-11-24T19:55:57+00:00" unixtime="1606247757" sha1="768cf903d16d4880a8c78989ca77c118e6c82185" relative="vendor/dragonmantank/cron-expression/src/Cron/FieldFactory.php"/>
+  <docblock>
+    <description compact="CRON field factory implementing a flyweight factory."/>
+    <see value="http://en.wikipedia.org/wiki/Cron"/>
+  </docblock>
+  <implements full="Cron\FieldFactoryInterface" namespace="Cron" name="FieldFactoryInterface"/>
+  <member name="fields" default="" type="array" visibility="private" static="false" line="19">
+    <docblock>
+      <description/>
+      <var description="Cache of instantiated fields" type="array"/>
+    </docblock>
+  </member>
+  <method name="getField" start="28" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get an instance of a field object for a cron expression position."/>
+      <param description="CRON expression position value to retrieve" type="int" variable="$position"/>
+      <throws description="if a position is not valid" type="object">
+        <type full="InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+    </return>
+    <parameter name="position" byreference="false" type="int"/>
+  </method>
+  <method name="instantiateField" start="33" end="51" abstract="false" final="false" static="false" visibility="private">
+    <return type="object" nullable="false">
+      <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+    </return>
+    <parameter name="position" byreference="false" type="int"/>
+  </method>
+  <interface full="Cron\FieldFactoryInterface" namespace="Cron" name="FieldFactoryInterface">
+    <method name="getField" start="7" end="7" abstract="false" final="false" static="false" visibility="public">
+      <return type="object" nullable="false">
+        <type full="Cron\FieldInterface" namespace="Cron" name="FieldInterface"/>
+      </return>
+      <parameter name="position" byreference="false" type="int"/>
+    </method>
+  </interface>
+</class>
