@@ -1,0 +1,32 @@
+{
+  "name": "phpdoc-vuepress",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:nelson6e65/phpdoc-vuepress.git",
+  "license": "MIT",
+  "author": "Nelson Martell <nelson6e65@gmail.com>",
+  "scripts": {
+    "cs:fix": "prettier --write .",
+    "cs:lint": "prettier --check .",
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.1",
+    "@vuepress/plugin-google-analytics": "^1.8.1",
+    "vuepress": "^1.8.1"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.13.0",
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1",
+    "prettier-plugin-packagejson": "^2.2.9",
+    "prettier-plugin-twig-melody": "^0.4.6",
+    "pretty-quick": "^3.1.0"
+  }
+}

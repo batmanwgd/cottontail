@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "start": "vuepress dev --host localhost"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "*",
+        "vuepress": "*"
+    },
+    "dependencies": {
+        "@stencil/core": "2.5.2",
+        "markdown-it": "*",
+        "resolve-from": "*",
+        "stylint": "*"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "barryvdh/laravel-async-queue",
+    "description": "Async Queue Driver for Laravel (Push to background)",
+    "keywords": ["laravel", "queue", "async", "background"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "illuminate/support": "^6|^7|^8",
+        "illuminate/console": "^6|^7|^8",
+        "symfony/process": "^4|^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Barryvdh\\Queue\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.7-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Barryvdh\\Queue\\AsyncServiceProvider"
+            ]
+        }
+    }
+}

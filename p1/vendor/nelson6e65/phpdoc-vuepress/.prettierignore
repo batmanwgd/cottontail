@@ -1,0 +1,15 @@
+composer.phar
+vendor/
+composer.lock
+node_modules/
+dist/
+docs/api/
+docs/demo/
+output/
+build/
+*.svg
+*.log
+npm-debug.log*
+
+# Not compatible with Markdown Twig
+data/templates/
